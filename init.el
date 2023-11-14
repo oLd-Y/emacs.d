@@ -141,6 +141,12 @@
 
 ;; programming
 (require 'init-programming)
+
+;; auto-save
+(require 'auto-save)
+
+;; init-treemacs
+(require 'init-treemacs)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; init.el ends here
 (put 'dired-find-alternate-file 'disabled nil)
