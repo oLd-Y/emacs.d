@@ -141,6 +141,15 @@
 
 ;; programming
 (require 'init-programming)
+
+;; auto-save
+(require 'auto-save)
+
+;; vfp-mode
+(require 'vfp-mode)
+;; 为 VFP 文件设置自动 mode
+(add-to-list 'auto-mode-alist '("\\.prg\\'" . vfp-mode))
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; init.el ends here
 (put 'dired-find-alternate-file 'disabled nil)
