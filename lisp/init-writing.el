@@ -98,6 +98,9 @@
     (add-hook hook (lambda () (flyspell-mode 1))))
   (ispell-change-dictionary "american" t))
 
+;;将aspell添加到搜索路径中
+(add-to-list 'exec-path "D:\Program\msys2\mingw64\bin")
+
 (use-package corfu-english-helper
   :ensure nil
   :commands toggle-corfu-english-helper)
@@ -121,5 +124,6 @@
 
 
 (use-package markdown-mode)
+
 
 (provide 'init-writing)

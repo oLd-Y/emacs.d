@@ -1,4 +1,4 @@
-;; ;;; vfp-mode.el --- Major mode for Visual FoxPro scripting
+;; ;;; init-vfp.el --- Major mode for Visual FoxPro scripting
 
 ;; ;; Author: Your Name
 ;; ;; Version: 1.0
@@ -38,8 +38,8 @@
 ;; ;; 添加 mode 到 features 列表
 ;; (provide 'vfp-mode)
 
-;; ;;; vfp-mode.el ends here
-;;; vfp-mode.el --- Major mode for Visual FoxPro scripting
+;; ;;; init-vfp.el ends here
+;;; init-vfp.el --- Major mode for Visual FoxPro scripting
 
 ;; Author: Your Name
 ;; Version: 1.0
@@ -98,6 +98,6 @@
 (add-hook 'vfp-mode-hook (lambda () (font-lock-mode 1)))
 
 ;; 添加 mode 到 features 列表
-(provide 'vfp-mode)
+(provide 'init-vfp)
 
 ;;; vfp-mode.el ends here

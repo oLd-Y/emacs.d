@@ -146,7 +146,7 @@
 (require 'auto-save)
 
 ;; vfp-mode
-(require 'vfp-mode)
+(require 'init-vfp)
 ;; 为 VFP 文件设置自动 mode
 (add-to-list 'auto-mode-alist '("\\.prg\\'" . vfp-mode))
 
