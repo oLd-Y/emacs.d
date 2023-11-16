@@ -317,6 +317,10 @@ Create prefix map: +general-global-NAME. Prefix bindings in BODY with INFIX-KEY.
     :prefix ","
     "" '(:ignore t :which-key (lambda (arg) `(,(cadr (split-string (car arg) " ")) . ,(replace-regexp-in-string "-mode$" "" (symbol-name major-mode)))))))
 
+
+;; set default coding system for .org to utf-8
+(modify-coding-system-alist 'file "\\.org\\'" 'utf-8)
+
 (provide 'init-basic)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

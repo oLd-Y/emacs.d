@@ -113,4 +113,13 @@
   :ensure t
   :config (treemacs-set-scope-type 'Tabs))
 
+
+(with-eval-after-load 'treemacs
+  (add-to-list 'treemacs-pre-file-insert-predicates #'my/treemacs-ignore-by-extension))
+
+(defun my/treemacs-ignore-by-extension (file _)
+  (let ((ext (file-name-extension file)))
+    (or (string= ext "FXP")
+        (string= ext "BAK"))))
+
 (provide 'init-treemacs)

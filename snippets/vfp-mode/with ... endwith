@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: with ... endwith
+# key: wi
+# --
+with $1
+    $0
+endwith
