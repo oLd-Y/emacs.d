@@ -1,0 +1,18 @@
+;;; init-text.el --- Text configurations -*- lexical-binding: t -*-
+
+;;; Commentary:
+;;
+
+;;; Code:
+
+(use-package markdown-mode
+  :ensure t
+  :defer t
+  :mode ("README\\.md\\'" . gfm-mode)
+  :init (setq markdown-command "multimarkdown")
+  :bind (:map markdown-mode-map
+         ("C-c C-e" . markdown-do)))
+
+(provide 'init-text)
+
+;;; init-text.el ends here

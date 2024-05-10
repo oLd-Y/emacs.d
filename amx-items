@@ -1,0 +1,64 @@
+
+;; ----- amx-history -----
+(
+ visual-line-mode
+ org-id-get-create
+ python-ts-mode
+ org-hugo-auto-export-mode
+ org-indent-mode
+ org-mode
+ compile
+)
+
+;; ----- amx-data -----
+(
+ (next-ten-lines . 1)
+ (tab-last . 4)
+ (Buffer-menu-delete . 2)
+ (project-dired . 1)
+ (project-switch-project . 1)
+ (add-dir-local-variable . 1)
+ (eval-region . 1)
+ (package-install . 5)
+ (lsp-find-references . 1)
+ (xref-find-apropos . 1)
+ (xref-find-definitions . 3)
+ (winum-mode . 1)
+ (rgrep . 1)
+ (company-yasnippet . 1)
+ (org-capture . 2)
+ (newline-bellow . 1)
+ (meow-tutor . 5)
+ (c-mode . 2)
+ (prog-mode . 2)
+ (lisp-mode . 1)
+ (meow-tail . 3)
+ (clm/toggle-command-log-buffer . 3)
+ (clm/open-command-log-buffer . 1)
+ (copilot-mode . 12)
+ (find-file . 3)
+ (nerd-icons-install-fonts . 1)
+ (rg . 4)
+ (kill-buffer . 1)
+ (dashboard-open . 1)
+ (magit . 1)
+ (customize-group . 1)
+ (org-goto . 1)
+ (help-with-tutorial-spec-language . 3)
+ (end-of-line . 1)
+ (find-file-in-project-at-point . 8)
+ (menu-bar-read-lispintro . 2)
+ (lsp-bridge-mode . 1)
+ (run-python . 1)
+ (vc-dir . 1)
+ (copilot-install-server . 1)
+ (copilot-diagnose . 1)
+ (treesit-install-language-grammar . 1)
+ (compile . 5)
+ (org-indent-mode . 3)
+ (org-mode . 1)
+ (org-hugo-auto-export-mode . 1)
+ (python-ts-mode . 1)
+ (org-id-get-create . 1)
+ (visual-line-mode . 1)
+)
