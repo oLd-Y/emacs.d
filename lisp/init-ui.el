@@ -97,7 +97,7 @@
   "Check if font with FONT-NAME is available."
   (find-font (font-spec :name font-name)))
 (when (display-graphic-p)
-  (cl-loop for font in '("Cascadia Code" "SF Mono" "Source Code Pro"
+  (cl-loop for font in '("Maple Mono SC NF" "Cascadia Code" "SF Mono" "Source Code Pro"
                          "Fira Code" "Menlo" "Monaco" "Dejavu Sans Mono"
                          "Lucida Console" "Consolas" "SAS Monospace")
            when (font-installed-p font)

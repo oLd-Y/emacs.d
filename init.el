@@ -27,6 +27,7 @@
 
 
 ;; (setq confirm-kill-emacs #'yes-or-no-p)      ; 在关闭 Emacs 前询问是否确认关闭，防止误触
+
 (visual-line-mode t)
 (electric-pair-mode t)                       ; 自动补全括号
 (add-hook 'prog-mode-hook #'show-paren-mode) ; 编程模式下，光标在括号上时高亮另一个括号
@@ -35,6 +36,7 @@
 (delete-selection-mode t)                    ; 选中文本后输入文本会替换文本（更符合我们习惯了的其它编辑器的逻辑）
 (setq inhibit-startup-message t)             ; 关闭启动 Emacs 时的欢迎界面
 (setq make-backup-files nil)                 ; 关闭文件自动备份
+(setq visible-bell t)
 (add-hook 'prog-mode-hook #'hs-minor-mode)   ; 编程模式下，可以折叠代码块
 ;; (global-display-line-numbers-mode 1)         ; 在 Window 显示行号
 (tool-bar-mode -1)                           ; （熟练后可选）关闭 Tool bar
@@ -53,8 +55,8 @@
 
 ;; set proxy
 (setq url-proxy-services '(("no_proxy" . "^\\(192\\.168\\..*\\)")
-                           ("http" . "localhost:7890")
-			   ("https" . "localhost:7890")))
+                           ("http" . "127.0.0.1:7890")
+			   ("https" . "127.0.0.1:7890")))
 
 (defvar bootstrap-version)
 (let ((bootstrap-file
@@ -92,6 +94,7 @@
 (require 'init-text)
 (require 'init-completion)
 (require 'init-treesit)
+(require 'init-meow)
 
 (use-package flycheck
   :ensure t
@@ -100,12 +103,12 @@
   :hook
   (prog-mode . flycheck-mode))
 
-(use-package hydra
-  :ensure t)
+;; (use-package hydra
+;;   :ensure t)
 
-(use-package use-package-hydra
-  :ensure t
-  :after hydra) 
+;; (use-package use-package-hydra
+;;   :ensure t
+;;   :after hydra) 
 
 
 (use-package undo-tree
@@ -125,7 +128,7 @@
 
 (use-package which-key
   :ensure t
-  :defer t
+  ;; :defer t 
   :hook (after-init . which-key-mode))
 
 
@@ -152,10 +155,6 @@
 (use-package rainbow-delimiters
   :ensure t
   :hook (prog-mode . rainbow-delimiters-mode))
-
-
-
-
 
 
 

@@ -23,21 +23,29 @@
 ;; (global-set-key (kbd "RET") 'newline-and-indent)
 
 
-(use-package rg
-  :ensure t
+;; (use-package rg
+;;   :ensure t
+;;   :config
+;;   (global-set-key (kbd "M-s M-s") 'rg)
+;;   ;; win32平台解决rg.el无法正常搜索中文，在调用rg.exe前使用本地编码修改pattern
+;;   (advice-add 'rg-run :around  
+;;             (lambda (orig-fun &rest args)  
+;;               (let ((pattern (car args)))  
+;;                 (apply orig-fun  
+;;                        (encode-coding-string pattern locale-coding-system)  
+;;                        (cdr args)))))
+;;   )
+
+(use-package color-rg
+  :ensure nil
+  :load-path "~/color-rg"
   :config
-  (global-set-key (kbd "M-s M-s") 'rg)
-  ;; win32平台解决rg.el无法正常搜索中文，在调用rg.exe前使用本地编码修改pattern
-  (advice-add 'rg-run :around  
-            (lambda (orig-fun &rest args)  
-              (let ((pattern (car args)))  
-                (apply orig-fun  
-                       (encode-coding-string pattern locale-coding-system)  
-                       (cdr args)))))
+  (when (eq system-type 'windows-nt)
+    (setq color-rg-command-prefix "powershell"))
+  :bind
+  ("C-c s i" . color-rg-search-input)
+  
   )
-
-
-
 (use-package mwim
   :ensure t
   :bind

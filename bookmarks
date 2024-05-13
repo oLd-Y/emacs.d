@@ -4,8 +4,8 @@
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-capture-last-stored"
  (filename . "~/org/all-posts.org")
- (front-context-string . "** TODO test2\n:P")
- (rear-context-string . "36\n:END:\n\ntest1\n")
- (position . 415)
- (last-modified 26173 34734 182186 0))
+ (front-context-string . "** TODO lsp-brid")
+ (rear-context-string . "earch/issues/42\n")
+ (position . 863)
+ (last-modified 26176 30900 581187 0))
 )

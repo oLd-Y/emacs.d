@@ -18,11 +18,12 @@
 
 
 
-(add-to-list 'load-path (concat "~/lsp-bridge"))
+
 (use-package lsp-bridge
+  :load-path "~/lsp-bridge"
   :ensure nil
   :config
-  (setq lsp-bridge-enable-log t)
+  (setq lsp-bridge-enable-log nil)
   (global-lsp-bridge-mode))
 
 (provide 'init-completion)

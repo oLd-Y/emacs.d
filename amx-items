@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
- visual-line-mode
- org-id-get-create
- python-ts-mode
- org-hugo-auto-export-mode
- org-indent-mode
- org-mode
- compile
+ toggle-debug-on-error
+ meow-tutor
+ magit-init
+ magit
+ color-rg-search-project
+ org-download-clipboard
+ org-bullets-mode
 )
 
 ;; ----- amx-data -----
@@ -28,20 +28,20 @@
  (company-yasnippet . 1)
  (org-capture . 2)
  (newline-bellow . 1)
- (meow-tutor . 5)
+ (meow-tutor . 10)
  (c-mode . 2)
  (prog-mode . 2)
  (lisp-mode . 1)
  (meow-tail . 3)
  (clm/toggle-command-log-buffer . 3)
  (clm/open-command-log-buffer . 1)
- (copilot-mode . 12)
+ (copilot-mode . 14)
  (find-file . 3)
- (nerd-icons-install-fonts . 1)
+ (nerd-icons-install-fonts . 3)
  (rg . 4)
  (kill-buffer . 1)
  (dashboard-open . 1)
- (magit . 1)
+ (magit . 3)
  (customize-group . 1)
  (org-goto . 1)
  (help-with-tutorial-spec-language . 3)
@@ -51,14 +51,33 @@
  (lsp-bridge-mode . 1)
  (run-python . 1)
  (vc-dir . 1)
- (copilot-install-server . 1)
+ (copilot-install-server . 2)
  (copilot-diagnose . 1)
- (treesit-install-language-grammar . 1)
+ (treesit-install-language-grammar . 3)
  (compile . 5)
  (org-indent-mode . 3)
  (org-mode . 1)
  (org-hugo-auto-export-mode . 1)
  (python-ts-mode . 1)
  (org-id-get-create . 1)
- (visual-line-mode . 1)
+ (visual-line-mode . 2)
+ (org-download-yank . 1)
+ (org-download-clipboard . 3)
+ (org-download-screenshot . 1)
+ (org-toggle-link-display . 2)
+ (color-rg-open-file . 4)
+ (color-rg-mode . 1)
+ (emacs-lisp-mode . 1)
+ (color-rg-search-project . 3)
+ (color-rg-search-input . 11)
+ (color-rg-search-symbol-in-current-file . 2)
+ (color-rg-customized-search . 2)
+ (meow-normal-mode . 3)
+ (org-roam-node-insert . 3)
+ (org-roam-db-sync . 4)
+ (org-roam-node-find . 1)
+ (org-roam-dailies-goto-today . 1)
+ (org-bullets-mode . 1)
+ (magit-init . 1)
+ (toggle-debug-on-error . 1)
 )

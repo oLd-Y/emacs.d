@@ -7,14 +7,13 @@
 
 (use-package org
   :ensure nil
-  :defer t
+  :demand t
   :config
   ;; override the default org
   (bind-key* "C-j C-j" 'avy-goto-char-timer)
   (setq org-startup-indented t)
-  ;; :hook
-  ;; (org-mode . (org-indent-mode))
-  )
+  :hook
+  (org-mode . (org-indent-mode)))
 
 ;; blog backend
 (use-package ox-hugo
@@ -26,12 +25,11 @@
 (use-package org-capture
   :ensure nil
   :after org
-  :defer t
   :bind
   ("C-c c" . 'org-capture)
   :config
   (setq org-default-notes-file "~/org/all-posts.org")
-  ;; (setq org-capture-templates
+  ;; (add-to-list 'org-capture-templates
   ;; 	       '("t" "Task" entry (file+headline "" "Tasks") "* TODO %?\n  %u\n  %a"))
   (defun org-hugo-new-subtree-post-capture-template ()
     "Returns `org-capture' template string for new Hugo post.
@@ -57,7 +55,7 @@ See `org-capture-templates' for more information."
                  ;; It is assumed that below file is present in `org-directory'
                  ;; and that it has a "Blog Ideas" heading. It can even be a
                  ;; symlink pointing to the actual location of all-posts.org!
-                 (file+olp "~/org/all-posts.org" "Blog Ideas")
+                 (file+olp "~/org/all-posts.org" "Blogs")
                  (function org-hugo-new-subtree-post-capture-template)))))
 
 (use-package org-bullets
@@ -65,11 +63,12 @@ See `org-capture-templates' for more information."
   :config
   (progn
     (setq org-bullets-bullet-list '("☯" "✿" "✚" "◉" "❀"))
-    (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
-    ))
+    (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))))
 
 (use-package org-roam
-  :ensure t)
+  :ensure t
+  :config
+  (setq org-roam-directory "~/org"))
 
 
 (use-package org-download
