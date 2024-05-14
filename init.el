@@ -111,20 +111,20 @@
 ;;   :after hydra) 
 
 
-(use-package undo-tree
-  :ensure t
-  :init (global-undo-tree-mode)
-  :custom
-  (undo-tree-auto-save-history nil))
+;; (use-package undo-tree
+;;   :ensure t
+;;   :init (global-undo-tree-mode)
+;;   :custom
+;;   (undo-tree-auto-save-history nil))
 
-(use-package smart-mode-line
-  :ensure t
-  :init (sml/setup))
+;; (use-package smart-mode-line
+;;   :ensure t
+;;   :init (sml/setup))
 
-(use-package good-scroll
-  :ensure t
-  :if window-system          ; 在图形化界面时才使用这个插件
-  :init (good-scroll-mode))
+;; (use-package good-scroll
+;;   :ensure t
+;;   :if window-system          ; 在图形化界面时才使用这个插件
+;;   :init (good-scroll-mode))
 
 (use-package which-key
   :ensure t
@@ -169,14 +169,11 @@
 (use-package consult-projectile
   :straight (consult-projectile :type git :host gitlab :repo "OlMon/consult-projectile" :branch "master"))
 
-
+;; ExecPathFromShellPac
 (use-package exec-path-from-shell
-  :if (memq window-system '(mac ns))
-  :ensure t
-  :init
-  (setq exec-path-from-shell-arguments nil)
+  :if (memq window-system '(mac ns x))
+  :config
   (exec-path-from-shell-initialize))
-
 
 (use-package magit
   :ensure t)
@@ -207,3 +204,16 @@
 (provide 'init)
 ;;; init.el ends here
 
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-vc-selected-packages
+   '((color-rg :vc-backend Git :url "https://github.com/manateelazycat/color-rg"))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

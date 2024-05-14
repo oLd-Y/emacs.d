@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
+ lsp-bridge-mode
+ copilot-install-server
+ package-install
+ meow-comment
  toggle-debug-on-error
  meow-tutor
  magit-init
- magit
- color-rg-search-project
- org-download-clipboard
- org-bullets-mode
 )
 
 ;; ----- amx-data -----
@@ -19,7 +19,7 @@
  (project-switch-project . 1)
  (add-dir-local-variable . 1)
  (eval-region . 1)
- (package-install . 5)
+ (package-install . 9)
  (lsp-find-references . 1)
  (xref-find-apropos . 1)
  (xref-find-definitions . 3)
@@ -48,10 +48,10 @@
  (end-of-line . 1)
  (find-file-in-project-at-point . 8)
  (menu-bar-read-lispintro . 2)
- (lsp-bridge-mode . 1)
+ (lsp-bridge-mode . 3)
  (run-python . 1)
  (vc-dir . 1)
- (copilot-install-server . 2)
+ (copilot-install-server . 5)
  (copilot-diagnose . 1)
  (treesit-install-language-grammar . 3)
  (compile . 5)
@@ -80,4 +80,5 @@
  (org-bullets-mode . 1)
  (magit-init . 1)
  (toggle-debug-on-error . 1)
+ (meow-comment . 1)
 )

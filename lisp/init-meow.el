@@ -86,15 +86,19 @@
    '("Y" . meow-sync-grab)
    '("z" . meow-pop-selection)
    '("'" . repeat)
+   ;; '("<escape>" . ignore)
+   ;; notice that do not set a keybinding for ESC, e.g '("ESC" . meow-last-buffer), other wise some keybinding will be lost
    '("<escape>" . meow-last-buffer)))
 
 
 
 (use-package meow
   :ensure t
+  :defer 2
   :config
-  ;; (define-key meow-insert-state-keymap (kbd "<escape>") #'meow-insert-exit)
   (meow-setup)
+  (define-key meow-insert-state-keymap (kbd "ESC") #'meow-insert-exit)
+  
   (meow-global-mode 1)
   ;; 失去焦点时，退出 insert mode。
   ;;(add-hook 'focus-out-hook 'meow-insert-exit)
@@ -102,29 +106,29 @@
   (setq meow-expand-hint-remove-delay 3))
 
 
-(use-package sis
-  :ensure t
-  ;; :hook
-  ;; enable the /context/ and /inline region/ mode for specific buffers
-  ;; (((text-mode prog-mode) . sis-context-mode)
-  ;;  ((text-mode prog-mode) . sis-inline-mode))
+;; (use-package sis
+;;   :ensure t
+;;   ;; :hook
+;;   ;; enable the /context/ and /inline region/ mode for specific buffers
+;;   ;; (((text-mode prog-mode) . sis-context-mode)
+;;   ;;  ((text-mode prog-mode) . sis-inline-mode))
 
-  :config
-  (sis-ism-lazyman-config "1033" "2052" 'im-select)
-  ;;(sis-ism-lazyman-config nil t 'w32)
-  (add-hook 'meow-insert-exit-hook #'sis-set-english)
-  (add-to-list 'sis-context-hooks 'meow-insert-enter-hook)
+;;   :config
+;;   ;;(sis-ism-lazyman-config "1033" "2052" 'im-select)
+;;   ;;(sis-ism-lazyman-config nil t 'w32)
+;;   (add-hook 'meow-insert-exit-hook #'sis-set-english)
+;;   (add-to-list 'sis-context-hooks 'meow-insert-enter-hook)
   
-  (setq sis-default-cursor-color "green yellow" ; 英文光标色
-   	sis-other-cursor-color "#FF2121") ; 中文光标色
-  ;; enable the /cursor color/ mode
-  (sis-global-cursor-color-mode t)
-  ;; enable the /respect/ mode
-  (sis-global-respect-mode t)
-  ;; enable the /context/ mode for all buffers
-  (sis-global-context-mode t)
-  ;; enable the /inline english/ mode for all buffers
-  (sis-global-inline-mode t))
+;;   (setq sis-default-cursor-color "green yellow" ; 英文光标色
+;;    	sis-other-cursor-color "#FF2121") ; 中文光标色
+;;   ;; enable the /cursor color/ mode
+;;   (sis-global-cursor-color-mode t)
+;;   ;; enable the /respect/ mode
+;;   (sis-global-respect-mode t)
+;;   ;; enable the /context/ mode for all buffers
+;;   (sis-global-context-mode t)
+;;   ;; enable the /inline english/ mode for all buffers
+;;   (sis-global-inline-mode t))
 
 ;; (use-package sis
 ;;   :init
