@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
- lsp-bridge-mode
- copilot-install-server
- package-install
- meow-comment
- toggle-debug-on-error
- meow-tutor
- magit-init
+ yas-new-snippet
+ magit-clone
+ magit
+ find-file-in-project-by-selected
+ package-refresh-contents
+ eshell
+ straight-rebuild-all
 )
 
 ;; ----- amx-data -----
@@ -35,18 +35,18 @@
  (meow-tail . 3)
  (clm/toggle-command-log-buffer . 3)
  (clm/open-command-log-buffer . 1)
- (copilot-mode . 14)
+ (copilot-mode . 16)
  (find-file . 3)
  (nerd-icons-install-fonts . 3)
  (rg . 4)
  (kill-buffer . 1)
  (dashboard-open . 1)
- (magit . 3)
+ (magit . 5)
  (customize-group . 1)
  (org-goto . 1)
  (help-with-tutorial-spec-language . 3)
  (end-of-line . 1)
- (find-file-in-project-at-point . 8)
+ (find-file-in-project-at-point . 13)
  (menu-bar-read-lispintro . 2)
  (lsp-bridge-mode . 3)
  (run-python . 1)
@@ -81,4 +81,12 @@
  (magit-init . 1)
  (toggle-debug-on-error . 1)
  (meow-comment . 1)
+ (eshell . 3)
+ (meow-wrap-round . 1)
+ (find-file-in-project-by-selected . 8)
+ (straight-rebuild-all . 2)
+ (straight-pull-all . 1)
+ (package-refresh-contents . 1)
+ (magit-clone . 3)
+ (yas-new-snippet . 1)
 )

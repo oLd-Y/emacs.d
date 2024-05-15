@@ -76,6 +76,13 @@
   (consult-async-input-throttle 0.2)
   (consult-async-input-debounce 0.1))
 
+;; (unless (package-installed-p 'consult-projectile)
+;;   (package-vc-install "https://github.com/OlMon/consult-projectile"))
+
+;; (use-package consult-projectile
+;;   :straight (consult-projectile :type git :host gitlab :repo "OlMon/consult-projectile" :branch "master"))
+
+
 ;; Consult users will also want the embark-consult package.
 (use-package embark-consult
   :ensure t)
@@ -90,6 +97,10 @@
   :ensure t
   :init (amx-mode))
 
+(use-package which-key
+  :ensure t
+  ;; :defer t 
+  :hook (after-init . which-key-mode))
 
 
 (provide 'init-minibuffer)

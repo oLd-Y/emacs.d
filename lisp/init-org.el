@@ -6,14 +6,8 @@
 ;;; Code:
 
 (use-package org
-  :ensure nil
-  :demand t
   :config
-  ;; override the default org
-  (bind-key* "C-j C-j" 'avy-goto-char-timer)
-  (setq org-startup-indented t)
-  :hook
-  (org-mode . (org-indent-mode)))
+  (setq org-startup-indented t))
 
 ;; blog backend
 (use-package ox-hugo
@@ -29,8 +23,6 @@
   ("C-c c" . 'org-capture)
   :config
   (setq org-default-notes-file "~/org/all-posts.org")
-  ;; (add-to-list 'org-capture-templates
-  ;; 	       '("t" "Task" entry (file+headline "" "Tasks") "* TODO %?\n  %u\n  %a"))
   (defun org-hugo-new-subtree-post-capture-template ()
     "Returns `org-capture' template string for new Hugo post.
 See `org-capture-templates' for more information."
@@ -56,7 +48,17 @@ See `org-capture-templates' for more information."
                  ;; and that it has a "Blog Ideas" heading. It can even be a
                  ;; symlink pointing to the actual location of all-posts.org!
                  (file+olp "~/org/all-posts.org" "Blogs")
-                 (function org-hugo-new-subtree-post-capture-template)))))
+                 (function org-hugo-new-subtree-post-capture-template))
+		 ("b"                ;`org-capture' binding + h
+                  "Config backup"
+                  entry
+                  ;; It is assumed that below file is present in `org-directory'
+                  ;; and that it has a "Blog Ideas" heading. It can even be a
+                  ;; symlink pointing to the actual location of all-posts.org!
+                  (file+olp "~/org/all-posts.org" "Config backup")
+                  (function org-hugo-new-subtree-post-capture-template))
+		 )))
+
 
 (use-package org-bullets
   :ensure t

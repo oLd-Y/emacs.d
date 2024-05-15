@@ -33,5 +33,9 @@
 ;; larger than the system default.
 (setq frame-inhibit-implied-resize t)
 
+;; prevent package.el loading packages prior to their init-file loading.
+;; (setq straight-use-package-by-default t)
+;; (setq package-enable-at-startup nil)
+
 (provide 'early-init)
 ;;; early-init.el ends here

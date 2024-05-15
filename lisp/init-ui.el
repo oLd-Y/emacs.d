@@ -145,6 +145,24 @@
   (setq valign-fancy-bar t))
 
 
+(use-package all-the-icons
+  :ensure t
+  :if (display-graphic-p))
+
+
+(use-package winum
+  :ensure t
+  :hook (after-init . winum-mode)
+  :bind
+  ("M-0" . 'winum-select-window-0-or-10)
+  ("M-1" . 'winum-select-window-1)
+  ("M-2" . 'winum-select-window-2)
+  ("M-3" . 'winum-select-window-3)
+  ("M-4" . 'winum-select-window-4)
+  ("M-5" . 'winum-select-window-5))
+
+
+
 (provide 'init-ui)
 
 ;;; init-ui.el ends here

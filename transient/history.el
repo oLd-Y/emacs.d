@@ -1,1 +1,3 @@
-((rg-menu nil))
+((magit-commit nil)
+ (magit-push nil)
+ (rg-menu nil))

@@ -2,6 +2,8 @@
 ;;; Commentary:
 ;;; Code:
 
+
+
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 (add-to-list 'load-path	(expand-file-name "site-lisp" user-emacs-directory))
 
@@ -28,6 +30,7 @@
 
 ;; (setq confirm-kill-emacs #'yes-or-no-p)      ; 在关闭 Emacs 前询问是否确认关闭，防止误触
 
+;; (setq pixel-scroll-precision-mode t)
 (visual-line-mode t)
 (electric-pair-mode t)                       ; 自动补全括号
 (add-hook 'prog-mode-hook #'show-paren-mode) ; 编程模式下，光标在括号上时高亮另一个括号
@@ -45,36 +48,13 @@
 (savehist-mode 1)                            ; （可选）打开 Buffer 历史记录保存
 
 
-
-(require 'package)
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
-(package-initialize)
-
-
-(setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3") ; 不加这一句可能有问题，建议读者尝试一下
-
 ;; set proxy
 (setq url-proxy-services '(("no_proxy" . "^\\(192\\.168\\..*\\)")
                            ("http" . "127.0.0.1:7890")
 			   ("https" . "127.0.0.1:7890")))
+(setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3") ; 不加这一句可能有问题，建议读者尝试一下
 
-(defvar bootstrap-version)
-(let ((bootstrap-file
-       (expand-file-name
-        "straight/repos/straight.el/bootstrap.el"
-        (or (bound-and-true-p straight-base-dir)
-            user-emacs-directory)))
-      (bootstrap-version 7))
-  (unless (file-exists-p bootstrap-file)
-    (with-current-buffer
-        (url-retrieve-synchronously
-         "https://raw.githubusercontent.com/radian-software/straight.el/develop/install.el"
-         'silent 'inhibit-cookies)
-      (goto-char (point-max))
-      (eval-print-last-sexp)))
-  (load bootstrap-file nil 'nomessage))
 
-(straight-use-package 'use-package)
 
 
 (global-set-key (kbd "C-j") nil)
@@ -86,6 +66,7 @@
 ; TODO 
 (setq package-check-signature nil)
 
+(require 'init-package)
 (require 'init-ui)
 (require 'init-yas)
 (require 'init-minibuffer)
@@ -96,12 +77,7 @@
 (require 'init-treesit)
 (require 'init-meow)
 
-(use-package flycheck
-  :ensure t
-  :config
-  (setq truncate-lines nil) ; 如果单行信息很长会自动换行
-  :hook
-  (prog-mode . flycheck-mode))
+
 
 ;; (use-package hydra
 ;;   :ensure t)
@@ -126,10 +102,7 @@
 ;;   :if window-system          ; 在图形化界面时才使用这个插件
 ;;   :init (good-scroll-mode))
 
-(use-package which-key
-  :ensure t
-  ;; :defer t 
-  :hook (after-init . which-key-mode))
+
 
 
 ;; (use-package avy
@@ -157,17 +130,14 @@
   :hook (prog-mode . rainbow-delimiters-mode))
 
 
+;; (use-package projectile
+;;   :ensure t
+;;   :bind (("C-c p" . projectile-command-map))
+;;   :config
+;;   (setq projectile-mode-line "Projectile")
+;;   (setq projectile-track-known-projects-automatically nil))
 
-(use-package projectile
-  :ensure t
-  :bind (("C-c p" . projectile-command-map))
-  :config
-  (setq projectile-mode-line "Projectile")
-  (setq projectile-track-known-projects-automatically nil))
 
-
-(use-package consult-projectile
-  :straight (consult-projectile :type git :host gitlab :repo "OlMon/consult-projectile" :branch "master"))
 
 ;; ExecPathFromShellPac
 (use-package exec-path-from-shell
@@ -182,22 +152,6 @@
 
 
 
-(use-package all-the-icons
-  :ensure t
-  :if (display-graphic-p))
-
-
-(use-package winum
-  :ensure t
-  :hook (after-init . winum-mode)
-  :bind
-  ("M-0" . 'winum-select-window-0-or-10)
-  ("M-1" . 'winum-select-window-1)
-  ("M-2" . 'winum-select-window-2)
-  ("M-3" . 'winum-select-window-3)
-  ("M-4" . 'winum-select-window-4)
-  ("M-5" . 'winum-select-window-5))
-
 
 
 
@@ -209,8 +163,11 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(package-selected-packages '(quelpa copilot))
  '(package-vc-selected-packages
-   '((color-rg :vc-backend Git :url "https://github.com/manateelazycat/color-rg"))))
+   '((copilot :vc-backend Git :url "https://github.com/copilot-emacs/copilot.el")
+     (find-file-in-project :vc-backend Git :url "https://github.com/redguardtoo/find-file-in-project")
+     (color-rg :vc-backend Git :url "https://github.com/manateelazycat/color-rg"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
