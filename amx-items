@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
- yas-new-snippet
- magit-clone
- magit
+ rime-deploy
+ meow-insert-mode
+ meow-global-mode
+ toggle-input-method
+ rime-open-configuration
+ scroll-up-line
  find-file-in-project-by-selected
- package-refresh-contents
- eshell
- straight-rebuild-all
 )
 
 ;; ----- amx-data -----
@@ -41,7 +41,7 @@
  (rg . 4)
  (kill-buffer . 1)
  (dashboard-open . 1)
- (magit . 5)
+ (magit . 7)
  (customize-group . 1)
  (org-goto . 1)
  (help-with-tutorial-spec-language . 3)
@@ -83,10 +83,18 @@
  (meow-comment . 1)
  (eshell . 3)
  (meow-wrap-round . 1)
- (find-file-in-project-by-selected . 8)
+ (find-file-in-project-by-selected . 9)
  (straight-rebuild-all . 2)
  (straight-pull-all . 1)
  (package-refresh-contents . 1)
  (magit-clone . 3)
  (yas-new-snippet . 1)
+ (maximize-window . 1)
+ (toggle-frame-fullscreen . 1)
+ (scroll-up-line . 2)
+ (rime-deploy . 5)
+ (rime-open-configuration . 1)
+ (toggle-input-method . 1)
+ (meow-global-mode . 1)
+ (meow-insert-mode . 4)
 )

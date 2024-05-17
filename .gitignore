@@ -2,3 +2,10 @@ elpa/
 straight/
 tree-sitter/
 .cache/
+auto-save-list/
+eshell/
+amx-items/
+history/
+rime/
+recentf
+.org-id-locations

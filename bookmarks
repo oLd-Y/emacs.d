@@ -4,8 +4,8 @@
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-capture-last-stored"
  (filename . "~/org/all-posts.org")
- (front-context-string . "** TODO emacs 配置")
- (rear-context-string . "掉 hook 部分的代码即可。\n")
- (position . 2623)
- (last-modified 26180 10634 101222 340000))
+ (front-context-string . "** TODO 迁移 Tasks")
+ (rear-context-string . "2024-05-16 Thu]\n")
+ (position . 7848)
+ (last-modified 26182 47798 867182 932000))
 )

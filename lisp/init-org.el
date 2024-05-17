@@ -9,6 +9,8 @@
   :config
   (setq org-startup-indented t))
 
+(use-package org-tempo)
+
 ;; blog backend
 (use-package ox-hugo
   :ensure t   ;Auto-install the package from Melpa
@@ -40,7 +42,7 @@ See `org-capture-templates' for more information."
                    "%?\n")                ;Place the cursor here finally
                  "\n")))
   (setq org-capture-templates
-	       '(("t" "Task" entry (file+headline "" "Tasks") "* TODO %?\n  %u\n  %a")
+	       '(("t" "Task" entry (file+headline "~/org/gtd.org" "Tasks") "* TODO %?\n  %u\n  %a")
 		 ("h"                ;`org-capture' binding + h
                  "Hugo post"
                  entry
@@ -59,6 +61,14 @@ See `org-capture-templates' for more information."
                   (function org-hugo-new-subtree-post-capture-template))
 		 )))
 
+;; (defun hold-line-scroll-up()
+;; "Scroll the page with the cursor in the same line"
+;; (interactive)
+;; (let ((next-screen-context-lines
+;; (count-lines
+;; (window-start) (window-end))))
+;; (scroll-up)))
+;; (global-set-key (kbd "M-N") 'hold-line-scroll-up)
 
 (use-package org-bullets
   :ensure t
