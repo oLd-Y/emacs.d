@@ -28,7 +28,8 @@
   :ensure nil
   :config
   (setq lsp-bridge-enable-log nil)
-  (global-lsp-bridge-mode))
+  (global-lsp-bridge-mode)
+  (setq lsp-bridge-enable-org-babel t))
 
 (provide 'init-completion)
 ;;; init-completion.el ends here

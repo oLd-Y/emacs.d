@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
- rime-deploy
- meow-insert-mode
- meow-global-mode
- toggle-input-method
- rime-open-configuration
- scroll-up-line
+ projectile-find-file
  find-file-in-project-by-selected
+ org-mode
+ emacs-lisp-mode
+ lsp-bridge-mode
+ meow-motion-mode
+ rime-deploy
 )
 
 ;; ----- amx-data -----
@@ -28,7 +28,7 @@
  (company-yasnippet . 1)
  (org-capture . 2)
  (newline-bellow . 1)
- (meow-tutor . 10)
+ (meow-tutor . 11)
  (c-mode . 2)
  (prog-mode . 2)
  (lisp-mode . 1)
@@ -41,14 +41,14 @@
  (rg . 4)
  (kill-buffer . 1)
  (dashboard-open . 1)
- (magit . 7)
+ (magit . 11)
  (customize-group . 1)
  (org-goto . 1)
  (help-with-tutorial-spec-language . 3)
  (end-of-line . 1)
  (find-file-in-project-at-point . 13)
  (menu-bar-read-lispintro . 2)
- (lsp-bridge-mode . 3)
+ (lsp-bridge-mode . 5)
  (run-python . 1)
  (vc-dir . 1)
  (copilot-install-server . 5)
@@ -56,7 +56,7 @@
  (treesit-install-language-grammar . 3)
  (compile . 5)
  (org-indent-mode . 3)
- (org-mode . 1)
+ (org-mode . 2)
  (org-hugo-auto-export-mode . 1)
  (python-ts-mode . 1)
  (org-id-get-create . 1)
@@ -67,7 +67,7 @@
  (org-toggle-link-display . 2)
  (color-rg-open-file . 4)
  (color-rg-mode . 1)
- (emacs-lisp-mode . 1)
+ (emacs-lisp-mode . 2)
  (color-rg-search-project . 3)
  (color-rg-search-input . 11)
  (color-rg-search-symbol-in-current-file . 2)
@@ -83,7 +83,7 @@
  (meow-comment . 1)
  (eshell . 3)
  (meow-wrap-round . 1)
- (find-file-in-project-by-selected . 9)
+ (find-file-in-project-by-selected . 11)
  (straight-rebuild-all . 2)
  (straight-pull-all . 1)
  (package-refresh-contents . 1)
@@ -92,9 +92,13 @@
  (maximize-window . 1)
  (toggle-frame-fullscreen . 1)
  (scroll-up-line . 2)
- (rime-deploy . 5)
+ (rime-deploy . 7)
  (rime-open-configuration . 1)
  (toggle-input-method . 1)
  (meow-global-mode . 1)
  (meow-insert-mode . 4)
+ (kill-this-buffer . 1)
+ (lisp-interaction-mode . 1)
+ (meow-motion-mode . 1)
+ (projectile-find-file . 3)
 )

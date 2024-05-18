@@ -61,15 +61,6 @@ See `org-capture-templates' for more information."
                   (function org-hugo-new-subtree-post-capture-template))
 		 )))
 
-;; (defun hold-line-scroll-up()
-;; "Scroll the page with the cursor in the same line"
-;; (interactive)
-;; (let ((next-screen-context-lines
-;; (count-lines
-;; (window-start) (window-end))))
-;; (scroll-up)))
-;; (global-set-key (kbd "M-N") 'hold-line-scroll-up)
-
 (use-package org-bullets
   :ensure t
   :config

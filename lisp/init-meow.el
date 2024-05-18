@@ -94,12 +94,10 @@
 
 (use-package meow
   :ensure t
-  :defer 1
   :config
   (meow-setup)
   (define-key meow-insert-state-keymap (kbd "ESC") #'meow-insert-exit)
 
-  :custom
   (meow-global-mode 1)
   ;; 失去焦点时，退出 insert mode。
   ;;(add-hook 'focus-out-hook 'meow-insert-exit)
@@ -114,13 +112,21 @@
   :ensure t
   :config
   (setq rime-disable-predicates '(meow-normal-mode-p
-                                meow-keypad-mode-p
-                                meow-motion-mode-p
-                                meow-beacon-mode-p))
+                                  meow-keypad-mode-p
+                                  meow-motion-mode-p
+                                  meow-beacon-mode-p))
+  (set-face-attribute 'rime-default-face nil :foreground "#839496" :background "#073642")
+
   :custom
+
   (default-input-method "rime")
   (rime-share-data-dir "~/.local/share/fcitx5/rime")
-  (rime-user-data-dir "~/.emacs.d/rime"))
+  (rime-user-data-dir "~/.emacs.d/rime")
+  (rime-show-candidate 'posframe)
+  (rime-posframe-properties
+   (list :background-color "#073642"
+         :foreground-color "#839496"
+         :internal-border-width 1)))
 
 (provide 'init-meow)
 ;;; init-meow.el ends here
