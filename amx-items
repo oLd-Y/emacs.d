@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
- projectile-find-file
- find-file-in-project-by-selected
- org-mode
- emacs-lisp-mode
- lsp-bridge-mode
- meow-motion-mode
  rime-deploy
+ find-file
+ visual-line-mode
+ direnv-allow
+ package-refresh-contents
+ xref-go-back
+ repeat
 )
 
 ;; ----- amx-data -----
@@ -36,12 +36,12 @@
  (clm/toggle-command-log-buffer . 3)
  (clm/open-command-log-buffer . 1)
  (copilot-mode . 16)
- (find-file . 3)
+ (find-file . 4)
  (nerd-icons-install-fonts . 3)
  (rg . 4)
  (kill-buffer . 1)
  (dashboard-open . 1)
- (magit . 11)
+ (magit . 12)
  (customize-group . 1)
  (org-goto . 1)
  (help-with-tutorial-spec-language . 3)
@@ -51,7 +51,7 @@
  (lsp-bridge-mode . 5)
  (run-python . 1)
  (vc-dir . 1)
- (copilot-install-server . 5)
+ (copilot-install-server . 6)
  (copilot-diagnose . 1)
  (treesit-install-language-grammar . 3)
  (compile . 5)
@@ -60,7 +60,7 @@
  (org-hugo-auto-export-mode . 1)
  (python-ts-mode . 1)
  (org-id-get-create . 1)
- (visual-line-mode . 2)
+ (visual-line-mode . 3)
  (org-download-yank . 1)
  (org-download-clipboard . 3)
  (org-download-screenshot . 1)
@@ -86,13 +86,13 @@
  (find-file-in-project-by-selected . 11)
  (straight-rebuild-all . 2)
  (straight-pull-all . 1)
- (package-refresh-contents . 1)
- (magit-clone . 3)
+ (package-refresh-contents . 2)
+ (magit-clone . 4)
  (yas-new-snippet . 1)
  (maximize-window . 1)
  (toggle-frame-fullscreen . 1)
  (scroll-up-line . 2)
- (rime-deploy . 7)
+ (rime-deploy . 10)
  (rime-open-configuration . 1)
  (toggle-input-method . 1)
  (meow-global-mode . 1)
@@ -101,4 +101,7 @@
  (lisp-interaction-mode . 1)
  (meow-motion-mode . 1)
  (projectile-find-file . 3)
+ (repeat . 1)
+ (xref-go-back . 1)
+ (direnv-allow . 1)
 )

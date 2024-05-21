@@ -114,7 +114,11 @@
   (setq rime-disable-predicates '(meow-normal-mode-p
                                   meow-keypad-mode-p
                                   meow-motion-mode-p
-                                  meow-beacon-mode-p))
+                                  meow-beacon-mode-p
+				  rime-predicate-space-after-cc-p
+				  rime-predicate-after-alphabet-char-p
+				  rime-predicate-prog-in-code-p
+				  rime-predicate-after-ascii-char-p))
   (set-face-attribute 'rime-default-face nil :foreground "#839496" :background "#073642")
 
   :custom
@@ -122,11 +126,12 @@
   (default-input-method "rime")
   (rime-share-data-dir "~/.local/share/fcitx5/rime")
   (rime-user-data-dir "~/.emacs.d/rime")
-  (rime-show-candidate 'posframe)
-  (rime-posframe-properties
-   (list :background-color "#073642"
-         :foreground-color "#839496"
-         :internal-border-width 1)))
+  ;; (rime-show-candidate 'posframe)
+  ;; (rime-posframe-properties
+  ;;  (list :background-color "#073642"
+  ;;        :foreground-color "#839496"
+  ;;        :internal-border-width 1))
+  )
 
 (provide 'init-meow)
 ;;; init-meow.el ends here

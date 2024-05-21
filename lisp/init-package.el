@@ -5,6 +5,10 @@
 ;; (use-package quelpa
 ;;   :ensure t)
 
+
+; TODO 
+(setq package-check-signature nil)
+
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 ;; (package-initialize)

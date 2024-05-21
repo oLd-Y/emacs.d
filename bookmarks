@@ -4,8 +4,8 @@
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-capture-last-stored"
  (filename . "~/org/all-posts.org")
- (front-context-string . "** TODO emacs-ex")
- (rear-context-string . "tx-best-config/\n")
- (position . 10357)
- (last-modified 26183 17452 750477 116000))
+ (front-context-string . "** TODO arch lin")
+ (rear-context-string . " 4 3)\n#+end_src\n")
+ (position . 12362)
+ (last-modified 26186 48283 216048 447000))
 )
