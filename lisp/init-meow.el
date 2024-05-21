@@ -126,11 +126,12 @@
   (default-input-method "rime")
   (rime-share-data-dir "~/.local/share/fcitx5/rime")
   (rime-user-data-dir "~/.emacs.d/rime")
-  ;; (rime-show-candidate 'posframe)
-  ;; (rime-posframe-properties
-  ;;  (list :background-color "#073642"
-  ;;        :foreground-color "#839496"
-  ;;        :internal-border-width 1))
+  (rime-show-candidate nil)
+  (rime-show-candidate 'posframe)
+  (rime-posframe-properties
+   (list :background-color "#073642"
+         :foreground-color "#839496"
+         :internal-border-width 1))
   )
 
 (provide 'init-meow)

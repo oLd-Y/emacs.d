@@ -7,6 +7,7 @@
 
 (use-package org
   :config
+  (define-key org-mode-map (kbd "C-j") nil)
   (setq org-startup-indented t))
 
 (use-package org-tempo)

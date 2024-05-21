@@ -126,3 +126,16 @@
 
 (provide 'init)
 ;;; init.el ends here
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   '(find-file-in-project ace-pinyin avy yasnippet-snippets winum which-key vertico valign shackle rime rainbow-delimiters ox-hugo org-roam org-download org-bullets orderless mwim meow markdown-mode marginalia magit flycheck exec-path-from-shell embark-consult editorconfig doom-themes doom-modeline direnv dashboard copilot color-rg amx all-the-icons)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
