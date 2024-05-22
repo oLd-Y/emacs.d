@@ -14,11 +14,11 @@
 (global-set-key (kbd "M-n")
                 (lambda ()
                   (interactive)
-                  (scroll-up-line 3)))
+                  (scroll-up-line 5)))
 (global-set-key (kbd "M-p")
                 (lambda ()
                   (interactive)
-                  (scroll-down-line 3)))
+                  (scroll-down-line 5)))
 
 (unless (package-installed-p 'color-rg)
   (package-vc-install "https://github.com/manateelazycat/color-rg"))
@@ -50,10 +50,10 @@
 
 (use-package avy
   :ensure t
-  :bind
-  ("C-j" . avy-goto-char-timer)
   :custom
-  (avy-timeout-seconds 0.3))
+  (avy-timeout-seconds 0.3)
+
+  )
 
 
 
@@ -70,8 +70,65 @@
       (avy-with avy-goto-char-timer
         (setq avy--old-cands (avy--read-candidates
                               'pinyinlib-build-regexp-string))
-        (avy-process avy--old-cands)))))
+        (avy-process avy--old-cands))))
+  :bind
+  ("C-j" . my/avy-goto-char-timer))
+
+(unless (package-installed-p 'awesome-pair)
+  (package-vc-install "https://github.com/manateelazycat/awesome-pair"))
+
+(use-package awesome-pair
+  :ensure nil
+  :config
+  (dolist (hook (list
+		 'c-mode-common-hook
+		 'c-mode-hook
+		 'c++-mode-hook
+		 'java-mode-hook
+		 'haskell-mode-hook
+		 'emacs-lisp-mode-hook
+		 'lisp-interaction-mode-hook
+		 'lisp-mode-hook
+		 'maxima-mode-hook
+		 'ielm-mode-hook
+		 'sh-mode-hook
+		 'makefile-gmake-mode-hook
+		 'php-mode-hook
+		 'python-mode-hook
+		 'js-mode-hook
+		 'go-mode-hook
+		 'qml-mode-hook
+		 'jade-mode-hook
+		 'css-mode-hook
+		 'ruby-mode-hook
+		 'coffee-mode-hook
+		 'rust-mode-hook
+		 'qmake-mode-hook
+		 'lua-mode-hook
+		 'swift-mode-hook
+		 'minibuffer-inactive-mode-hook
+		 ))
+    (add-hook hook '(lambda () (awesome-pair-mode 1))))
+
+  (define-key awesome-pair-mode-map (kbd "(") 'awesome-pair-open-round)
+  (define-key awesome-pair-mode-map (kbd "[") 'awesome-pair-open-bracket)
+  (define-key awesome-pair-mode-map (kbd "{") 'awesome-pair-open-curly)
+  (define-key awesome-pair-mode-map (kbd ")") 'awesome-pair-close-round)
+  (define-key awesome-pair-mode-map (kbd "]") 'awesome-pair-close-bracket)
+  (define-key awesome-pair-mode-map (kbd "}") 'awesome-pair-close-curly)
+  (define-key awesome-pair-mode-map (kbd "%") 'awesome-pair-match-paren)
+  (define-key awesome-pair-mode-map (kbd "\"") 'awesome-pair-double-quote)
+  (define-key awesome-pair-mode-map (kbd "M-o") 'awesome-pair-backward-delete)
+  (define-key awesome-pair-mode-map (kbd "C-k") 'awesome-pair-kill)
+  (define-key awesome-pair-mode-map (kbd "M-\"") 'awesome-pair-wrap-double-quote)
+  (define-key awesome-pair-mode-map (kbd "M-[") 'awesome-pair-wrap-bracket)
+  (define-key awesome-pair-mode-map (kbd "M-{") 'awesome-pair-wrap-curly)
+  (define-key awesome-pair-mode-map (kbd "M-(") 'awesome-pair-wrap-round)
+  (define-key awesome-pair-mode-map (kbd "M-)") 'awesome-pair-unwrap)
+  (define-key awesome-pair-mode-map (kbd "M-p") 'awesome-pair-jump-right)
+  (define-key awesome-pair-mode-map (kbd "M-n") 'awesome-pair-jump-left)
+  (define-key awesome-pair-mode-map (kbd "M-:") 'awesome-pair-jump-out-pair-and-newline))
+
 
 (provide 'init-edit)
-
-;;; init-edit ends here
+;;; init-edit.el ends here

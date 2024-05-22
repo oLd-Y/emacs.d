@@ -59,6 +59,8 @@
                        consult-recent-file
                        consult-buffer
                        :preview-key nil))
+  
+  (setq consult-preview-key 'any)
 
   ;; Optionally configure the register formatting. This improves the register
   ;; preview for `consult-register', `consult-register-load',

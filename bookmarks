@@ -4,8 +4,8 @@
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-capture-last-stored"
  (filename . "~/org/all-posts.org")
- (front-context-string . "** TODO meow not")
- (rear-context-string . "/clash-on-arch/\n")
- (position . 14424)
- (last-modified 26188 2384 751426 12000))
+ (front-context-string . "** TODO arch lin")
+ (rear-context-string . " emacs-rime 的冲突\n")
+ (position . 19600)
+ (last-modified 26189 45618 104275 252000))
 )

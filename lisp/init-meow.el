@@ -1,6 +1,6 @@
 ;;; init-meow.el  --- Custom configuration
-;;; Commentary
-
+;;; Commentary:
+;;; Code:
 
 (defun meow-setup ()
   (setq meow-cheatsheet-layout meow-cheatsheet-layout-qwerty)
@@ -90,20 +90,20 @@
    ;; notice that do not set a keybinding for ESC, e.g '("ESC" . meow-last-buffer), other wise some keybinding will be lost
    '("<escape>" . meow-last-buffer)))
 
-
-
 (use-package meow
   :ensure t
   :config
   (meow-setup)
-  (define-key meow-insert-state-keymap (kbd "ESC") #'meow-insert-exit)
+  ;; C-[ exit insert mode
+  (when window-system
+    (define-key input-decode-map (kbd "C-[") [control-bracketleft])
+    (define-key meow-insert-state-keymap [control-bracketleft] 'meow-insert-exit))
 
   (meow-global-mode 1)
   ;; 失去焦点时，退出 insert mode。
   ;;(add-hook 'focus-out-hook 'meow-insert-exit)
   ;; 延长数字显示时间
   (setq meow-expand-hint-remove-delay 3))
-
 
 
 
@@ -118,7 +118,8 @@
 				  rime-predicate-space-after-cc-p
 				  rime-predicate-after-alphabet-char-p
 				  rime-predicate-prog-in-code-p
-				  rime-predicate-after-ascii-char-p))
+				  rime-predicate-after-ascii-char-p
+				  rime-predicate-ace-window-p))
   (set-face-attribute 'rime-default-face nil :foreground "#839496" :background "#073642")
 
   :custom

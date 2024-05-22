@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
- find-file
- scroll-up-line
- rime-deploy
- my/avy-goto-char-timer
- ace-pinyin-dwim
- electric-newline-and-maybe-indent
- exit-minibuffer
+ mark-page
+ mark-end-of-sentence
+ copilot-mode
+ find-file-in-project-by-selected
+ consult-buffer-other-window
+ consult-buffer
+ copilot-login
 )
 
 ;; ----- amx-data -----
@@ -28,20 +28,20 @@
  (company-yasnippet . 1)
  (org-capture . 2)
  (newline-bellow . 1)
- (meow-tutor . 12)
+ (meow-tutor . 14)
  (c-mode . 2)
  (prog-mode . 2)
  (lisp-mode . 1)
  (meow-tail . 6)
  (clm/toggle-command-log-buffer . 3)
  (clm/open-command-log-buffer . 1)
- (copilot-mode . 16)
+ (copilot-mode . 17)
  (find-file . 11)
  (nerd-icons-install-fonts . 3)
  (rg . 4)
  (kill-buffer . 1)
  (dashboard-open . 1)
- (magit . 14)
+ (magit . 17)
  (customize-group . 1)
  (org-goto . 1)
  (help-with-tutorial-spec-language . 3)
@@ -83,7 +83,7 @@
  (meow-comment . 1)
  (eshell . 9)
  (meow-wrap-round . 1)
- (find-file-in-project-by-selected . 11)
+ (find-file-in-project-by-selected . 12)
  (straight-rebuild-all . 2)
  (straight-pull-all . 1)
  (package-refresh-contents . 2)
@@ -92,7 +92,7 @@
  (maximize-window . 1)
  (toggle-frame-fullscreen . 1)
  (scroll-up-line . 3)
- (rime-deploy . 12)
+ (rime-deploy . 13)
  (rime-open-configuration . 1)
  (toggle-input-method . 1)
  (meow-global-mode . 1)
@@ -108,6 +108,14 @@
  (read-only-mode . 1)
  (exit-minibuffer . 1)
  (electric-newline-and-maybe-indent . 1)
- (my/avy-goto-char-timer . 4)
+ (my/avy-goto-char-timer . 8)
  (ace-pinyin-dwim . 2)
+ (ffip-lisp-find-file-in-project . 1)
+ (ffip-diff-find-file . 1)
+ (color-rg-switch-to-edit-mode . 1)
+ (copilot-login . 1)
+ (consult-buffer . 1)
+ (consult-buffer-other-window . 2)
+ (mark-end-of-sentence . 4)
+ (mark-page . 1)
 )
