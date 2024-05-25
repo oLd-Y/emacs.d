@@ -2,10 +2,1058 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("org-capture-last-stored"
+(("Arch 论坛"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://bbs.archlinuxcn.org/index.php"))
+("拆分查询"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://tiger-code.com/search"))
+("GLaDOS"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://glados.one/console/checkin"))
+("Stars"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://github.com/oLd-Y?tab=stars"))
+("Repos"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://github.com/oLd-Y?tab=repositories"))
+("赛文跟打"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://typer.owenyang.top/"))
+("微信读书"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://weread.qq.com/web/shelf"))
+("CSDN后台"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://editor.csdn.net/md/?not_checkout=1&spm=1015.2103.3001.8066"))
+("LeetCode"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://leetcode.cn/problemset/"))
+("YouTube"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.youtube.com/"))
+("B站"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.bilibili.com/"))
+("DeepL"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.deepl.com/translator"))
+("blog"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://old-y.github.io/blog/"))
+("【已解决】应用图标没法保留在托盘栏内 / 应用程序与桌面环境 / Arch Linux 中文论坛"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://bbs.archlinuxcn.org/viewtopic.php?id=12739"))
+("基于Nix的下一代个人开发环境使用指南"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://gameapp.club/post/dev-env-nix-install/"))
+("安装 NixOS | NixOS 与 Flakes"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://nixos-and-flakes.thiscute.world/zh/introduction/installation"))
+("双系统安装 | NixOS 中文"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://nixos-cn.org/tutorials/installation/Subsystem.html#%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5"))
+("NixOS Search - Packages"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://search.nixos.org/packages"))
+("Arch Linux 用 Clash 配置软路由 - 酢豚的家"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://kazusa.cc/daily/setup-soft-router-with-clash.html"))
+("Wayland 输入法解决方案 - 知乎"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://zhuanlan.zhihu.com/p/676505513"))
+("在 Arch Linux 中设置 Full Wayland 的指南 - 汲古得实"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://jigutech.com/3060.html"))
+("Arch Linux下全面使用Wayland的配置实践"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://cloud.baidu.com/article/3249631"))
+("程序员专用系统？聊一聊一个非程序员使用 Linux 系统的历程 - 少数派"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://sspai.com/post/77854"))
+("ArchLinux on Y9000P2022十分好用,就是有点难用 - 柯罗krau的博客 | krau's blog"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://krau.top/posts/archlinux-on-y9kp22-1"))
+("Arch Linux 配置 -- 驱动和软件安装"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://xland.cyou/p/arch-linux-configuration-driver-and-software/#nvidia-%E9%A9%B1%E5%8A%A8"))
+("Arch Linux 升级系统提示签名无效"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://smj.im/blag/posts/signature-invalid-when-upgrading-archlinux/"))
+("Manjaro软件更新失败：无效或已损坏的软件包 - 掘金"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://juejin.cn/post/7091962125660192798"))
+("Archlinux 长时间未更新报错：containerd: 来自 \"Santiago Torres-Arias <santiago@archlinux.org>\" 的签名是未知信任的 - 简书"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.jianshu.com/p/1db80e403cca"))
+("Arch 更新安装 已损坏 (无效或已损坏的软件包 (PGP 签名)) - Programming - Emacs China"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://emacs-china.org/t/arch-pgp/19089/5"))
+("请问 archlinux 使用 yay 安装软件时候，交互命令是什么意思？ - V2EX"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://v2ex.com/t/700678"))
+("Cleanbuild or not when using yay - General system / Pacman - EndeavourOS"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://forum.endeavouros.com/t/cleanbuild-or-not-when-using-yay/15416"))
+("archlinux 真的适合我吗？ | archlinux 简明指南"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://arch.icekylin.online/guide/prepare/head-on-blow"))
+("ArchLinux安装fcitx5-rime_fcitx-rime-CSDN博客"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://blog.csdn.net/userid23823/article/details/127040555"))
+("Arch Linux Clash 安装配置记录"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://blog.linioi.com/posts/clash-on-arch/"))
+("Arch Linux + Windows 双系统安装教程"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://blog.linioi.com/posts/18/"))
+("关键词分类"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://ry5hwpuf7b.feishu.cn/sheets/shtcnbzGRzUnpRlSgWT1TbKTl9d"))
+("【第1期】SD入门 - 飞书云文档"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://ry5hwpuf7b.feishu.cn/wiki/LiT2woqpHi4kKPkJ2bPcQaSsnZf"))
+("公众号"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://mp.weixin.qq.com/cgi-bin/home?t=home/index&token=56426470&lang=zh_CN"))
+("写个AI虚拟主播：看懂弹幕，妙语连珠，悲欢形于色，以一种简单的实现 - 掘金"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://juejin.cn/post/7204742468612145209"))
+("怎么用YouTube为个人网站引流？附5个YouTube引流技巧 - 发财麦克"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://facaimike.com/youtuber.html/"))
+("词魂-免费提供AI绘画使用的AI提示词(promt)、AI咒语"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.icihun.com/search/-0_0_600_601-0-1-1.html"))
+("PaperMod主题配置 | 🚀 田少晗的个人博客"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.shaohanyun.top/posts/env/blog_build2/"))
+("Hugo+PaperMod 双语博客搭建 Home-Info+Profile Mode - YUNYI BLOG"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.yunyitang.me/hugo-papermod-blog/#Shortcodes-%E6%89%A9%E5%B1%95%E5%8A%9F%E8%83%BD-%E6%8F%92%E4%BB%B6"))
+("动手写一个 Hugo 博客主题 | Yuanji's Blog"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://blog.gimo.me/posts/creating-a-hugo-theme/"))
+("自定义 Hugo Shortcodes 简码 | 荷戟独彷徨"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://guanqr.com/tech/website/hugo-shortcodes-customization/"))
+("使用 Obsidian 免费建个人博客 - 少数派"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://sspai.com/post/85262"))
+("Hugo博客添加LaTeX语法支持 | 🚀 田少晗的个人博客"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.shaohanyun.top/posts/env/hugo_mathjax/"))
+("两年后，我还在用的 Obsidian 插件 - 经验分享 - Obsidian 中文论坛"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://forum-zh.obsidian.md/t/topic/10622"))
+("2022年7月，obsidian 依然必装的 10 个插件 - 经验分享 - Obsidian 中文论坛"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://forum-zh.obsidian.md/t/topic/8728"))
+(".obsidian.vimrc"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://gist.github.com/jiyee/cfa8dc2f37359004b34820543f691db3"))
+("esm7/obsidian-vimrc-support: A plugin for the Obsidian.md note-taking software"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://github.com/esm7/obsidian-vimrc-support"))
+("Obsidian 搭配 Vim Mode，提升中文写作体验 - 少数派"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://sspai.com/post/78030"))
+("Obsidian 中使用 Vim 模式并配置 Vimrc | Verne in GitHub"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://einverne.github.io/post/2022/07/obsidian-vim-and-vimrc.html"))
+("Advanced URI | obsidian文档咖啡豆版"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://coffeetea.top/zh/community-plugins/Advanced-URI.html"))
+("正则表达式测试"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://regex101.com/"))
+("SM.MS"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://sm.ms/home/"))
+("Stable Diffusion 零基础入门课学习资料汇总 - 幕布"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://mubu.com/doc/_2As4DSE4m"))
+("图片转文字在线 - 图片文字提取 - 网页OCR文字识别 - 白描网页版"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://web.baimiaoapp.com/"))
+("ESP32 DIY技术分享"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.xutoubee.cn/"))
+("英语听力练习 ELLLO - English Listening Lesson Library Online"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://elllo.org/"))
+("jwxt.sit.edu.cn"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "http://jwxt.sit.edu.cn/"))
+("今日热榜官网"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://tophub.today/"))
+("Copilot X 相关链接"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://zhuanlan.zhihu.com/p/616239761"))
+("挑战 | Vue.js挑战"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://cn-vuejs-challenges.netlify.app/challenges.html#category=Built-ins"))
+("如何用免费GPU线上跑AI项目实践 - Feishu Docs"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://datawhaler.feishu.cn/docx/QaujdWRcJoFi6yxr16DciPThndd"))
+("FlowGPT | the best ChatGPT prompts&AI prompts community"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://flow-4fx96lhhx-flow-gpt.vercel.app/"))
+("KATEX公式编辑器符号大全"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://blog.csdn.net/YuYunTan/article/details/83617781"))
+("Home - MindShow, Make Slides Easy"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.mindshow.fun/#/folder/home"))
+("主页| Microsoft 365"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.office.com/?auth=1"))
+("Z-Library – the world’s largest e-book library. Your gateway to knowledge and culture."
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://lib-pxyz5quvknyqrt3p4xx5ymhc.1lib.ph/"))
+("Shell"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://app.myshell.ai/"))
+("My first project – MyBib"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.mybib.com/#/projects/yggW9v/citations"))
+("国外虚拟手机号"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://sms-activate.org/getNumber"))
+("Humata-AI 读论文"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://app.humata.ai/"))
+("geeksforgeeks"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.geeksforgeeks.org/"))
+("Library Genesis"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://libgen.is/"))
+("熊猫搜书_熊猫搜索_一站式读书学习导航站_聚合电子书及文档搜索_xmsoushu_xmsearch"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://xmsoushu.com/index.html#/"))
+("超级简历WonderCV"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.wondercv.com/cvs"))
+("BOSS直聘-找工作我要跟老板谈！招聘求职找工作！"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.zhipin.com/"))
+("镝数图表-种类齐全的免费在线图表模板"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://dycharts.com/appv2/#/pages/home/chart-template"))
+("获取鼠标点击经纬度-地图属性-示例中心-JS API 2.0 示例 | 高德地图API"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://lbs.amap.com/demo/jsapi-v2/example/map/click-to-get-lnglat/"))
+("Virtual numbers for receiving SMS online - SMS-Activate"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://sms-activate.org/en"))
+("我的云端硬盘 - Google 云端硬盘"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://drive.google.com/drive/my-drive"))
+("Axure原型模板和Axure元件库免费下载 Axure原型模板 | Axure组件库 | Axure元件库 | Axure大数据可视化 | Axure大屏原型模板 - AxureUX"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.axureux.com/home/freeworks.html"))
+("邮件 - 郭 联垚 - Outlook"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://outlook.live.com/mail/0/inbox/id/AQQkADAwATM0MDAAMS0xZTNjLWI1MTQtMDACLTAwCgAQANdeEy7kw85EgqcTpNHWeSg%3D"))
+("iconfont-阿里巴巴矢量图标库"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.iconfont.cn/"))
+("Search Icons & Find the Perfect Design | Font Awesome"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://fontawesome.com/v6/search"))
+("夜兰 | Honey Impact - Genshin Impact DB and Tools"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://genshin.honeyhunterworld.com/db/char/yelan/?lang=CHS"))
+("Genshin Impact Wish Sim"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://gi-wish-simulator.uzairashraf.dev/"))
+("原神 NGA玩家社区"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://nga.178.com/thread.php?fid=650"))
+("提瓦特大地图 - 观测枢"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://webstatic.mihoyo.com/app/ys-map-cn/index.html?bbs_presentation_style=no_header#/map/2?shown_types=&center=5426.00,2854.00&zoom=-1.00"))
+("旅行者创作平台-观测枢-原神wiki"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://bbs.mihoyo.com/ys/obc/?bbs_presentation_style=no_header"))
+("简中服公会战作业表 v0.21.5"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://docs.qq.com/sheet/DWkdtR2djbnFiUGRk?tab=ltc6xo"))
+("公主连结 Box"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://pcr.satroki.tech/"))
+(" 公会战排名查询"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://kengxxiao.github.io/Kyouka/"))
+("超異域公主連結☆Re:Dive (公主連結R)（プリコネR）Wiki | 蘭德索爾圖書館 公主連結 プリコネR Wiki"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://pcredivewiki.tw/"))
+("竞技场查询 - 公主连结Re: Dive Fan Club - 硬核的竞技场数据分析站 公主连接 公主链接 JJC"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.pcrdfans.com/battle"))
+("公主连结WIKI 公主连接WIKI 公主连结re：dive_电波WIKI"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.diopoo.com/pcr/"))
+("公主连结Re:Dive NGA玩家社区"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://bbs.nga.cn/thread.php?fid=-10308342&rand=300"))
+("Your Projects - Overleaf, Online LaTeX Editor"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.overleaf.com/project"))
+("中国知网"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://cnki.net/"))
+("Google 学术搜索"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://scholar.google.com.hk/?hl=zh-CN"))
+("吴恩达《机器学习》 - Heywhale.com"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.heywhale.com/home/column/5dd7524c83b6ff002c786fff"))
+("操作系统原理与实践_Linux - 蓝桥云课"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.lanqiao.cn/courses/115"))
+("图怪兽作图神器-在线图片编辑器-PS图片制作-搞定平面设计不求人"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://818ps.com/"))
+("GOTOVLOG.COM - 你的视频创作指南"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://gotovlog.com/"))
+("酷Q网音乐格式转换 - 酷狗酷我QQ音乐网易云音乐虾米音乐ncm,qmc,mflac,mgg,kgm.kwm加密音乐格式转换成MP3"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://mp3.aoleiao.com/"))
+("哔哩哔哩(bilibili)视频解析下载 - 保存B站视频到手机、电脑"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://bilibili.iiilab.com/"))
+("消音 - 云猫转码 | 简单智能、功能齐备的云端视频工具"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://yunmaovideo.com/remove-audio/"))
+("将彩色照片转换为黑白图像 - 免费工具"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://blackandwhite.imageonline.co/cn/"))
+("LookAE.com-大众脸影视后期特效"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.lookae.com/"))
+("80s电影网 - 高清手机电影迅雷下载_最新MP4电视剧磁力下载"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.80s.tw/"))
+("电影天堂,天天影视免费看"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://yingtt.com/"))
+("AcFun弹幕视频网 - 认真你就输啦 (・ω・)ノ- ( ゜- ゜)つロ"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.acfun.cn/"))
+("樱花动漫－专注动漫的门户网站"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "http://www.imomoe.in/"))
+("DLAI - Learning Platform Prototype"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://learn.deeplearning.ai/chatgpt-prompt-eng/lesson/2/guidelines"))
+("小甲鱼"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://fishc.com.cn/forum.php"))
+("Carbon | 源码贴图"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://carbon.now.sh/?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false"))
+("Notion – The all-in-one workspace for your notes, tasks, wikis, and databases."
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.notion.so/"))
+("CodingLabs - keep coding, keep foolish"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "http://blog.codinglabs.org/"))
+("The Modern JavaScript Tutorial"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://javascript.info/"))
+("主页 | Java程序员进阶之路"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://tobebetterjavaer.com/"))
+("visualising data structures and algorithms through animation - VisuAlgo"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://visualgo.net/en"))
+("GitLab · lianyao-guo / my-first-project · GitLab"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://gitlab.com/lianyao-guo/my-first-project/-/learn_gitlab"))
+("Matlab入门教程"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://ocw.mit.edu/courses/6-057-introduction-to-matlab-january-iap-2019/pages/syllabus/"))
+("Vercel"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://vercel.com/dashboard"))
+("lianyao-guo / my-first-project · GitLab"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://gitlab.com/lianyao-guo/my-first-project"))
+("在线工具 - 你的工具箱"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://tool.lu/"))
+("首页 - 洛谷 | 计算机科学教育新生态"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.luogu.com.cn/"))
+("Stack Overflow - Where Developers Learn, Share, & Build Careers"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://stackoverflow.com/"))
+("专业IT技术博客创作平台-wx62983250b5a00技术成就梦想-51CTO博客"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://blog.51cto.com/creative-center/index"))
+("小林coding"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.xiaolincoding.com/"))
+("快速上手 | 白月黑羽"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.byhy.net/tut/others/loadtest/jmeter/01/"))
+("30 Days of ML | Kaggle"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.kaggle.com/thirty-days-of-ml"))
+("Learn Git Branching"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://learngitbranching.js.org/?locale=zh_CN"))
+("CS自学指南"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://csdiy.wiki/"))
+(" Overleaf, Online LaTeX Editor"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.overleaf.com/project#"))
+("精选项目课程_IT热门课程_蓝桥云课课程 - 蓝桥云课"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.lanqiao.cn/courses"))
+("Data Structure Visualization"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.cs.usfca.edu/~galles/visualization/Algorithms.html"))
+("牛客网-找工作神器|笔试题库|面试经验|实习招聘内推，求职就业一站解决_牛客网"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.nowcoder.com/"))
+("题库 - 力扣 (LeetCode) 全球极客挚爱的技术成长平台"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://leetcode-cn.com/problemset/all/"))
+("19 大厂面试题：不要搞混 JMM 与 JVM.md"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA%20Java%20%E8%99%9A%E6%8B%9F%E6%9C%BA-%E5%AE%8C/19%20%E5%A4%A7%E5%8E%82%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%9A%E4%B8%8D%E8%A6%81%E6%90%9E%E6%B7%B7%20JMM%20%E4%B8%8E%20JVM.md"))
+("Java 全栈知识体系"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://pdai.tech/"))
+("JavaGuide"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://javaguide.cn/"))
+("头像"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://hyperhuman.deemos.com/chatavatar"))
+("GPT Prompt网站"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.chainbrainai.com/"))
+("代码、SQL优化等"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://aidaxia.net/#/ai"))
+("7.4. Python 自动化脚本 - AIGC All in One"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://aigc.ioclab.com/llm-inference/python-tool.html"))
+("ChatDOC"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://chatdoc.com/chatdoc/#/upload"))
+("ai提示词翻译"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://ai.dawnmark.cn/"))
+("一个工具箱 AI绘画提示词"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "http://www.atoolbox.net/"))
+("正则 | SQL | Cron | Nginx配置生成"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.agilebuilder.net/tools/"))
+("文件查看"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://filegpt.app/chat"))
+("ChatPaper"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://chatpaper.org/"))
+("text to image"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.canva.com/your-apps/text-to-image"))
+("ChatPDF - Chat with any PDF!"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.chatpdf.com/"))
+("ZelinAi"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://zelinai.com/model"))
+("stable-diffusion-webui-kaggle | Kaggle"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.kaggle.com/code/lianyao/stable-diffusion-webui-kaggle/edit"))
+("Civitai | Stable Diffusion models, embeddings, LoRAs and more"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://civitai.com/"))
+("Discover and Generate AI Art | OpenArt"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://openart.ai/"))
+("Stable Diffusion Online"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://stablediffusionweb.com/#demo"))
+("EffectHub AI Painter"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "http://www.effecthub.com/draw"))
+("视频逐字稿"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.assemblyai.com/"))
+("Table of Contents"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://tuhdo.github.io/index.html"))
+("能否通过设置环境变量让 conda 切换虚拟环境 - 闲聊灌水 - Emacs China"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://emacs-china.org/t/conda/17117/7"))
+("在 Emacs 中进行分离式项目环境变量管理 – direnv"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://egh0bww1.com/posts/2023-10-10-46-manage-project-environment-use-direnv/"))
+("Emacs, 我已经十年没有按过保存按键了（附带 auto-save.el 源码解析）"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://manateelazycat.github.io/2016/03/16/auto-save/"))
+("The Org Manual"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://orgmode.org/org.html"))
+("Emacs高手修炼手册 （2.0版，2023年，针对Emacs 29） - 知乎"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://zhuanlan.zhihu.com/p/655059463"))
+("Top (Programming in Emacs Lisp)"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html#SEC_Contents"))
+("用 org mode 管理生活和工作 | chaomai's blog"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://chaomai.github.io/2021/2021-03-13-organized-life/"))
+("emacs完全补完计划（三）——package的引入和管理 - 记忆和记忆的补完"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://longlycode.github.io/post/emacs%E5%AE%8C%E5%85%A8%E8%A1%A5%E5%AE%8C%E8%AE%A1%E5%88%92-%E4%B8%89/"))
+("43.使用 use-package 管理 emacs 配置 - 知乎"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://zhuanlan.zhihu.com/p/653837521"))
+("Vanilla Emacs with Purcell | Lucius | Braindump"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.sheerwill.live/posts/main/20220723211325-vanilla_emacs_with_purcell/#init-meow-dot-el"))
+("极简Emacs开发环境配置"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://huadeyu.tech/tools/emacs-setup-notes.html"))
+("Emacs常用插件推荐（持续更新） - 知乎"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://zhuanlan.zhihu.com/p/468098391"))
+("An Agenda for Life With Org Mode - The Chronicle"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://blog.aaronbieber.com/2016/09/24/an-agenda-for-life-with-org-mode.html"))
+("Avy can do anything | Karthinks"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://karthinks.com/software/avy-can-do-anything/"))
+("emacs-config/config/pkg-web.el at master · Lenic/emacs-config"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://github.com/Lenic/emacs-config/blob/master/config/pkg-web.el"))
+("[资源贴] 一个收集大家[doom emacs] [spacemacs] [emacs]配置的资源贴, 持续更新 - 闲聊灌水 - Emacs China"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://emacs-china.org/t/doom-emacs-spacemacs-emacs/18112"))
+("lijigang/100-questions-about-orgmode: It's all about *orgmode* !"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://github.com/lijigang/100-questions-about-orgmode"))
+("Hugo系列(3.0) - LoveIt主题美化与博客功能增强 · 第一章 - Yulin Lewis' Blog"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://lewky233.top/posts/hugo-3.html/#%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD"))
+("Efficient LaTeX Editing With Emacs - Michael"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://michaelneuper.com/posts/efficient-latex-editing-with-emacs/"))
+("强大的 Org mode(4): 使用 capture 功能快速记录 · ZMonster's Blog"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.zmonster.me/2018/02/28/org-mode-capture.html"))
+("fniessen/refcard-org-mode: Get organized and boost your productivity with our comprehensive Org mode syntax reference card! Get a quick access to helpful tips and tricks. #orgmode #syntax #productivity #referencecard"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://github.com/fniessen/refcard-org-mode"))
+("How To Take Smart Notes With Org-mode · Jethro Kuan"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://blog.jethro.dev/posts/how_to_take_smart_notes_org/"))
+("[译]Emacs: 正则表达式教程 | feng 言 feng 语"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://feng-qi.github.io/2017/03/24/emacs-regex-tutorial/"))
+("Emacs文件管理神器--dired常用操作说明 - 暗无天日"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "http://blog.lujun9972.win/blog/2016/12/10/emacs%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E7%A5%9E%E5%99%A8--dired%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E8%AF%B4%E6%98%8E/"))
+("Hugo系列(3.2) - LoveIt主题美化与博客功能增强 · 第三章-腾讯云开发者社区-腾讯云"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://cloud.tencent.com/developer/article/1932815"))
+("强大的 Org mode(3): 表格的基本操作及公式、绘图 · ZMonster's Blog"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.zmonster.me/2016/06/03/org-mode-table.html"))
+("在 Hugo 博客上使用 PlantUML – Mogeko's Blog"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://mogeko.me/zh-cn/posts/zh-cn/083/"))
+("给 Hugo 博客添加 PlantUML 支持 | /dev/ttyS3 Blog"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://ttys3.dev/blog/add-plantuml-support-to-hugo"))
+("Qt WebEngine resouces not found at /share/qt/resouces · Issue #890 · emacs-eaf/emacs-application-framework"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://github.com/emacs-eaf/emacs-application-framework/issues/890"))
+("使用 Emacs 两年多后的总结 | hsingko"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://hsingko.pages.dev/post/2023/07/29/emacs-usage-summary/"))
+("DoomEmacs和EAF安装小白记录 - Emacs-general - Emacs China"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://emacs-china.org/t/doomemacs-eaf/23155/9"))
+("软链接设置启动时不同 emacs 配置"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://zhuanlan.zhihu.com/p/594392320"))
+("自安装包模块化管理"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.bilibili.com/read/cv11371146/"))
+("日程管理GTD：Emacs+Org-mode+WebDav - 知乎"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://zhuanlan.zhihu.com/p/127791789"))
+("My Workflow with Org-Agenda"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://cachestocaches.com/2016/9/my-workflow-org-agenda/"))
+("Org Mode - Organize Your Life In Plain Text!"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "http://doc.norang.ca/org-mode.html"))
+("我的日程计划安排"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.gtrun.org/custom/my-agenda#org1c51aa5"))
+("org-roam发布"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://blog.liuliancao.com/posts/emacs-org-roamshi-yong/"))
+("Emacs 学习（四）Emacs 详细配置 - Emacs - Computer-Science | Linn's Shoka = 林・初夏 = Linn 的书架"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://linn-ylz.com/Computer-Science/Emacs/emacs-learning-4/"))
+("在org-mode里如何搜索tag - Emacs-general - Emacs China"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://emacs-china.org/t/org-mode-tag/25319/2"))
+("org-roam 使用"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.skfwe.cn/p/org-roam-%E4%BD%BF%E7%94%A8/"))
+("分享|如何在 Emacs 中使用 Magit 管理 Git 项目"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://linux.cn/article-10564-1.html"))
+("5 Org Roam Hacks for Better Productivity in Emacs - System Crafters"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://systemcrafters.net/build-a-second-brain-in-emacs/5-org-roam-hacks/#streamlined-custom-capture-for-tasks-and-notes"))
+("Emacs 手册"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.gnu.org/software/emacs/manual/html_node/elisp/"))
+("使用 org-roam 构建自己的知识网络 · ZMonster's Blog"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.zmonster.me/2020/06/27/org-roam-introduction.html"))
+("Org-roam(v2) 以及 org-roam-ui 的使用姿势（已支持Emacs 29 内置的 sqlite) - Org-mode - Emacs China"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://emacs-china.org/t/org-roam-v2-org-roam-ui-emacs-29-sqlite/17806/108?page=6"))
+("Export org-roam backlinks with Gohugo | Ben Mezger"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://seds.nl/notes/export_org_roam_backlinks_with_gohugo/"))
+("Migrate Tiddlywiki to org-roam - Part 2: org-roam and hugo - blog.dornea.nu"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://blog.dornea.nu/2022/10/04/migrate-tiddlywiki-to-org-roam-part-2-org-roam-and-hugo/"))
+("My Org Roam Notes Workflow - Hugo Cisneros"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://hugocisneros.com/blog/my-org-roam-notes-workflow/"))
+("Emacs 常用 debug 手段 - 博客"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://whatacold.io/zh-cn/blog/2022-07-17-emacs-elisp-debug/"))
+("我平常是怎么使用 Emacs 的？"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://manateelazycat.github.io/2022/11/07/how-i-use-emacs/"))
+("Emacs帮你进行英文写作 - 暗无天日"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "http://blog.lujun9972.win/blog/2018/06/03/emacs%E5%B8%AE%E4%BD%A0%E8%BF%9B%E8%A1%8C%E8%8B%B1%E6%96%87%E5%86%99%E4%BD%9C/index.html"))
+("emacs org-mode 的使用 – Wenhui's Rotten Pen"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.wenhui.space/docs/02-emacs/emacs_org_mode/"))
+("Emacs 自力求生指南 ── 来写自己的配置吧 - Nayuki's Archive"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://nyk.ma/posts/emacs-write-your-own/"))
+("Emacs Lisp: Lisp Basics"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "http://xahlee.info/emacs/emacs/elisp.html"))
+("Emacs Lisp 简明教程 - 水木社区Emacs版"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://smacs.github.io/elisp/"))
+("45.使用 emacs 进行 Python 编程 - 知乎"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://zhuanlan.zhihu.com/p/655323133"))
+("DevDocs API Documentation"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://devdocs.io/"))
+("Gmail"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://mail.google.com/mail/u/0/#inbox"))
+("本站简介 | labuladong 的算法笔记"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://labuladong.online/algo/home/#%E5%9D%91%E5%9B%9B-%E5%96%9C%E6%AC%A2%E6%8A%96%E6%9C%BA%E7%81%B5-%E8%88%8D%E6%9C%AC%E9%80%90%E6%9C%AB"))
+("使用Github Pages+Hugo+PaperMod搭建博客 | ElegantCrazy's blog"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.elegantcrazy.com/posts/blog/build-blog-with-github-pages-hugo-and-papermod/"))
+("设计模式目录：22种设计模式"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://refactoringguru.cn/design-patterns/catalog"))
+("Moonshot AI - 开放平台"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://platform.moonshot.cn/console/account"))
+("What's the equivalent of ProgressBar in Jetpack Compose?"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.jetpackcompose.app/What-is-the-equivalent-of-ProgressBar-in-Jetpack-Compose"))
+("概述 — 跟我一起写Makefile 1.0 文档"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://seisman.github.io/how-to-write-makefile/overview.html"))
+("一个仅供参考的CS学习规划 - CS自学指南"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://csdiy.wiki/CS%E5%AD%A6%E4%B9%A0%E8%A7%84%E5%88%92/#_1"))
+("Years Index - 暗无天日"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "http://blog.lujun9972.win/years/"))
+("vim高级用法多年经验原创总结(全部测试成功） _51CTO博客_vim高级技巧"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://blog.51cto.com/hashlinux/1761788"))
+("云服务器管理控制台"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://ecs.console.aliyun.com/server/region/cn-shanghai"))
+("PromptPerfect"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://promptperfect.jinaai.cn/prompts"))
+("欢迎来到《探索three.js》! | Discover three.js"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://discoverthreejs.com/zh/book/introduction/"))
+("图形化线代"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://textbooks.math.gatech.edu/ila/systems-of-eqns.html"))
+("虚拟信用卡 OneKey Card"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://card.onekey.so/home"))
+("‌⁣⁣⁤​⁣‍⁤⁢⁣‌​﻿‌‬⁢‬⁣﻿﻿‬‌‬⁤﻿​⁡​‬﻿​​‬⁢‬‍⁡⁣⁢﻿⁣‍‬‬⁣‬‌​﻿AI赛博训练营共创手册 - Feishu Docs"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://ry5hwpuf7b.feishu.cn/docx/DaS4dGu5novJxNxmQvdcwli6nrh"))
+("简书"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.jianshu.com/u/e74058eb7444"))
+("知乎"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.zhihu.com/"))
+("百家号"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://baijiahao.baidu.com/builder/rc/newRights?app_id=1768116186636122"))
+("文章同步助手 - 开发者工具"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://developer.wechatsync.com/#/"))
+("多平台同步 Markdown"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.wechatsync.com/md/?utm_source=homebtn#/"))
+("Civitai"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://easywithai.com/resources/civitai/"))
+("Hugging Face"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://huggingface.co/"))
+("Convert PDF to Word for free | Smallpdf.com"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://smallpdf.com/pdf-to-word"))
+("Discord"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://discord.com/channels/662267976984297473/@home"))
+("SQL练习"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://www.nowcoder.com/exam/oj?page=1&tab=SQL%E7%AF%87&topicId=268"))
+("drawio"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://app.diagrams.net/"))
+("Overview - OpenAI API"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://beta.openai.com/overview"))
+("hugo-PaperModeX"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://gitlab.com/hmajid2301/blog/-/tree/main"))
+("rating"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://zerotrac.github.io/leetcode_problem_rating/#/"))
+("Claude"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://claude.ai/chats"))
+("总览 - 控制台 - 腾讯云"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://console.cloud.tencent.com/"))
+("精选 | AI破局"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://ai.ifindyi.com/"))
+("HIT-OSLab"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://github.com/hoverwinter/HIT-OSLab"))
+("Personal Access Tokens (Classic)"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://github.com/settings/tokens"))
+("Z-Library"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://zlibrary-asia.se/"))
+("Features · adityatelange/hugo-PaperMod Wiki"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://github.com/adityatelange/hugo-PaperMod/wiki/Features#search-page"))
+("葫芦AI,Hulu AI,AI绘画,Midjourney绘画,人工智能绘画,AI图片放大,AI二维码"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://h5.cxyhub.com/chat"))
+("Kimi Chat - 帮你看更大的世界"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://kimi.moonshot.cn/"))
+("ChatGPT"
+ (handler . eaf--bookmark-restore)
+ (eaf-app . "browser")
+ (filename . "https://chat.openai.com/chat"))
+("org-capture-last-stored"
  (filename . "~/org/all-posts.org")
- (front-context-string . "** TODO arch lin")
- (rear-context-string . " emacs-rime 的冲突\n")
- (position . 19600)
- (last-modified 26189 45618 104275 252000))
+ (front-context-string . "** TODO npm erro")
+ (rear-context-string . "etails/82391665\n")
+ (position . 21380)
+ (last-modified 26192 20950 114994 367000))
 )

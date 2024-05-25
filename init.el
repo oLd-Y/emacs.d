@@ -37,6 +37,7 @@
 
 
 
+
 (require 'init-basic)
 (require 'init-package)
 (require 'init-env)
@@ -49,6 +50,9 @@
 (require 'init-completion)
 (require 'init-treesit)
 (require 'init-meow)
+(require 'init-project)
+(require 'init-eaf)
+(require 'init-session)
 
 
 
@@ -132,7 +136,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(awesome-pair find-file-in-project ace-pinyin avy yasnippet-snippets winum which-key vertico valign shackle rime rainbow-delimiters ox-hugo org-roam org-download org-bullets orderless mwim meow markdown-mode marginalia magit flycheck exec-path-from-shell embark-consult editorconfig doom-themes doom-modeline direnv dashboard copilot color-rg amx all-the-icons))
+   '(sis awesome-pair find-file-in-project ace-pinyin avy yasnippet-snippets winum which-key vertico valign shackle rime rainbow-delimiters ox-hugo org-roam org-download org-bullets orderless mwim meow markdown-mode marginalia magit flycheck exec-path-from-shell embark-consult editorconfig doom-themes doom-modeline direnv dashboard copilot color-rg amx all-the-icons))
  '(package-vc-selected-packages
    '((awesome-pair :vc-backend Git :url "https://github.com/manateelazycat/awesome-pair"))))
 (custom-set-faces

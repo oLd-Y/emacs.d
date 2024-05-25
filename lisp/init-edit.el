@@ -10,6 +10,7 @@
 (global-set-key (kbd "C-j") nil)
 (global-set-key (kbd "M-j") nil)
 
+
 ;; set scroll up/down screen one line
 (global-set-key (kbd "M-n")
                 (lambda ()
@@ -35,8 +36,8 @@
 (use-package mwim
   :ensure t
   :bind
-  ("C-a" . mwim-beginning-of-code-or-line)
-  ("C-e" . mwim-end-of-code-or-line))
+  ("C-a" . mwim-beginning-of-code-or-line))
+
 
 (use-package flycheck
   :ensure t
@@ -51,9 +52,7 @@
 (use-package avy
   :ensure t
   :custom
-  (avy-timeout-seconds 0.3)
-
-  )
+  (avy-timeout-seconds 0.3))
 
 
 
@@ -73,6 +72,7 @@
         (avy-process avy--old-cands))))
   :bind
   ("C-j" . my/avy-goto-char-timer))
+
 
 (unless (package-installed-p 'awesome-pair)
   (package-vc-install "https://github.com/manateelazycat/awesome-pair"))
@@ -107,12 +107,12 @@
 		 'lua-mode-hook
 		 'swift-mode-hook
 		 'minibuffer-inactive-mode-hook
-		 ))
+		 'org-mode-hook))
     (add-hook hook '(lambda () (awesome-pair-mode 1))))
 
   (define-key awesome-pair-mode-map (kbd "(") 'awesome-pair-open-round)
   (define-key awesome-pair-mode-map (kbd "[") 'awesome-pair-open-bracket)
-  (define-key awesome-pair-mode-map (kbd "{") 'awesome-pair-open-curly)
+  (define-key awesome-pair-mode-map (kbd "{") 'awesome-pa}ir-open-curly)
   (define-key awesome-pair-mode-map (kbd ")") 'awesome-pair-close-round)
   (define-key awesome-pair-mode-map (kbd "]") 'awesome-pair-close-bracket)
   (define-key awesome-pair-mode-map (kbd "}") 'awesome-pair-close-curly)
@@ -125,10 +125,9 @@
   (define-key awesome-pair-mode-map (kbd "M-{") 'awesome-pair-wrap-curly)
   (define-key awesome-pair-mode-map (kbd "M-(") 'awesome-pair-wrap-round)
   (define-key awesome-pair-mode-map (kbd "M-)") 'awesome-pair-unwrap)
-  (define-key awesome-pair-mode-map (kbd "M-p") 'awesome-pair-jump-right)
-  (define-key awesome-pair-mode-map (kbd "M-n") 'awesome-pair-jump-left)
-  (define-key awesome-pair-mode-map (kbd "M-:") 'awesome-pair-jump-out-pair-and-newline))
-
+  ;; (define-key awesome-pair-mode-map (kbd "M-p") 'awesome-pair-jump-right)
+  ;; (define-key awesome-pair-mode-map (kbd "M-n") 'awesome-pair-jump-left)
+  (define-key awesome-pair-mode-map (kbd "C-<return>") 'awesome-pair-jump-out-pair-and-newline))
 
 (provide 'init-edit)
 ;;; init-edit.el ends here

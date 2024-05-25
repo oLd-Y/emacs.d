@@ -55,12 +55,10 @@ See `org-capture-templates' for more information."
 		 ("b"                ;`org-capture' binding + h
                   "Config backup"
                   entry
-                  ;; It is assumed that below file is present in `org-directory'
-                  ;; and that it has a "Blog Ideas" heading. It can even be a
-                  ;; symlink pointing to the actual location of all-posts.org!
                   (file+olp "~/org/all-posts.org" "Config backup")
-                  (function org-hugo-new-subtree-post-capture-template))
-		 )))
+                 (function org-hugo-new-subtree-post-capture-template)))))
+
+
 
 (use-package org-bullets
   :ensure t

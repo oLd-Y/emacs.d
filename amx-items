@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
- mark-page
- mark-end-of-sentence
- copilot-mode
- find-file-in-project-by-selected
- consult-buffer-other-window
- consult-buffer
- copilot-login
+ visual-line-mode
+ desktop-read
+ desktop-save
+ auto-save-mode
+ emacs-session-restore
+ eaf-open-in-file-manager
+ lsp-bridge-copilot-login
 )
 
 ;; ----- amx-data -----
@@ -28,20 +28,20 @@
  (company-yasnippet . 1)
  (org-capture . 2)
  (newline-bellow . 1)
- (meow-tutor . 14)
+ (meow-tutor . 15)
  (c-mode . 2)
  (prog-mode . 2)
  (lisp-mode . 1)
  (meow-tail . 6)
  (clm/toggle-command-log-buffer . 3)
  (clm/open-command-log-buffer . 1)
- (copilot-mode . 17)
+ (copilot-mode . 18)
  (find-file . 11)
  (nerd-icons-install-fonts . 3)
  (rg . 4)
  (kill-buffer . 1)
  (dashboard-open . 1)
- (magit . 17)
+ (magit . 19)
  (customize-group . 1)
  (org-goto . 1)
  (help-with-tutorial-spec-language . 3)
@@ -55,12 +55,12 @@
  (copilot-diagnose . 1)
  (treesit-install-language-grammar . 3)
  (compile . 5)
- (org-indent-mode . 3)
+ (org-indent-mode . 10)
  (org-mode . 2)
  (org-hugo-auto-export-mode . 1)
  (python-ts-mode . 1)
  (org-id-get-create . 1)
- (visual-line-mode . 3)
+ (visual-line-mode . 7)
  (org-download-yank . 1)
  (org-download-clipboard . 3)
  (org-download-screenshot . 1)
@@ -88,7 +88,7 @@
  (straight-pull-all . 1)
  (package-refresh-contents . 2)
  (magit-clone . 4)
- (yas-new-snippet . 1)
+ (yas-new-snippet . 2)
  (maximize-window . 1)
  (toggle-frame-fullscreen . 1)
  (scroll-up-line . 3)
@@ -97,7 +97,7 @@
  (toggle-input-method . 1)
  (meow-global-mode . 1)
  (meow-insert-mode . 4)
- (kill-this-buffer . 1)
+ (kill-this-buffer . 2)
  (lisp-interaction-mode . 1)
  (meow-motion-mode . 1)
  (projectile-find-file . 3)
@@ -118,4 +118,28 @@
  (consult-buffer-other-window . 2)
  (mark-end-of-sentence . 4)
  (mark-page . 1)
+ (org-agenda-goto . 1)
+ (scroll-up-command . 1)
+ (awesome-pair-jump-right . 10)
+ (lsp-bridge-toggle-sdcv-helper . 3)
+ (dictionary-overlay-install . 1)
+ (dictionary-overlay-start . 1)
+ (dictionary-overlay-render-buffer . 4)
+ (dictionary-overlay-mark-word-unknown . 6)
+ (dictionary-overlay-mark-word-known . 2)
+ (eaf-open-browser . 13)
+ (eaf-open . 1)
+ (eaf-install-and-update . 1)
+ (eaf-open-browser-with-history . 7)
+ (eaf-py-proxy-insert_or_render_by_eww . 4)
+ (eaf-open-bookmark . 3)
+ (eaf-import-chrome-bookmarks . 1)
+ (mark-line . 2)
+ (lsp-bridge-copilot-login . 2)
+ (eaf-open-file-manager . 2)
+ (eaf-open-in-file-manager . 4)
+ (auto-save-mode . 2)
+ (emacs-session-restore . 1)
+ (desktop-read . 4)
+ (desktop-save . 2)
 )

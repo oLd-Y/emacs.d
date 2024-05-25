@@ -16,17 +16,45 @@
                  'doom-Iosvkem)))
     (load-theme theme t)))
 
-(use-package doom-modeline
-  :ensure t
-  :hook (after-init . doom-modeline-mode)
-  :custom
-  (doom-modeline-irc nil)
-  (doom-modeline-mu4e nil)
-  (doom-modeline-gnus nil)
-  (doom-modeline-github nil)
-  (doom-modeline-persp-name nil)
-  (doom-modeline-unicode-fallback t)
-  (doom-modeline-enable-word-count nil))
+;; (use-package doom-modeline
+;;   :ensure t
+;;   :hook (after-init . doom-modeline-mode)
+;;   :custom
+;;   (doom-modeline-irc nil)
+;;   (doom-modeline-mu4e nil)
+;;   (doom-modeline-gnus nil)
+;;   (doom-modeline-github nil)
+;;   (doom-modeline-persp-name nil)
+;;   (doom-modeline-unicode-fallback t)
+;;   (doom-modeline-enable-word-count nil))
+
+(add-to-list 'load-path "~/.emacs.d/site-lisp/sort-tab/")
+(use-package sort-tab
+  :config
+  (sort-tab-mode 1)
+
+;;   (global-set-key (kbd "s-1") 'sort-tab-select-visible-tab)
+;; (global-set-key (kbd "s-2") 'sort-tab-select-visible-tab)
+;; (global-set-key (kbd "s-3") 'sort-tab-select-visible-tab)
+;; (global-set-key (kbd "s-4") 'sort-tab-select-visible-tab)
+;; (global-set-key (kbd "s-5") 'sort-tab-select-visible-tab)
+;; (global-set-key (kbd "s-6") 'sort-tab-select-visible-tab)
+;; (global-set-key (kbd "s-7") 'sort-tab-select-visible-tab)
+;; (global-set-key (kbd "s-8") 'sort-tab-select-visible-tab)
+;; (global-set-key (kbd "s-9") 'sort-tab-select-visible-tab)
+;; (global-set-key (kbd "s-0") 'sort-tab-select-visible-tab)
+;; (global-set-key (kbd "s-Q") 'sort-tab-close-all-tabs)
+;; (global-set-key (kbd "s-q") 'sort-tab-close-mode-tabs)
+;; (global-set-key (kbd "C-;") 'sort-tab-close-current-tab)
+  :bind
+  ("s-1" . 'sort-tab-select-visible-tab)
+  ("s-2" . 'sort-tab-select-visible-tab)
+  ("s-3" . 'sort-tab-select-visible-tab)
+  ("s-4" . 'sort-tab-select-visible-tab)
+  ("s-5" . 'sort-tab-select-visible-tab)
+  ("s-6" . 'sort-tab-select-visible-tab)
+  ("s-7" . 'sort-tab-select-visible-tab)
+  )
 
 ;; Customize popwin behavior
 (use-package shackle
@@ -78,17 +106,17 @@
   :demand t)
 
 
-(use-package dashboard
-  :ensure t
-  :config
-  (setq dashboard-banner-logo-title "Welcome to Emacs!") ;; 个性签名，随读者喜好设置
-  ;; (setq dashboard-projects-backend 'projectile) ;; 读者可以暂时注释掉这一行，等安装了 projectile 后再使用
-  (setq dashboard-center-content t)
-  (setq dashboard-startup-banner 'official) ;; 也可以自定义图片
-  (setq dashboard-items '((recents  . 5)   ;; 显示多少个最近文件
-			  (bookmarks . 5)  ;; 显示多少个最近书签
-			  (projects . 10))) ;; 显示多少个最近项目
-  (dashboard-setup-startup-hook))
+;; (use-package dashboard
+;;   :ensure t
+;;   :config
+;;   (setq dashboard-banner-logo-title "Welcome to Emacs!") ;; 个性签名，随读者喜好设置
+;;   ;; (setq dashboard-projects-backend 'projectile) ;; 读者可以暂时注释掉这一行，等安装了 projectile 后再使用
+;;   (setq dashboard-center-content t)
+;;   (setq dashboard-startup-banner 'official) ;; 也可以自定义图片
+;;   (setq dashboard-items '((recents  . 5)   ;; 显示多少个最近文件
+;; 			  (bookmarks . 5)  ;; 显示多少个最近书签
+;; 			  (projects . 10))) ;; 显示多少个最近项目
+;;   (dashboard-setup-startup-hook))
 
 
 

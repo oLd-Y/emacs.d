@@ -99,6 +99,12 @@
     (define-key input-decode-map (kbd "C-[") [control-bracketleft])
     (define-key meow-insert-state-keymap [control-bracketleft] 'meow-insert-exit))
 
+  ;; (meow-thing-register 'org-md-block
+  ;;                      '(regexp "^[ \\|\t]*\\(#\\+begin_\\|```\\)[^\n]*\n" "^[ \\|\t]*\\(#\\+end_[^\n]*\\|```\\)$")
+  ;;                      '(regexp "^[ \\|\t]*\\(#\\+begin_\\|```\\)[^\n]*\n" "^[ \\|\t]*\\(#\\+end_[^\n]*\\|```\\)$")
+  ;;                      )
+  ;; (add-to-list 'meow-char-thing-table '(?o . org-source-block))
+
   (meow-global-mode 1)
   ;; 失去焦点时，退出 insert mode。
   ;;(add-hook 'focus-out-hook 'meow-insert-exit)
@@ -134,6 +140,8 @@
          :foreground-color "#839496"
          :internal-border-width 1))
   )
+
+
 
 (provide 'init-meow)
 ;;; init-meow.el ends here

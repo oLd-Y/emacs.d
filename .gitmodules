@@ -1,0 +1,22 @@
+[submodule "dictionary-overlay"]
+	path = site-lisp/dictionary-overlay
+	url = https://github.com/ginqi7/dictionary-overlay.git
+	branch = main
+[submodule "emacs-websocket"]
+	path = site-lisp/emacs-websocket
+	url = https://github.com/ahyatt/emacs-websocket
+	branch = main
+[submodule "/home/lyao/.emacs.d/site-lisp/websocket-bridge"]
+	path = /home/lyao/.emacs.d/site-lisp/websocket-bridge
+	url = https://github.com/ginqi7/websocket-bridge
+	branch = main
+[submodule "/home/lyao/.emacs.d/site-lisp/emacs-application-framework"]
+	path = /home/lyao/.emacs.d/site-lisp/emacs-application-framework
+	url = https://github.com/emacs-eaf/emacs-application-framework.git
+	branch = master
+[submodule "auto-save"]
+	path = auto-save
+	url = https://github.com/manateelazycat/auto-save.git
+[submodule "site-lisp/sort-tab"]
+	path = site-lisp/sort-tab
+	url = https://github.com/manateelazycat/sort-tab.git

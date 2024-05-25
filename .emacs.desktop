@@ -1,0 +1,43 @@
+;; -*- mode: emacs-lisp; lexical-binding:t; coding: utf-8-emacs; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Sat May 25 09:17:54 2024
+;; Desktop file format version 208
+;; Emacs version 29.3
+
+;; Global section:
+(setq desktop-saved-frameset nil)
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/.emacs.d/" "~/.emacs.d/lisp/init-project.el" "~/.emacs.d/lisp/init-env.el" "~/.emacs.d/lisp/init-ui.el" "~/.emacs.d/lisp/init-env.el" "~/.emacs.d/lisp/init-ui.el" "~/.emacs.d/lisp/init-env.el" "~/.emacs.d/lisp/init-ui.el" "~/.emacs.d/" "~/.emacs.d/init.el" "~/.emacs.d/lisp/init-session.el" "/home/lyao/.emacs.d/site-lisp/auto-save" "~/Videos/" "~/.emacs.d/" "~/.emacs.d/extensions/basic-toolkit.el" "~/lazycat-emacs/site-lisp/extensions/lazycat/" "~/lazycat-emacs/site-lisp/extensions/lazycat/basic-toolkit.el" "~/lazycat-emacs/" "~/.emacs.d/lisp/init-session.el" "~/.emacs.d/lisp/" "~/.emacs.d/" "~/.emacs.d/lisp/" "~/.emacs.d/lisp/init-eaf.el" "~/.emacs.d/site-lisp/emacs-application-framework/app/browser/" "~/.emacs.d/lisp/init-eaf.el" "~/.emacs.d/" "~/org/all-posts.org" "~/.emacs.d/lisp/init-session.el" "~/org/all-posts.org" "~/.emacs.d/site-lisp/emacs-application-framework/" "~/.emacs.d/lisp/init-eaf.el" "~/.emacs.d/site-lisp/emacs-application-framework/" "~/.emacs.d/lisp/init-eaf.el" "~/.emacs.d/init.el" "~/.emacs.d/" "~/.emacs.d/lisp/init-eaf.el" "~/.emacs.d/lisp/init-text.el" "~/.emacs.d/" "~/.emacs.d/lisp/init-meow.el" "~/.emacs.d/lisp/init-env.el" "~/.emacs.d/init.el" "~/org/all-posts.org" "~/.emacs.d/lisp/init-env.el" "~/.emacs.d/lisp/init-writing.el" "~/.emacs.d/lisp/init-edit.el" "~/.emacs.d/init.el" "~/org/all-posts.org" "~/.emacs.d/lisp/init-edit.el" "~/org/" "~/.emacs.d/init.el" "~/.emacs.d/lisp/init-edit.el" "~/.emacs.d/lisp/init-meow.el" "~/.emacs.d/lisp/init-edit.el" "~/.emacs.d/init.el" "~/org/all-posts.org" "~/.emacs.d/init.el" "~/.emacs.d/" "~/org/" "/usr/share/" "~/org/os-configuration.org" "~/.emacs.d/init.el" "~/org/all-posts.org" "~/.emacs.d/lisp/init-meow.el" "~/.emacs.d/" "~/org/all-posts.org" "~/.emacs.d/.git/COMMIT_EDITMSG" "~/.emacs.d/lisp/init-meow.el" "~/.emacs.d/init.el" "~/org/all-posts.org" "~/.emacs.d/lisp/init-meow.el" "~/.emacs.d/" "~/.emacs.d/lisp/" "~/.emacs.d/" "~/org/" "~/.emacs.d/lisp/init-project.el" "~/.emacs.d/lisp/" "~/org/all-posts.org" "~/.emacs.d/lisp/init-meow.el" "~/test.py" "~/.emacs.d/" "~/test.el" "~/.emacs.d/lisp/init-edit.el" "~/.emacs.d/lisp/init-meow.el" "~/.emacs.d/" "~/" "~/org/" "~/.emacs.d/" "~/org/.git/COMMIT_EDITMSG" "~/org/all-posts.org" "~/.emacs.d/README.org" "~/.emacs.d/history" "~/.emacs.d/amx-items" "~/.emacs.d/.gitignore" "~/.emacs.d/.git/COMMIT_EDITMSG" "~/.emacs.d/lisp/init-edit.el" "~/org/diary.org" "~/.emacs.d/meow" "~/.emacs.d/" "~/.emacs.d/lisp/init-edit.el" "~/.emacs.d/lisp/init-org.el"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/home/lyao/.emacs.d/lisp/init-project.el"
+  "init-project.el"
+  'emacs-lisp-mode
+  '(font-lock-mode eldoc-mode meow-normal-mode meow-mode awesome-pair-mode lsp-bridge-mode hs-minor-mode yas-minor-mode flycheck-mode copilot-mode rainbow-delimiters-mode)
+  239
+  '(376 nil)
+  nil
+  nil
+  '((buffer-display-time 26193 15424 126426 95000) (buffer-file-coding-system . prefer-utf-8-unix))
+  '((mark-ring (376))))
+
+(desktop-create-buffer 208
+  "/home/lyao/.emacs.d/lisp/init-env.el"
+  "init-env.el"
+  'emacs-lisp-mode
+  '(font-lock-mode eldoc-mode meow-normal-mode meow-mode awesome-pair-mode lsp-bridge-mode hs-minor-mode yas-minor-mode flycheck-mode copilot-mode rainbow-delimiters-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 26193 15391 906980 119000) (buffer-file-coding-system . prefer-utf-8-unix))
+  '((mark-ring nil)))
+
