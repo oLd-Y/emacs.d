@@ -1,19 +1,19 @@
 
 ;; ----- amx-history -----
 (
- visual-line-mode
+ emacs-init-time
  desktop-read
- desktop-save
- auto-save-mode
- emacs-session-restore
- eaf-open-in-file-manager
  lsp-bridge-copilot-login
+ auto-save-mode
+ visual-line-mode
+ eaf-open-browser-with-history
+ eaf-open-bookmark
 )
 
 ;; ----- amx-data -----
 (
  (next-ten-lines . 1)
- (tab-last . 4)
+ (tab-last . 5)
  (Buffer-menu-delete . 2)
  (project-dired . 1)
  (project-switch-project . 1)
@@ -41,14 +41,14 @@
  (rg . 4)
  (kill-buffer . 1)
  (dashboard-open . 1)
- (magit . 19)
+ (magit . 25)
  (customize-group . 1)
  (org-goto . 1)
  (help-with-tutorial-spec-language . 3)
  (end-of-line . 1)
  (find-file-in-project-at-point . 13)
  (menu-bar-read-lispintro . 2)
- (lsp-bridge-mode . 5)
+ (lsp-bridge-mode . 6)
  (run-python . 1)
  (vc-dir . 1)
  (copilot-install-server . 6)
@@ -60,7 +60,7 @@
  (org-hugo-auto-export-mode . 1)
  (python-ts-mode . 1)
  (org-id-get-create . 1)
- (visual-line-mode . 7)
+ (visual-line-mode . 9)
  (org-download-yank . 1)
  (org-download-clipboard . 3)
  (org-download-screenshot . 1)
@@ -130,16 +130,22 @@
  (eaf-open-browser . 13)
  (eaf-open . 1)
  (eaf-install-and-update . 1)
- (eaf-open-browser-with-history . 7)
+ (eaf-open-browser-with-history . 9)
  (eaf-py-proxy-insert_or_render_by_eww . 4)
- (eaf-open-bookmark . 3)
+ (eaf-open-bookmark . 4)
  (eaf-import-chrome-bookmarks . 1)
  (mark-line . 2)
- (lsp-bridge-copilot-login . 2)
+ (lsp-bridge-copilot-login . 4)
  (eaf-open-file-manager . 2)
- (eaf-open-in-file-manager . 4)
- (auto-save-mode . 2)
+ (eaf-open-in-file-manager . 5)
+ (auto-save-mode . 4)
  (emacs-session-restore . 1)
- (desktop-read . 4)
- (desktop-save . 2)
+ (desktop-read . 26)
+ (desktop-save . 5)
+ (magit-unstage . 1)
+ (sort-tab-close-current-tab . 1)
+ (eaf-open-pyqterminal . 2)
+ (vterm . 1)
+ (meow-last-buffer . 1)
+ (emacs-init-time . 7)
 )

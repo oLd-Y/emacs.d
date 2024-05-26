@@ -9,3 +9,8 @@ history
 rime/
 recentf
 .org-id-locations
+*.desktop
+org-roam.db
+eaf/
+dictionary-overlay-data/
+eshell/

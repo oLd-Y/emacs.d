@@ -30,6 +30,7 @@
   :config
   (when (eq system-type 'windows-nt)
     (setq color-rg-command-prefix "powershell"))
+  
   :bind
   ("C-c s i" . color-rg-search-input))
 
@@ -128,6 +129,11 @@
   ;; (define-key awesome-pair-mode-map (kbd "M-p") 'awesome-pair-jump-right)
   ;; (define-key awesome-pair-mode-map (kbd "M-n") 'awesome-pair-jump-left)
   (define-key awesome-pair-mode-map (kbd "C-<return>") 'awesome-pair-jump-out-pair-and-newline))
+
+
+(use-package rainbow-delimiters
+  :ensure t
+  :hook (prog-mode . rainbow-delimiters-mode))
 
 (provide 'init-edit)
 ;;; init-edit.el ends here

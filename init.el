@@ -4,8 +4,9 @@
 
 
 
-(add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
-(add-to-list 'load-path	(expand-file-name "site-lisp" user-emacs-directory))
+
+;; (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
+;; (add-to-list 'load-path	(expand-file-name "site-lisp" user-emacs-directory))
 
 (defconst *spell-check-support-enabled* nil) ;; Enable with t if you prefer
 (defconst *is-a-mac* (eq system-type 'darwin))
@@ -53,6 +54,7 @@
 (require 'init-project)
 (require 'init-eaf)
 (require 'init-session)
+(require 'init-auto-save)
 
 
 
@@ -61,7 +63,7 @@
 
 ;; (use-package use-package-hydra
 ;;   :ensure t
-;;   :after hydra) 
+;;   :after hydra)
 
 
 ;; (use-package undo-tree
@@ -70,41 +72,17 @@
 ;;   :custom
 ;;   (undo-tree-auto-save-history nil))
 
-;; (use-package smart-mode-line
-;;   :ensure t
-;;   :init (sml/setup))
-
-;; (use-package good-scroll
-;;   :ensure t
-;;   :if window-system          ; 在图形化界面时才使用这个插件
-;;   :init (good-scroll-mode))
-
-
-
-
-;; (use-package avy
-;;   :ensure t
-;;   :config
-;;   (defun avy-action-embark (pt)
-;; 	(unwind-protect
-;; 		(save-excursion
-;;           (goto-char pt)
-;;           (embark-act))
-;;       (select-window
-;;        (cdr (ring-ref avy-ring 0))))
-;; 	t)
-;;   (setf (alist-get ?e avy-dispatch-alist) 'avy-action-embark)
-;;   :bind
-;;   (("C-j C-j" . avy-goto-char-timer)))
 
 
 
 
 
 
-(use-package rainbow-delimiters
-  :ensure t
-  :hook (prog-mode . rainbow-delimiters-mode))
+
+
+
+
+
 
 
 ;; (use-package projectile
@@ -130,18 +108,3 @@
 
 (provide 'init)
 ;;; init.el ends here
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   '(sis awesome-pair find-file-in-project ace-pinyin avy yasnippet-snippets winum which-key vertico valign shackle rime rainbow-delimiters ox-hugo org-roam org-download org-bullets orderless mwim meow markdown-mode marginalia magit flycheck exec-path-from-shell embark-consult editorconfig doom-themes doom-modeline direnv dashboard copilot color-rg amx all-the-icons))
- '(package-vc-selected-packages
-   '((awesome-pair :vc-backend Git :url "https://github.com/manateelazycat/awesome-pair"))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )

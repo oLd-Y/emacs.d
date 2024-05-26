@@ -21,15 +21,23 @@
 ;; (global-display-line-numbers-mode 1)         ; 在 Window 显示行号
 (tool-bar-mode -1)                           ; （熟练后可选）关闭 Tool bar
 (when (display-graphic-p) (toggle-scroll-bar -1)) ; 图形界面时关闭滚动条
+(setq custom-file "~/.emacs.d/custom.el")
+
+
+
+
 
 (savehist-mode 1)                            ; （可选）打开 Buffer 历史记录保存
-
+;; (add-to-list 'default-frame-alist '(fullscreen . maximized))
+(add-hook 'window-setup-hook 'toggle-frame-fullscreen t) ; 启动时全屏
 
 ;; set proxy
 (setq url-proxy-services '(("no_proxy" . "^\\(192\\.168\\..*\\)")
                            ("http" . "127.0.0.1:7890")
 			   ("https" . "127.0.0.1:7890")))
 (setopt use-short-answers t)   ;; Since Emacs 29, `yes-or-no-p' will use `y-or-n-p'
+
+
 
 (provide 'init-basic)
 ;;; init-basic.el ends here

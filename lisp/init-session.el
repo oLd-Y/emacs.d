@@ -128,6 +128,8 @@
     ;; Exit emacs.
     (kill-emacs)))
 
+(global-set-key (kbd "<f5>") 'emacs-session-save)
+
 (provide 'init-session)
 
 ;;; init-session.el ends here

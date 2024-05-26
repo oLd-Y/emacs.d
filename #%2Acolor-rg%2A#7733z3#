@@ -1,0 +1,1735 @@
+-*- mode: color-rg; default-directory: "~/.emacs.d/" -*-
+color-rg started at Sun May 26 08:42:26
+
+rg --no-config --column --color=always -H --heading --max-columns 3000 --no-ignore -g '!node_modules' -g '!dist' -g '!TAGS' -g '!tags' -g '!*~' -U --smart-case -e vterm "/home/lyao/.emacs.d/"
+/home/lyao/.emacs.d/history
+25:175:(setq extended-command-history '("emacs-init-time" "eaf-open-browser-with-history (s-\")" "eaf-open-bookmark (C-c e b)" "desktop-read" "visual-line-mode" "meow-last-buffer" "vterm" "desktop-read" "eaf-open-pyqterminal" "desktop-read" "eaf-open-pyqterminal" "eaf-open-browser-with-history" "desktop-read" "lsp-bridge-copilot-login" "desktop-read" "desktop-save" "desktop-read" "sort-tab-close-current-tab" "desktop-read" "desktop-save" "desktop-read" "desktop-save" "magit" "magit-unstage (<remap> <magit-unstage-file>)" "magit" "lsp-bridge-mode" "tab-last" "eaf-open-in-file-manager" "magit" "visual-line-mode" "desktop-read" "desktop-save" "desktop-read" "desktop-save" "desktop-read" "auto-save-mode" "emacs-session-restore" "auto-save-mode" "eaf-open-in-file-manager" "lsp-bridge-copilot-login" "eaf-open-in-file-manager" "eaf-open-file-manager" "lsp-bridge-copilot-login" "org-indent-mode" "eaf-py-proxy-insert_or_render_by_eww (N)" "mark-line" "eaf-open-bookmark" "mark-line" "dictionary-overlay-mark-word-unknown" "visual-line-mode" "dictionary-overlay-mark-word-unknown" "dictionary-overlay-render-buffer" "eaf-open-bookmark" "eaf-import-chrome-bookmarks" "eaf-open-bookmark" "eaf-open-browser-with-history" "eaf-py-proxy-insert_or_render_by_eww (N)" "eaf-py-proxy-insert_or_render_by_eww" "eaf-py-proxy-insert_or_render_by_eww (N)" "eaf-open-browser-with-history" "kill-this-buffer (C-c b k)" "eaf-open-browser-with-history" "eaf-open-browser" "eaf-open-browser-with-history" "visual-line-mode" "eaf-open-browser-with-history" "eaf-open-browser" "eaf-install-and-update" "eaf-open-browser" "eaf-open" "eaf-open-browser" "dictionary-overlay-mark-word-known" "dictionary-overlay-render-buffer" "dictionary-overlay-mark-word-unknown" "dictionary-overlay-mark-word-known" "dictionary-overlay-mark-word-unknown" "dictionary-overlay-render-buffer" "dictionary-overlay-start" "dictionary-overlay-install" "org-indent-mode" "meow-tutor" "yas-new-snippet" "lsp-bridge-toggle-sdcv-helper" "copilot-mode" "awesome-pair-jump-right" "scroll-up-command (<next>)" "org-indent-mode" "visual-line-mode" "org-indent-mode" "org-agenda-goto" "magit" "mark-page (C-x C-p)" "mark-end-of-sentence" "copilot-mode" "find-file-in-project-by-selected" "consult-buffer-other-window" "consult-buffer" "copilot-login" "rime-deploy" "meow-tutor"))
+
+/home/lyao/.emacs.d/amx-items
+10:2: vterm
+148:3: (vterm . 1)
+
+/home/lyao/.emacs.d/lisp/init-terminal.el
+2:56:(add-to-list 'load-path "~/.emacs.d/site-lisp/emacs-libvterm/")
+3:14:(use-package vterm)
+
+/home/lyao/.emacs.d/elpa/meow-20240407.1642/meow-var.el
+211:6:    (vterm-mode . normal)
+
+/home/lyao/.emacs.d/elpa/archives/melpa/archive-contents
+1481:10: (eshell-vterm . [(20240305 1149) ((emacs (27 1)) (vterm (0 0 1))) "Vterm for visual commands in eshell" tar ((:commit . "20f4b246fa605a1533cdfbe3cb7faf31a24e3d2e") (:authors ("Illia Ostapyshyn" . "ilya.ostapyshyn@gmail.com")) (:maintainers ("Illia Ostapyshyn" . "ilya.ostapyshyn@gmail.com")) (:maintainer "Illia Ostapyshyn" . "ilya.ostapyshyn@gmail.com") (:keywords "eshell" "vterm" "terminals" "shell" "visual" "tools" "processes") (:url . "https://github.com/iostapyshyn/eshell-vterm"))])
+2862:9: (julia-vterm . [(20240514 724) ((emacs (25 1)) (vterm (0 0 1))) "A mode for Julia REPL using vterm" tar ((:commit . "2298cd42d354f069adbb7bb06b3b15222e5f54a2") (:authors ("Shigeaki Nishina")) (:maintainers ("Shigeaki Nishina")) (:maintainer "Shigeaki Nishina") (:keywords "languages" "julia") (:url . "https://github.com/shg/julia-vterm.el"))])
+3439:9: (multi-vterm . [(20221031 610) ((emacs (26 3)) (vterm (0 0)) (project (0 3 0))) "Like multi-term.el but for vterm" tar ((:commit . "36746d85870dac5aaee6b9af4aa1c3c0ef21a905") (:keywords "terminals" "processes") (:url . "https://github.com/suonlight/multi-libvterm"))])
+3643:12: (ob-julia-vterm . [(20240514 328) ((emacs (26 1)) (julia-vterm (0 25)) (queue (0 2))) "Babel functions for Julia that work with julia-vterm" tar ((:commit . "e1aae4f54cd06f33c63a16d88df4856947f46201") (:authors ("Shigeaki Nishina")) (:maintainers ("Shigeaki Nishina")) (:maintainer "Shigeaki Nishina") (:keywords "julia" "org" "outlines" "literate programming" "reproducible research") (:url . "https://github.com/shg/ob-julia-vterm.el"))])
+5477:3: (vterm . [(20240520 231) ((emacs (25 1))) "Fully-featured terminal emulator" tar ((:commit . "df057b1af2bb89a1deb288086f13be296af42090") (:authors ("Lukas Fürmetz" . "fuermetz@mailbox.org")) (:maintainers ("Lukas Fürmetz" . "fuermetz@mailbox.org")) (:maintainer "Lukas Fürmetz" . "fuermetz@mailbox.org") (:keywords "terminals") (:url . "https://github.com/akermu/emacs-libvterm"))])
+5478:3: (vterm-toggle . [(20230912 246) ((emacs (25 1)) (vterm (0 0 1))) "Toggles between the vterm buffer and other buffers." tar ((:commit . "06cb4f3c565e46470a3c4505c11e26066d869715") (:authors (nil . "jixiuf  jixiuf@qq.com")) (:maintainers (nil . "jixiuf  jixiuf@qq.com")) (:maintainer nil . "jixiuf  jixiuf@qq.com") (:keywords "vterm" "terminals") (:url . "https://github.com/jixiuf/vterm-toggle"))])
+5479:38: (vtm . [(20200921 338) nil "Manages vterm buffers with configuration files" tar ((:commit . "d770fd8cff7c24688199392ad93c01485c6a9569") (:keywords "convenience") (:url . "https://github.com/laishulu/emacs-vterm-manager"))])
+
+/home/lyao/.emacs.d/elpa/rime-20240130.1427/rime.el
+1113:24:(defun rime--init-hook-vterm ()
+1114:24:  "Rime initialize for vterm-mode."
+1115:16:  (advice-add 'vterm--redraw :after 'rime--redisplay)
+1116:27:  (when (bound-and-true-p vterm-mode-map)
+1117:17:    (define-key vterm-mode-map (kbd "<backspace>") 'rime--backspace)))
+1119:26:(defun rime--uninit-hook-vterm ()
+1120:22:  "Rime finalize for vterm-mode."
+1121:19:  (advice-remove 'vterm--redraw 'rime--redisplay)
+1123:27:  (when (bound-and-true-p vterm-mode-map)
+1124:17:    (define-key vterm-mode-map (kbd "<backspace>") 'vterm-send-backspace)))
+1132:6:    (vterm-mode (rime--init-hook-vterm))
+1140:6:    (vterm-mode (rime--uninit-hook-vterm))
+
+/home/lyao/.emacs.d/elpa/archives/melpa/elpa-packages.eld
+1480:11:  (eshell-vterm :url "https://github.com/iostapyshyn/eshell-vterm.git")
+2861:10:  (julia-vterm :url "https://github.com/shg/julia-vterm.el.git")
+3438:10:  (multi-vterm :url "https://github.com/suonlight/multi-vterm.git")
+3642:13:  (ob-julia-vterm :url "https://github.com/shg/ob-julia-vterm.el.git")
+5476:4:  (vterm :url "https://github.com/akermu/emacs-libvterm.git")
+5477:4:  (vterm-toggle :url "https://github.com/jixiuf/vterm-toggle.git")
+5478:48:  (vtm :url "https://github.com/laishulu/emacs-vterm-manager.git")
+
+/home/lyao/.emacs.d/elpa/copilot/copilot.el
+185:19:(declare-function vterm-delete-region "ext:vterm.el")
+186:19:(declare-function vterm-insert "ext:vterm.el")
+792:27:      (if (eq major-mode 'vterm-mode)
+794:14:            (vterm-delete-region start end)
+795:14:            (vterm-insert t-completion))
+
+/home/lyao/.emacs.d/elpa/with-editor-20240415.1558/with-editor.el
+55:21:;; `term-mode' and `vterm-mode' buffers.  Use this Emacs command
+63:17:;;   (add-hook 'vterm-mode-hook  #'with-editor-export-editor)
+89:19:(declare-function vterm-send-return "vterm" ())
+90:19:(declare-function vterm-send-string "vterm" (string &optional paste-p))
+93:9:(defvar vterm--process)
+741:2:`vterm'."
+759:22:   ((derived-mode-p 'vterm-mode)
+764:41:          (while (accept-process-output vterm--process 0.1))
+766:14:            (vterm-send-string (format " export %s=%S" envvar v))
+767:14:            (vterm-send-return))
+769:14:            (vterm-send-string (format " export EMACS_SERVER_FILE=%S" v))
+770:14:            (vterm-send-return))
+771:12:          (vterm-send-string "clear")
+772:12:          (vterm-send-return))
+
+/home/lyao/.emacs.d/elpa/nerd-icons-20240513.204/nerd-icons.el
+593:6:    (vterm-mode                        nerd-icons-devicon "nf-dev-terminal")
+
+/home/lyao/.emacs.d/elpa/doom-themes-20240404.2042/doom-themes-base.el
+1469:10:    ;;;; vterm
+1470:6:    (vterm-color-black   :background (doom-lighten base0 0.25)   :foreground base0)
+1471:6:    (vterm-color-red     :background (doom-lighten red 0.25)     :foreground red)
+1472:6:    (vterm-color-green   :background (doom-lighten green 0.25)   :foreground green)
+1473:6:    (vterm-color-yellow  :background (doom-lighten yellow 0.25)  :foreground yellow)
+1474:6:    (vterm-color-blue    :background (doom-lighten blue 0.25)    :foreground blue)
+1475:6:    (vterm-color-magenta :background (doom-lighten magenta 0.25) :foreground magenta)
+1476:6:    (vterm-color-cyan    :background (doom-lighten cyan 0.25)    :foreground cyan)
+1477:6:    (vterm-color-white   :background (doom-lighten base8 0.25)   :foreground base8)
+
+/home/lyao/.emacs.d/site-lisp/emacs-libvterm/vterm-module.h
+1:9:#ifndef VTERM_MODULE_H
+2:9:#define VTERM_MODULE_H
+7:11:#include <vterm.h>
+12:9:#define VTERM_EXPORT __attribute__((dllexport))
+14:9:#define VTERM_EXPORT __declspec(dllexport)
+18:9:#define VTERM_EXPORT __attribute__((visibility("default")))
+20:9:#define VTERM_EXPORT
+24:1:VTERM_EXPORT int plugin_is_GPL_compatible;
+47:3:  VTermScreenCell cells[];
+70:3:  VTerm *vt;
+71:3:  VTermScreen *vts;
+73:17:  //  - convert VTermScreen cell arrays into utf8 strings
+74:30:  //  - receive data from libvterm as a result of key presses.
+75:67:  ScrollbackLine **sb_buffer; // Scrollback buffer storage for libvterm
+88:57:  int invalid_start, invalid_end; // invalid rows in libvterm screen
+106:30:  int selection_mask; /* see VTermSelectionMask in vterm.h */
+127:27:static bool compare_cells(VTermScreenCell *a, VTermScreenCell *b);
+130:41:                               int len, VTermScreenCell *cell);
+134:35:                                  VTermScreenCell *cell, bool is_foreground);
+136:29:static int term_settermprop(VTermProp prop, VTermValue *val, void *user_data);
+141:42:                             size_t len, VTermModifier modifier);
+146:14:emacs_value Fvterm_new(emacs_env *env, ptrdiff_t nargs, emacs_value args[],
+148:14:emacs_value Fvterm_update(emacs_env *env, ptrdiff_t nargs, emacs_value args[],
+150:14:emacs_value Fvterm_redraw(emacs_env *env, ptrdiff_t nargs, emacs_value args[],
+152:14:emacs_value Fvterm_write_input(emacs_env *env, ptrdiff_t nargs,
+154:14:emacs_value Fvterm_set_size(emacs_env *env, ptrdiff_t nargs, emacs_value args[],
+156:14:emacs_value Fvterm_set_pty_name(emacs_env *env, ptrdiff_t nargs,
+158:14:emacs_value Fvterm_get_icrnl(emacs_env *env, ptrdiff_t nargs,
+161:14:emacs_value Fvterm_get_pwd(emacs_env *env, ptrdiff_t nargs, emacs_value args[],
+164:14:emacs_value Fvterm_get_prompt_point(emacs_env *env, ptrdiff_t nargs,
+166:14:emacs_value Fvterm_reset_cursor_point(emacs_env *env, ptrdiff_t nargs,
+169:1:VTERM_EXPORT int emacs_module_init(struct emacs_runtime *ert);
+171:11:#endif /* VTERM_MODULE_H */
+
+/home/lyao/.emacs.d/site-lisp/emacs-libvterm/vterm.el
+1:5:;;; vterm.el --- Fully-featured terminal emulator -*- lexical-binding: t; -*-
+7:44:;; URL: https://github.com/akermu/emacs-libvterm
+30:13:;; Emacs-libvterm (vterm) is fully-fledged terminal emulator based on an
+31:25:;; external library (libvterm) loaded as a dynamic module.  As a result of using
+32:47:;; compiled code (instead of elisp), emacs-libvterm is fully capable, fast, and
+37:13:;; Emacs-libvterm requires support for loading modules.  You can check if your
+42:13:;; Emacs-libvterm requires CMake and libvterm.  If libvterm is not available,
+43:13:;; emacs-libvterm will downloaded and compiled.  In this case, libtool is
+46:44:;; The reccomended way to install emacs-libvterm is from MELPA.
+50:51:;; To open a terminal, simply use the command M-x vterm.
+62:11:  (error "VTerm needs module support.  Please compile Emacs with
+65:9:(defvar vterm-copy-mode)
+69:12:(defcustom vterm-module-cmake-args ""
+70:40:  "Arguments given to CMake to compile vterm-module.
+72:12:Currently, vterm defines the following flags (in addition to the
+75:16:`USE_SYSTEM_LIBVTERM'.  Set it to `Off' to use the vendored version of
+76:4:libvterm instead of the one installed on your system.
+80:21:is `-DUSE_SYSTEM_LIBVTERM=Off'."
+82:11:  :group 'vterm)
+84:12:(defcustom vterm-always-compile-module nil
+85:20:  "If not nil, if `vterm-module' is not found, compile it without asking.
+87:7:When `vterm-always-compile-module' is nil, vterm will ask for
+90:11:  :group 'vterm)
+92:9:(defvar vterm-install-buffer-name " *Install vterm* "
+93:42:  "Name of the buffer used for compiling vterm-module.")
+95:8:(defun vterm-module--cmake-is-available ()
+97:26:CMake is needed to build vterm, here we check that we can find
+101:13:    (error "Vterm needs CMake to be compiled.  Please, install CMake"))
+105:8:(defun vterm-module-compile ()
+106:12:  "Compile vterm-module."
+108:10:  (when (vterm-module--cmake-is-available)
+109:13:    (let* ((vterm-directory
+113:35:             ;; `(locate-library "vterm")'. See emacs-devel thread
+116:52:             (file-name-directory (locate-library "vterm.el" t))))
+119:20:             "cd " vterm-directory "; \
+123:14:             vterm-module-cmake-args
+127:39:           (buffer (get-buffer-create vterm-install-buffer-name)))
+132:46:          (message "Compilation of `emacs-libvterm' module succeeded")
+133:42:        (error "Compilation of `emacs-libvterm' module failed!")))))
+135:11:;; If the vterm-module is not compiled yet, compile it
+136:19:(unless (require 'vterm-module nil t)
+137:11:  (if (or vterm-always-compile-module
+138:22:          (y-or-n-p "Vterm needs `vterm-module' to work.  Compile it now? "))
+140:10:        (vterm-module-compile)
+141:19:        (require 'vterm-module))
+142:13:    (error "Vterm will not work until `vterm-module' is compiled!")))
+147:66:;; awk -F\" '/bind_function*/ {print "(declare-function", $2, "\"vterm-module\")"}' vterm-module.c
+148:19:(declare-function vterm--new "vterm-module")
+149:19:(declare-function vterm--update "vterm-module")
+150:19:(declare-function vterm--redraw "vterm-module")
+151:19:(declare-function vterm--write-input "vterm-module")
+152:19:(declare-function vterm--set-size "vterm-module")
+153:19:(declare-function vterm--set-pty-name "vterm-module")
+154:19:(declare-function vterm--get-pwd-raw "vterm-module")
+155:19:(declare-function vterm--reset-point "vterm-module")
+156:19:(declare-function vterm--get-icrnl "vterm-module")
+170:12:(defcustom vterm-shell shell-file-name
+171:35:  "The shell that gets run in the vterm."
+173:11:  :group 'vterm)
+175:12:(defcustom vterm-tramp-shells '(("docker" "/bin/sh"))
+176:35:  "The shell that gets run in the vterm for tramp.
+178:2:`vterm-tramp-shells' has to be a list of pairs of the format:
+181:11:  :group 'vterm)
+183:12:(defcustom vterm-buffer-name "*vterm*"
+184:26:  "The basename used for vterm buffers.
+185:45:This is the default name used when running `vterm' or
+186:2:`vterm-other-window'.
+188:36:With a numeric prefix argument to `vterm', the buffer name will
+191:10:named \"*vterm*<2>\"."
+193:11:  :group 'vterm)
+195:12:(defcustom vterm-max-scrollback 1000
+199:33:changing the SB_MAX variable in vterm-module.h and recompiling
+202:11:  :group 'vterm)
+204:12:(defcustom vterm-min-window-width 80
+207:11:  :group 'vterm)
+209:12:(defcustom vterm-kill-buffer-on-exit t
+210:15:  "If not nil vterm buffers are killed when the attached process is terminated.
+212:5:If `vterm-kill-buffer-on-exit' is set to t, when the process
+213:17:associated to a vterm buffer quits, the buffer is killed.  When
+217:11:  :group 'vterm)
+219:34:(define-obsolete-variable-alias 'vterm-clear-scrollback
+220:4:  'vterm-clear-scrollback-when-clearing "0.0.1")
+222:34:(define-obsolete-variable-alias 'vterm-use-vterm-prompt
+223:4:  'vterm-use-vterm-prompt-detection-method "0.0.1")
+225:12:(defcustom vterm-clear-scrollback-when-clearing nil
+226:16:  "If not nil `vterm-clear' clears both screen and scrollback.
+229:11:screen in vterm buffers.
+231:5:If `vterm-clear-scrollback-when-clearing' is nil, `vterm-clear'
+235:11:  :group 'vterm)
+237:12:(defcustom vterm-keymap-exceptions
+239:20:  "Exceptions for `vterm-keymap'.
+245:35:The mapping is done by the macro `vterm-define-key', and the
+246:11:function `vterm--exclude-keys' removes the keybindings defined in
+247:2:`vterm-keymap-exceptions'."
+251:31:         (when (and (fboundp 'vterm--exclude-keys)
+252:30:                    (boundp 'vterm-mode-map))
+253:13:           (vterm--exclude-keys vterm-mode-map val)))
+254:11:  :group 'vterm)
+256:12:(defcustom vterm-exit-functions nil
+257:36:  "List of functions called when a vterm process exits.
+259:49:Each function is called with two arguments: the vterm buffer of
+263:31:This hook applies only to new vterms, created after setting this
+267:43:`shell-pop' sets its own sentinel to the `vterm' process."
+269:11:  :group 'vterm)
+271:26:(make-obsolete-variable 'vterm-set-title-functions
+272:60:                        "This variable was substituted by `vterm-buffer-name-string'."
+275:12:(defcustom vterm-buffer-name-string nil
+276:35:  "Format string for the title of vterm buffers.
+278:5:If `vterm-buffer-name-string' is nil, vterm will not set the
+279:37:title of its buffers.  If not nil, `vterm-buffer-name-string' has
+285:18:For example, if `vterm-buffer-name-string' is set to \"vterm %s\",
+286:61:and the shell properly configured to set TITLE=$(pwd), than vterm
+287:25:buffers will be named \"vterm\" followed by the current path.
+292:11:  :group 'vterm)
+294:12:(defcustom vterm-term-environment-variable "xterm-256color"
+297:11:  :group 'vterm)
+299:12:(defcustom vterm-environment nil
+300:47:  "List of extra environment variables to the vterm shell processes only.
+304:11:  :group 'vterm)
+307:12:(defcustom vterm-enable-manipulate-selection-data-by-osc52 nil
+308:48:  "Support OSC 52 MANIPULATE SELECTION DATA(libvterm 0.2 is needed).
+322:11:  :group 'vterm)
+326:12:(defcustom vterm-eval-cmds '(("find-file" find-file)
+328:32:                             ("vterm-clear-scrollback" vterm-clear-scrollback))
+329:58:  "Whitelisted Emacs functions that can be executed from vterm.
+331:47:You can execute Emacs functions directly from vterm buffers.  To do this,
+336:48:The function you want to execute has to be in `vterm-eval-cmds'.
+338:2:`vterm-eval-cmds' has to be a list of pairs of the format:
+343:11:  :group 'vterm)
+345:12:(defcustom vterm-disable-underline nil
+348:17:This means that vterm will render underlined text as if it was not
+351:11:  :group 'vterm)
+353:12:(defcustom vterm-disable-inverse-video nil
+356:17:This means that vterm will render reversed video text as if it was not
+359:11:  :group 'vterm)
+361:34:(define-obsolete-variable-alias 'vterm-disable-bold-font
+362:4:  'vterm-disable-bold "0.0.1")
+364:12:(defcustom vterm-disable-bold-font nil
+367:17:This means that vterm will render bold with the default face weight."
+369:11:  :group 'vterm)
+371:12:(defcustom vterm-set-bold-hightbright nil
+374:11:  :group 'vterm)
+376:12:(defcustom vterm-ignore-blink-cursor t
+377:12:  "When t, vterm will ignore request from application to turn on/off cursor blink.
+383:11:  :group 'vterm)
+385:12:(defcustom vterm-copy-exclude-prompt t
+386:49:  "When not-nil, the prompt is not included by `vterm-copy-mode-done'."
+388:11:  :group 'vterm)
+390:12:(defcustom vterm-use-vterm-prompt-detection-method t
+393:1:Vterm needs to know where the shell prompt is to enable all the
+395:29:First, the shell can inform vterm on the location of the prompt.
+405:11:  :group 'vterm)
+407:12:(defcustom vterm-bookmark-check-dir t
+408:65:  "When set to non-nil, also restore directory when restoring a vterm bookmark."
+410:11:  :group 'vterm)
+412:12:(defcustom vterm-copy-mode-remove-fake-newlines nil
+415:1:vterm inserts \\='fake\\=' newlines purely for rendering. When using
+416:1:vterm-copy-mode these are in conflict with many emacs functions
+422:11:  :group 'vterm)
+426:10:(defface vterm-color-black
+429:11:  :group 'vterm)
+431:10:(defface vterm-color-red
+434:11:  :group 'vterm)
+436:10:(defface vterm-color-green
+439:11:  :group 'vterm)
+441:10:(defface vterm-color-yellow
+444:11:  :group 'vterm)
+446:10:(defface vterm-color-blue
+449:11:  :group 'vterm)
+451:10:(defface vterm-color-magenta
+454:11:  :group 'vterm)
+456:10:(defface vterm-color-cyan
+459:11:  :group 'vterm)
+461:10:(defface vterm-color-white
+464:11:  :group 'vterm)
+466:10:(defface vterm-color-bright-black
+471:11:  :group 'vterm)
+473:10:(defface vterm-color-bright-red
+478:11:  :group 'vterm)
+480:10:(defface vterm-color-bright-green
+485:11:  :group 'vterm)
+487:10:(defface vterm-color-bright-yellow
+492:11:  :group 'vterm)
+494:10:(defface vterm-color-bright-blue
+499:11:  :group 'vterm)
+501:10:(defface vterm-color-bright-magenta
+506:11:  :group 'vterm)
+508:10:(defface vterm-color-bright-cyan
+513:11:  :group 'vterm)
+515:10:(defface vterm-color-bright-white
+520:11:  :group 'vterm)
+522:10:(defface vterm-color-underline
+526:11:  :group 'vterm)
+528:10:(defface vterm-color-inverse-video
+532:11:  :group 'vterm)
+536:9:(defvar vterm-color-palette
+537:4:  [vterm-color-black
+538:4:   vterm-color-red
+539:4:   vterm-color-green
+540:4:   vterm-color-yellow
+541:4:   vterm-color-blue
+542:4:   vterm-color-magenta
+543:4:   vterm-color-cyan
+544:4:   vterm-color-white
+545:4:   vterm-color-bright-black
+546:4:   vterm-color-bright-red
+547:4:   vterm-color-bright-green
+548:4:   vterm-color-bright-yellow
+549:4:   vterm-color-bright-blue
+550:4:   vterm-color-bright-magenta
+551:4:   vterm-color-bright-cyan
+552:4:   vterm-color-bright-white]
+555:15:(defvar-local vterm--term nil
+558:15:(defvar-local vterm--process nil
+561:15:(defvar-local vterm--redraw-timer nil)
+562:15:(defvar-local vterm--redraw-immididately nil)
+563:15:(defvar-local vterm--linenum-remapping nil)
+564:15:(defvar-local vterm--prompt-tracking-enabled-p nil)
+565:15:(defvar-local vterm--insert-function (symbol-function #'insert))
+566:15:(defvar-local vterm--delete-char-function (symbol-function #'delete-char))
+567:15:(defvar-local vterm--delete-region-function (symbol-function #'delete-region))
+568:15:(defvar-local vterm--undecoded-bytes nil)
+569:15:(defvar-local vterm--copy-mode-fake-newlines nil)
+572:9:(defvar vterm-timer-delay 0.1
+573:68:  "Delay for refreshing the buffer after receiving updates from libvterm.
+580:38:;; We have many functions defined by vterm-define-key.  Later, we will bind some
+582:59:;; will complain that some functions are not defined (eg, vterm-send-C-c)
+584:13:  (defmacro vterm-define-key (key)
+585:64:    "Define a command that sends KEY with modifiers C and M to vterm."
+588:38:    `(progn (defun ,(intern (format "vterm-send-%s" key))()
+589:44:              ,(format "Sends %s to the libvterm."  key)
+591:16:              (vterm-send-key ,(char-to-string (get-byte (1- (length key)) key))
+597:47:            (make-obsolete ',(intern (format "vterm-send-%s" key))
+598:34:                           "use `vterm--self-insert' or `vterm-send' or `vterm-send-key'."
+600:19:  (make-obsolete 'vterm-define-key "" "v0.1")
+602:19:          (eval `(vterm-define-key ,key)))
+608:19:          (eval `(vterm-define-key ,key)))
+615:8:(defun vterm--exclude-keys (map exceptions)
+616:46:  "Remove EXCEPTIONS from the keys bound by `vterm-define-keys'.
+618:28:Exceptions are defined by `vterm-keymap-exceptions'."
+623:39:          (define-key map (kbd key) #'vterm--self-insert))
+635:30:        (define-key map key 'vterm--self-insert))
+639:36:          (define-key esc-map key 'vterm--self-insert-meta)))
+643:8:(defun vterm-xterm-paste (event)
+644:32:  "Handle xterm paste EVENT in vterm."
+649:4:  (vterm-yank))
+651:9:(defvar vterm-mode-map
+653:6:    (vterm--exclude-keys map vterm-keymap-exceptions)
+654:51:    (define-key map (kbd "C-]")                 #'vterm--self-insert)
+655:51:    (define-key map (kbd "M-<")                 #'vterm--self-insert)
+656:51:    (define-key map (kbd "M->")                 #'vterm--self-insert)
+657:51:    (define-key map [tab]                       #'vterm-send-tab)
+658:51:    (define-key map (kbd "TAB")                 #'vterm-send-tab)
+659:51:    (define-key map [backtab]                   #'vterm--self-insert)
+660:51:    (define-key map [backspace]                 #'vterm-send-backspace)
+661:51:    (define-key map (kbd "DEL")                 #'vterm-send-backspace)
+662:51:    (define-key map [delete]                    #'vterm-send-delete)
+663:51:    (define-key map [M-backspace]               #'vterm-send-meta-backspace)
+664:51:    (define-key map (kbd "M-DEL")               #'vterm-send-meta-backspace)
+665:51:    (define-key map [C-backspace]               #'vterm-send-meta-backspace)
+666:51:    (define-key map [return]                    #'vterm-send-return)
+667:51:    (define-key map (kbd "RET")                 #'vterm-send-return)
+668:51:    (define-key map [C-left]                    #'vterm--self-insert)
+669:51:    (define-key map [M-left]                    #'vterm--self-insert)
+670:51:    (define-key map [C-right]                   #'vterm--self-insert)
+671:51:    (define-key map [M-right]                   #'vterm--self-insert)
+672:51:    (define-key map [C-up]                      #'vterm--self-insert)
+673:51:    (define-key map [C-down]                    #'vterm--self-insert)
+674:51:    (define-key map [M-up]                      #'vterm--self-insert)
+675:51:    (define-key map [M-down]                    #'vterm--self-insert)
+676:51:    (define-key map [left]                      #'vterm--self-insert)
+677:51:    (define-key map [right]                     #'vterm--self-insert)
+678:51:    (define-key map [up]                        #'vterm--self-insert)
+679:51:    (define-key map [down]                      #'vterm--self-insert)
+680:51:    (define-key map [prior]                     #'vterm--self-insert)
+682:51:    (define-key map [next]                      #'vterm--self-insert)
+684:51:    (define-key map [home]                      #'vterm--self-insert)
+685:51:    (define-key map [end]                       #'vterm--self-insert)
+686:51:    (define-key map [C-home]                    #'vterm--self-insert)
+687:51:    (define-key map [C-end]                     #'vterm--self-insert)
+688:51:    (define-key map [escape]                    #'vterm--self-insert)
+689:51:    (define-key map [remap yank]                #'vterm-yank)
+690:51:    (define-key map [remap xterm-paste]         #'vterm-xterm-paste)
+691:51:    (define-key map [remap yank-pop]            #'vterm-yank-pop)
+692:51:    (define-key map [remap mouse-yank-primary]  #'vterm-yank-primary)
+693:51:    (define-key map [mouse-1]                   #'vterm-mouse-set-point)
+694:51:    (define-key map (kbd "C-SPC")               #'vterm--self-insert)
+695:51:    (define-key map (kbd "S-SPC")               #'vterm-send-space)
+696:51:    (define-key map (kbd "C-_")                 #'vterm--self-insert)
+697:51:    (define-key map [remap undo]                #'vterm-undo)
+698:51:    (define-key map (kbd "M-.")                 #'vterm--self-insert)
+699:51:    (define-key map (kbd "M-,")                 #'vterm--self-insert)
+700:51:    (define-key map (kbd "C-c C-y")             #'vterm--self-insert)
+701:51:    (define-key map (kbd "C-c C-c")             #'vterm--self-insert)
+702:51:    (define-key map (kbd "C-c C-l")             #'vterm-clear-scrollback)
+703:51:    (define-key map (kbd "C-l")                 #'vterm-clear)
+704:51:    (define-key map (kbd "C-\\")                #'vterm--self-insert)
+705:51:    (define-key map (kbd "C-c C-g")             #'vterm--self-insert)
+706:51:    (define-key map (kbd "C-c C-u")             #'vterm--self-insert)
+707:51:    (define-key map [remap self-insert-command] #'vterm--self-insert)
+708:51:    (define-key map (kbd "C-c C-r")             #'vterm-reset-cursor-point)
+709:51:    (define-key map (kbd "C-c C-n")             #'vterm-next-prompt)
+710:51:    (define-key map (kbd "C-c C-p")             #'vterm-previous-prompt)
+711:51:    (define-key map (kbd "C-c C-t")             #'vterm-copy-mode)
+714:9:(defvar vterm-copy-mode-map
+716:46:    (define-key map (kbd "C-c C-t")        #'vterm-copy-mode)
+717:46:    (define-key map [return]               #'vterm-copy-mode-done)
+718:46:    (define-key map (kbd "RET")            #'vterm-copy-mode-done)
+719:46:    (define-key map (kbd "C-c C-r")        #'vterm-reset-cursor-point)
+720:46:    (define-key map (kbd "C-a")            #'vterm-beginning-of-line)
+721:46:    (define-key map (kbd "C-e")            #'vterm-end-of-line)
+722:46:    (define-key map (kbd "C-c C-n")        #'vterm-next-prompt)
+723:46:    (define-key map (kbd "C-c C-p")        #'vterm-previous-prompt)
+729:22:(define-derived-mode vterm-mode fundamental-mode "VTerm"
+730:19:  "Major mode for vterm buffer."
+734:16:         (setq vterm--linenum-remapping
+737:10:  (let ((vterm-env (assq 'vterm-environment dir-local-variables-alist)))
+738:11:    (when vterm-env
+739:29:      (make-local-variable 'vterm-environment)
+740:13:      (setq vterm-environment (cdr vterm-env))))
+741:38:  (let ((process-environment (append vterm-environment
+743:49:                                                vterm-term-environment-variable)
+744:56:                                       ,(concat "EMACS_VTERM_PATH="
+745:90:                                                (file-name-directory (find-library-name "vterm")))
+746:54:                                       "INSIDE_EMACS=vterm"
+754:53:        (width (max (- (window-max-chars-per-line) (vterm--get-margin-width))
+755:21:                    vterm-min-window-width)))
+756:11:    (setq vterm--term (vterm--new (window-body-height)
+757:41:                                  width vterm-max-scrollback
+758:35:                                  vterm-disable-bold-font
+759:35:                                  vterm-disable-underline
+760:35:                                  vterm-disable-inverse-video
+761:35:                                  vterm-ignore-blink-cursor
+762:35:                                  vterm-set-bold-hightbright))
+776:21:                  #'vterm--filter-buffer-substring)
+777:11:    (setq vterm--process
+779:19:           :name "vterm"
+794:23:               width (vterm--get-shell)))
+798:22:           :filter #'vterm--filter
+800:15:           ;; vterm-kill-buffer-on-exit is set to t.  In this latter case,
+801:15:           ;; vterm--sentinel will kill the buffer
+802:32:           :sentinel (when (or vterm-exit-functions
+803:32:                               vterm-kill-buffer-on-exit)
+804:26:                       #'vterm--sentinel))))
+807:6:  ;; Vterm interfaces with an underlying process. Changing the major
+811:60:              (user-error "You cannot change major mode in vterm buffers")) nil t)
+813:4:  (vterm--set-pty-name vterm--term (process-tty-name vterm--process))
+814:16:  (process-put vterm--process 'adjust-window-size-function
+815:18:               #'vterm--window-adjust-process-window-size)
+817:29:  ;; Is this necessary? See vterm--compilation-setup
+818:30:  (setq next-error-function 'vterm-next-error-function)
+819:46:  (setq-local bookmark-make-record-function 'vterm--bookmark-make-record))
+821:8:(defun vterm--get-shell ()
+822:39:  "Get the shell that gets run in the vterm."
+825:33:        (or (cadr (assoc method vterm-tramp-shells))
+827:13:            vterm-shell))
+828:5:    vterm-shell))
+830:8:(defun vterm--bookmark-make-record ()
+831:13:  "Create a vterm bookmark.
+835:16:    (handler . vterm--bookmark-handler)
+842:8:(defun vterm--bookmark-handler (bmk)
+843:25:  "Handler to restore a vterm bookmark BMK.
+845:6:If a vterm buffer of the same name does not exist, the function will create a
+846:5:new vterm buffer of the name. It also checks the current directory and sets
+852:26:    ;; create if no such vterm buffer exists
+853:44:    (when (or (not buf) (not (eq thismode 'vterm-mode)))
+856:15:        (when vterm-bookmark-check-dir
+858:10:        (vterm-mode)))
+861:18:      (when (and vterm-bookmark-check-dir
+863:15:        (when vterm-copy-mode
+864:12:          (vterm-copy-mode-done nil))
+865:10:        (vterm-insert (concat "cd " thisdir))
+866:10:        (vterm-send-return)))
+867:20:    ;; set to this vterm buf
+870:8:(defun vterm--compilation-setup ()
+871:69:  "Function to enable the option `compilation-shell-minor-mode' for vterm.
+875:25:  (when (eq major-mode 'vterm-mode)
+876:32:    (setq next-error-function 'vterm-next-error-function)))
+878:48:(add-hook 'compilation-shell-minor-mode-hook #'vterm--compilation-setup)
+881:8:(defun vterm-next-error-function (n &optional reset)
+891:16:         (pwd (vterm--get-pwd)))
+899:8:(defun vterm--enter-copy-mode ()
+901:4:  (vterm-send-stop)
+902:9:  (when vterm-copy-mode-remove-fake-newlines
+905:8:      (vterm--remove-fake-newlines t))))
+908:8:(defun vterm--exit-copy-mode ()
+909:9:  (when vterm-copy-mode-remove-fake-newlines
+912:8:      (vterm--reinsert-fake-newlines)))
+913:4:  (vterm-reset-cursor-point)
+914:18:  (use-local-map vterm-mode-map)
+915:4:  (vterm-send-start))
+917:20:(define-minor-mode vterm-copy-mode
+918:12:  "Toggle `vterm-copy-mode'.
+920:7:When `vterm-copy-mode' is enabled, the terminal will not display
+923:34:typically used to copy text from vterm buffers.
+925:28:A conventient way to exit `vterm-copy-mode' is with
+926:2:`vterm-copy-mode-done', which copies the selected text and exit
+927:2:`vterm-copy-mode'."
+928:11:  :group 'vterm
+929:14:  :lighter " VTermCopy"
+930:11:  :keymap vterm-copy-mode-map
+931:26:  (if (equal major-mode 'vterm-mode)
+932:11:      (if vterm-copy-mode
+933:12:          (vterm--enter-copy-mode)
+934:10:        (vterm--exit-copy-mode))
+935:36:    (user-error "You cannot enable vterm-copy-mode outside vterm buffers")))
+937:8:(defun vterm-copy-mode-done (arg)
+938:62:  "Save the active region or line to the kill ring and exit `vterm-copy-mode'.
+943:13:The option `vterm-copy-exclude-prompt' controls if the prompt
+945:14:will invert `vterm-copy-exclude-prompt' for that call."
+947:11:  (unless vterm-copy-mode
+948:52:    (user-error "This command is effective only in vterm-copy-mode"))
+950:17:    (goto-char (vterm--get-beginning-of-line))
+952:18:    (if (or (and vterm-copy-exclude-prompt (not arg))
+953:23:            (and (not vterm-copy-exclude-prompt) arg))
+954:30:        (goto-char (max (or (vterm--get-prompt-point) 0)
+955:26:                        (vterm--get-beginning-of-line))))
+957:17:    (goto-char (vterm--get-end-of-line)))
+959:4:  (vterm-copy-mode -1))
+963:8:(defun vterm--self-insert-meta ()
+965:9:  (when vterm--term
+966:19:    (dolist (key (vterm--translate-event-to-args
+968:16:      (apply #'vterm-send-key key))))
+970:8:(defun vterm--self-insert ()
+971:28:  "Send invoking key to libvterm."
+973:9:  (when vterm--term
+974:19:    (dolist (key (vterm--translate-event-to-args
+976:16:      (apply #'vterm-send-key key))))
+978:8:(defun vterm-send-key (key &optional shift meta ctrl accept-proc-output)
+979:19:  "Send KEY to libvterm with optional modifiers SHIFT, META and CTRL."
+981:9:  (when vterm--term
+984:8:      (vterm--update vterm--term key shift meta ctrl)
+985:13:      (setq vterm--redraw-immididately t)
+987:32:        (accept-process-output vterm--process vterm-timer-delay nil t)))))
+989:8:(defun vterm-send (key)
+990:19:  "Send KEY to libvterm.  KEY can be anything `kbd' understands."
+991:17:  (dolist (key (vterm--translate-event-to-args
+993:14:    (apply #'vterm-send-key key)))
+995:8:(defun vterm-send-next-key ()
+996:48:  "Read next input event and send it to the libvterm.
+1001:17:  (dolist (key (vterm--translate-event-to-args
+1003:14:    (apply #'vterm-send-key key)))
+1005:8:(defun vterm-send-start ()
+1008:4:  (vterm-send-key "<start>"))
+1010:8:(defun vterm-send-stop ()
+1013:4:  (vterm-send-key "<stop>"))
+1015:8:(defun vterm-send-return ()
+1016:25:  "Send `C-m' to the libvterm."
+1019:9:  (when vterm--term
+1020:10:    (if (vterm--get-icrnl vterm--term)
+1021:30:        (process-send-string vterm--process "\C-j")
+1022:28:      (process-send-string vterm--process "\C-m"))))
+1024:8:(defun vterm-send-tab ()
+1025:27:  "Send `<tab>' to the libvterm."
+1027:4:  (vterm-send-key "<tab>"))
+1029:8:(defun vterm-send-space ()
+1030:29:  "Send `<space>' to the libvterm."
+1032:4:  (vterm-send-key " "))
+1034:8:(defun vterm-send-backspace ()
+1035:33:  "Send `<backspace>' to the libvterm."
+1037:4:  (vterm-send-key "<backspace>"))
+1039:8:(defun vterm-send-delete ()
+1040:30:  "Send `<delete>' to the libvterm."
+1042:4:  (vterm-send-key "<delete>"))
+1044:8:(defun vterm-send-meta-backspace ()
+1045:35:  "Send `M-<backspace>' to the libvterm."
+1047:4:  (vterm-send-key "<backspace>" nil t))
+1049:8:(defun vterm-send-up ()
+1050:26:  "Send `<up>' to the libvterm."
+1052:4:  (vterm-send-key "<up>"))
+1053:17:(make-obsolete 'vterm-send-up 'vterm--self-insert "v0.1")
+1055:8:(defun vterm-send-down ()
+1056:28:  "Send `<down>' to the libvterm."
+1058:4:  (vterm-send-key "<down>"))
+1059:17:(make-obsolete 'vterm-send-down 'vterm--self-insert "v0.1")
+1061:8:(defun vterm-send-left ()
+1062:28:  "Send `<left>' to the libvterm."
+1064:4:  (vterm-send-key "<left>"))
+1065:17:(make-obsolete 'vterm-send-left 'vterm--self-insert "v0.1")
+1067:8:(defun vterm-send-right ()
+1068:29:  "Send `<right>' to the libvterm."
+1070:4:  (vterm-send-key "<right>"))
+1071:17:(make-obsolete 'vterm-send-right 'vterm--self-insert "v0.1")
+1073:8:(defun vterm-send-prior ()
+1074:29:  "Send `<prior>' to the libvterm."
+1076:4:  (vterm-send-key "<prior>"))
+1077:17:(make-obsolete 'vterm-send-prior 'vterm--self-insert "v0.1")
+1079:8:(defun vterm-send-next ()
+1080:28:  "Send `<next>' to the libvterm."
+1082:4:  (vterm-send-key "<next>"))
+1083:17:(make-obsolete 'vterm-send-next 'vterm--self-insert "v0.1")
+1085:8:(defun vterm-send-meta-dot ()
+1086:25:  "Send `M-.' to the libvterm."
+1088:4:  (vterm-send-key "." nil t))
+1089:17:(make-obsolete 'vterm-send-meta-dot 'vterm--self-insert "v0.1")
+1091:8:(defun vterm-send-meta-comma ()
+1092:25:  "Send `M-,' to the libvterm."
+1094:4:  (vterm-send-key "," nil t))
+1095:17:(make-obsolete 'vterm-send-meta-comma 'vterm--self-insert "v0.1")
+1097:8:(defun vterm-send-ctrl-slash ()
+1098:25:  "Send `C-\' to the libvterm."
+1100:4:  (vterm-send-key "\\" nil nil t))
+1101:17:(make-obsolete 'vterm-send-ctrl-slash 'vterm--self-insert "v0.1")
+1103:8:(defun vterm-send-escape ()
+1104:30:  "Send `<escape>' to the libvterm."
+1106:4:  (vterm-send-key "<escape>"))
+1108:8:(defun vterm-clear-scrollback ()
+1109:40:  "Send `<clear-scrollback>' to the libvterm."
+1111:4:  (vterm-send-key "<clear_scrollback>"))
+1113:8:(defun vterm-clear (&optional arg)
+1114:29:  "Send `<clear>' to the libvterm.
+1116:2:`vterm-clear-scrollback' determines whether
+1117:2:`vterm-clear' should also clear the scrollback or not.
+1119:42:This behavior can be altered by calling `vterm-clear' with a
+1123:13:       (and vterm-clear-scrollback-when-clearing (not arg))
+1124:22:       (and arg (not vterm-clear-scrollback-when-clearing)))
+1125:8:      (vterm-clear-scrollback))
+1126:4:  (vterm-send-key "l" nil nil :ctrl))
+1128:8:(defun vterm-undo ()
+1129:25:  "Send `C-_' to the libvterm."
+1131:4:  (vterm-send-key "_" nil nil t))
+1133:8:(defun vterm-yank (&optional arg)
+1134:25:  "Yank (paste) text in vterm.
+1139:4:  (vterm-goto-char (point))
+1141:53:    (cl-letf (((symbol-function 'insert-for-yank) #'vterm-insert))
+1144:8:(defun vterm-yank-primary ()
+1145:44:  "Yank text from the primary selection in vterm."
+1147:4:  (vterm-goto-char (point))
+1150:53:    (cl-letf (((symbol-function 'insert-for-yank) #'vterm-insert))
+1153:8:(defun vterm-yank-pop (&optional arg)
+1158:4:  (vterm-goto-char (point))
+1160:54:        (yank-undo-function #'(lambda (_start _end) (vterm-undo))))
+1161:53:    (cl-letf (((symbol-function 'insert-for-yank) #'vterm-insert))
+1164:8:(defun vterm-mouse-set-point (event &optional promote-to-region)
+1171:10:        (vterm-reset-cursor-point)
+1176:8:(defun vterm-send-string (string &optional paste-p)
+1177:30:  "Send the string STRING to vterm.
+1179:9:  (when vterm--term
+1181:8:      (vterm--update vterm--term "<start_paste>" ))
+1183:8:      (vterm--update vterm--term (char-to-string char)))
+1185:8:      (vterm--update vterm--term "<end_paste>")))
+1186:9:  (setq vterm--redraw-immididately t)
+1187:26:  (accept-process-output vterm--process vterm-timer-delay nil t))
+1189:8:(defun vterm-insert (&rest contents)
+1192:42:Provide similar behavior as `insert' for vterm."
+1193:9:  (when vterm--term
+1194:6:    (vterm--update vterm--term "<start_paste>")
+1197:12:          (vterm--update vterm--term (char-to-string c))
+1199:12:          (vterm--update vterm--term (char-to-string char)))))
+1200:6:    (vterm--update vterm--term "<end_paste>")
+1201:11:    (setq vterm--redraw-immididately t)
+1202:28:    (accept-process-output vterm--process vterm-timer-delay nil t)))
+1204:8:(defun vterm-delete-region (start end)
+1205:46:  "Delete the text between START and END for vterm. "
+1206:9:  (when vterm--term
+1208:39:      (when (get-text-property start 'vterm-line-wrap)
+1213:12:      (if (vterm-goto-char start)
+1215:21:                   (vterm-send-key "<delete>" nil nil nil t))
+1217:12:          (vterm--delete-region start end))))))
+1219:8:(defun vterm-goto-char (pos)
+1220:30:  "Set point to POSITION for vterm.
+1223:14:  (when (and vterm--term
+1224:15:             (vterm-cursor-in-command-buffer-p)
+1225:15:             (vterm-cursor-in-command-buffer-p pos))
+1226:6:    (vterm-reset-cursor-point)
+1232:18:                (vterm--backward-char)
+1236:22:        (while (and (vterm--forward-char)
+1242:8:(defun vterm--forward-char ()
+1246:4:  (vterm-reset-cursor-point)
+1248:6:    (vterm-send-key "<right>" nil nil nil t)
+1253:45:           (get-text-property (1- (point)) 'vterm-line-wrap))
+1257:23:      (dotimes (_ 3) (vterm-send-key "<backspace>" nil nil nil t)) ;;delete  "^[[C"
+1260:8:      (vterm-send-key "_" nil nil t t) ;undo C-_
+1266:8:(defun vterm--backward-char ()
+1270:4:  (vterm-reset-cursor-point)
+1272:6:    (vterm-send-key "<left>" nil nil nil t)
+1283:23:      (dotimes (_ 3) (vterm-send-key "<backspace>" nil nil nil t)) ;;delete  "^[[D"
+1287:8:(defun vterm--delete-region(start end)
+1289:12:  (funcall vterm--delete-region-function start end))
+1291:8:(defun vterm--insert(&rest content)
+1293:10:  (apply vterm--insert-function content))
+1295:8:(defun vterm--delete-char(n &optional killflag)
+1297:12:  (funcall vterm--delete-char-function n killflag))
+1299:8:(defun vterm--translate-event-to-args (event &optional meta)
+1300:41:  "Translate EVENT as list of args for `vterm-send-key'.
+1326:8:(defun vterm--invalidate ()
+1328:17:  (if (and (not vterm--redraw-immididately)
+1329:12:           vterm-timer-delay)
+1330:15:      (unless vterm--redraw-timer
+1331:15:        (setq vterm--redraw-timer
+1332:31:              (run-with-timer vterm-timer-delay nil
+1333:33:                              #'vterm--delayed-redraw (current-buffer))))
+1334:6:    (vterm--delayed-redraw (current-buffer))
+1335:11:    (setq vterm--redraw-immididately nil)))
+1337:8:(defun vterm-check-proc (&optional buffer)
+1338:58:  "Check if there is a running process associated to the vterm buffer BUFFER.
+1345:31:         (buffer-local-value 'vterm--term buffer))))
+1347:8:(defun vterm--delayed-redraw (buffer)
+1355:15:        (setq vterm--redraw-timer nil)
+1356:15:        (when vterm--term
+1357:12:          (vterm--redraw vterm--term)
+1362:8:;; see VTermSelectionMask in vterm.el
+1363:4:;; VTERM_SELECTION_CLIPBOARD = (1<<0),
+1364:4:;; VTERM_SELECTION_PRIMARY   = (1<<1),
+1365:11:(defconst vterm--selection-clipboard 1)   ;(1<<0)
+1366:11:(defconst vterm--selection-primary   2)   ;(1<<1)
+1367:8:(defun vterm--set-selection (mask data)
+1371:9:  (when vterm-enable-manipulate-selection-data-by-osc52
+1375:26:            (logand mask vterm--selection-clipboard))
+1377:26:            (logand mask vterm--selection-primary))
+1379:41:      (message "kill-ring is updated by vterm OSC 52(Manipulate Selection Data)"))
+1385:8:(defun vterm (&optional arg)
+1386:26:  "Create an interactive Vterm buffer.
+1387:13:Start a new Vterm session, or switch to an already active
+1394:46:With a numeric prefix arg (as in `C-u 42 M-x vterm RET'), switch
+1398:26:The buffer name used for Vterm sessions is determined by the
+1399:11:value of `vterm-buffer-name'."
+1401:4:  (vterm--internal #'pop-to-buffer-same-window arg))
+1404:8:(defun vterm-other-window (&optional arg)
+1405:26:  "Create an interactive Vterm buffer in another window.
+1406:13:Start a new Vterm session, or switch to an already active
+1413:46:With a numeric prefix arg (as in `C-u 42 M-x vterm RET'), switch
+1417:26:The buffer name used for Vterm sessions is determined by the
+1418:11:value of `vterm-buffer-name'."
+1420:4:  (vterm--internal #'pop-to-buffer arg))
+1422:8:(defun vterm--internal (pop-to-buf-fun &optional arg)
+1423:14:  (cl-assert vterm-buffer-name)
+1426:48:                                               vterm-buffer-name
+1429:46:                   (arg (generate-new-buffer vterm-buffer-name))
+1431:40:                    (get-buffer-create vterm-buffer-name)))))
+1435:32:      (unless (derived-mode-p 'vterm-mode)
+1436:10:        (vterm-mode)))
+1441:8:(defun vterm--flush-output (output)
+1443:24:  (process-send-string vterm--process output))
+1453:11:(defconst vterm-control-seq-regexp
+1462:51:   ;; another Emacs specific control sequence for vterm.el
+1469:11:(defconst vterm-control-seq-prefix-regexp
+1472:8:(defun vterm--filter (process input)
+1489:69:        ;; multibyte characters (https://github.com/akermu/emacs-libvterm/issues/394).
+1491:15:        (when vterm--undecoded-bytes
+1492:31:          (setq input (concat vterm--undecoded-bytes input))
+1493:17:          (setq vterm--undecoded-bytes nil)
+1496:37:          (setq funny (string-match vterm-control-seq-regexp input i))
+1498:54:                           (setq funny (string-match vterm-control-seq-prefix-regexp input i))
+1500:38:                               (setq vterm--undecoded-bytes
+1526:27:                    (setq vterm--undecoded-bytes
+1532:31:              (ignore-errors (vterm--write-input vterm--term decoded-substring))
+1535:31:              (ignore-errors (vterm--write-input vterm--term (substring input i ctl-end))))
+1537:10:        (vterm--update vterm--term)))))
+1539:8:(defun vterm--sentinel (process event)
+1540:16:  "Sentinel of vterm PROCESS.
+1543:26:    (run-hook-with-args 'vterm-exit-functions
+1546:14:    (if (and vterm-kill-buffer-on-exit (buffer-live-p buf))
+1549:8:(defun vterm--text-scale-mode (&optional _argv)
+1552:27:       (equal major-mode 'vterm-mode)
+1556:16:         (when vterm--linenum-remapping
+1557:40:           (face-remap-remove-relative vterm--linenum-remapping))
+1558:16:         (setq vterm--linenum-remapping
+1562:40:(advice-add #'text-scale-mode :after #'vterm--text-scale-mode)
+1564:8:(defun vterm--window-adjust-process-window-size (process windows)
+1567:2:`vterm-min-window-width' determines the minimum width allowed."
+1568:15:  ;; We want `vterm-copy-mode' to resemble a fundamental buffer as much as
+1572:11:  (unless vterm-copy-mode
+1578:29:      (setq width (- width (vterm--get-margin-width)))
+1579:30:      (setq width (max width vterm-min-window-width))
+1584:10:        (vterm--set-size vterm--term height width)
+1587:8:(defun vterm--get-margin-width ()
+1588:24:  "Get margin width of vterm buffer when `display-line-numbers-mode' is enabled."
+1590:41:        (max-line-num (+ (frame-height) vterm-max-scrollback)))
+1596:8:(defun vterm--delete-lines (line-num count &optional delete-whole-line)
+1602:12:    (when (vterm--goto-line line-num)
+1603:8:      (vterm--delete-region (point) (line-end-position count))
+1606:10:        (vterm--delete-char 1)))))
+1608:8:(defun vterm--goto-line (n)
+1619:8:(defun vterm--set-title (title)
+1620:51:  "Use TITLE to set the buffer name according to `vterm-buffer-name-string'."
+1621:9:  (when vterm-buffer-name-string
+1622:28:    (rename-buffer (format vterm-buffer-name-string title) t)))
+1624:8:(defun vterm--set-directory (path)
+1626:15:  (let ((dir (vterm--get-directory path)))
+1629:8:(defun vterm--get-directory (path)
+1648:8:(defun vterm--get-pwd (&optional linenum)
+1650:9:  (when vterm--term
+1651:21:    (let ((raw-pwd (vterm--get-pwd-raw
+1652:21:                    vterm--term
+1655:10:        (vterm--get-directory raw-pwd)))))
+1657:8:(defun vterm--get-color (index &rest args)
+1658:29:  "Get color by INDEX from `vterm-color-palette'.
+1671:21:               (elt vterm-color-palette index))
+1673:17:               'vterm-color-underline)
+1675:17:               'vterm-color-inverse-video)
+1679:8:(defun vterm--eval (str)
+1680:28:  "Check if string STR is `vterm-eval-cmds' and execute command.
+1687:28:         (f (assoc command vterm-eval-cmds)))
+1691:32:                add it to the `vterm-eval-cmd' list" command))))
+1695:8:(defun vterm--prompt-tracking-enabled-p ()
+1700:50:For zsh user, this is done by PROMPT=$PROMPT'%{$(vterm_prompt_end)%}'.
+1707:7:  (or vterm--prompt-tracking-enabled-p
+1709:15:        (setq vterm--prompt-tracking-enabled-p
+1710:57:              (next-single-property-change (point-min) 'vterm-prompt)))))
+1712:8:(defun vterm-next-prompt (n)
+1715:12:  (if (and vterm-use-vterm-prompt-detection-method
+1716:13:           (vterm--prompt-tracking-enabled-p))
+1718:24:            (promp-pt (vterm--get-prompt-point)))
+1721:85:                 (setq pt (next-single-property-change (line-beginning-position 2) 'vterm-prompt))
+1725:8:(defun vterm-previous-prompt (n)
+1728:12:  (if (and vterm-use-vterm-prompt-detection-method
+1729:13:           (vterm--prompt-tracking-enabled-p))
+1731:25:            (prompt-pt (vterm--get-prompt-point)))
+1737:76:                   (setq pt (previous-single-property-change (1- (point)) 'vterm-prompt))
+1741:8:(defun vterm--get-beginning-of-line (&optional pt)
+1749:50:                (get-text-property (1- (point)) 'vterm-line-wrap))
+1754:8:(defun vterm--get-end-of-line (&optional pt)
+1761:40:    (while (get-text-property (point) 'vterm-line-wrap)
+1768:8:(defun vterm--get-prompt-point ()
+1770:23:More information see `vterm--prompt-tracking-enabled-p' and
+1772:21:  (let ((end-point (vterm--get-end-of-line))
+1775:16:      (if (and vterm-use-vterm-prompt-detection-method
+1776:17:               (vterm--prompt-tracking-enabled-p))
+1777:45:          (if (get-text-property end-point 'vterm-prompt)
+1779:76:            (setq prompt-point (previous-single-property-change end-point 'vterm-prompt))
+1784:12:          (vterm--get-beginning-of-line))))))
+1786:8:(defun vterm--at-prompt-p ()
+1788:19:  (= (point) (or (vterm--get-prompt-point) 0)))
+1790:8:(defun vterm-cursor-in-command-buffer-p (&optional pt)
+1793:6:    (vterm-reset-cursor-point)
+1794:22:    (let ((promp-pt (vterm--get-prompt-point)))
+1796:30:        (<= promp-pt (or pt (vterm--get-cursor-point)))))))
+1798:8:(defun vterm-beginning-of-line ()
+1805:8:  (if (vterm--at-prompt-p)
+1806:19:      (goto-char (vterm--get-beginning-of-line))
+1807:26:    (goto-char (max (or (vterm--get-prompt-point) 0)
+1808:22:                    (vterm--get-beginning-of-line)))))
+1810:8:(defun vterm-end-of-line ()
+1813:15:  (goto-char (vterm--get-end-of-line)))
+1815:8:(defun vterm-reset-cursor-point ()
+1818:9:  (when vterm--term
+1820:8:      (vterm--reset-point vterm--term))))
+1822:8:(defun vterm--get-cursor-point ()
+1824:9:  (when vterm--term
+1826:8:      (vterm-reset-cursor-point))))
+1828:8:(defun vterm--reinsert-fake-newlines ()
+1829:32:  "Reinsert fake newline from `vterm--copy-mode-fake-newlines'."
+1834:32:    (add-text-properties 0 1 '(vterm-line-wrap t rear-nonsticky t)
+1836:12:    (while vterm--copy-mode-fake-newlines
+1837:35:      (setq fake-newline-pos (car vterm--copy-mode-fake-newlines))
+1838:13:      (setq vterm--copy-mode-fake-newlines (cdr vterm--copy-mode-fake-newlines))
+1842:8:(defun vterm--remove-fake-newlines (&optional remembering-pos-p)
+1845:37:These newlines were tagged with \\='vterm-line-wrap property so we
+1848:2:`vterm--copy-mode-fake-newlines'."
+1853:13:      (setq vterm--copy-mode-fake-newlines nil))
+1858:49:               (get-text-property (1- (point)) 'vterm-line-wrap))
+1861:15:        (setq vterm--copy-mode-fake-newlines
+1862:29:              (cons (point) vterm--copy-mode-fake-newlines)))
+1863:8:      (vterm--delete-char 1))
+1867:46:                                    (point) 'vterm-line-wrap)))
+1871:15:        (setq vterm--copy-mode-fake-newlines
+1872:29:              (cons (point) vterm--copy-mode-fake-newlines)))
+1873:8:      (vterm--delete-char 1))))
+1875:8:(defun vterm--filter-buffer-substring (content)
+1878:6:    (vterm--insert content)
+1879:6:    (vterm--remove-fake-newlines nil)
+1883:11:(provide 'vterm)
+1887:5:;;; vterm.el ends here
+
+/home/lyao/.emacs.d/elpa/doom-themes-20240404.2042/doom-solarized-dark-high-contrast-theme.el
+215:9:   ;;;; vterm
+216:5:   (vterm-color-black   :background (doom-lighten base0 0.75)   :foreground base0)
+217:5:   (vterm-color-red     :background (doom-lighten red 0.75)     :foreground red)
+218:5:   (vterm-color-green   :background (doom-lighten green 0.75)   :foreground green)
+219:5:   (vterm-color-yellow  :background (doom-lighten yellow 0.75)  :foreground yellow)
+220:5:   (vterm-color-blue    :background (doom-lighten blue 0.75)    :foreground blue)
+221:5:   (vterm-color-magenta :background (doom-lighten magenta 0.75) :foreground magenta)
+222:5:   (vterm-color-cyan    :background (doom-lighten cyan 0.75)    :foreground cyan)
+223:5:   (vterm-color-white   :background (doom-lighten base8 0.75)   :foreground base8)
+
+/home/lyao/.emacs.d/elpa/doom-themes-20240404.2042/doom-meltbus-theme.el
+345:9:   ;;;; vterm
+346:5:   (vterm-color-black :inherit 'term-color-black)
+347:5:   (vterm-color-red :inherit 'term-color-red)
+348:5:   (vterm-color-blue :inherit 'term-color-blue)
+349:5:   (vterm-color-green :inherit 'term-color-green)
+350:5:   (vterm-color-yellow :inherit 'term-color-yellow)
+351:5:   (vterm-color-magenta :inherit 'term-color-magenta)
+352:5:   (vterm-color-cyan :inherit 'term-color-cyan)
+353:5:   (vterm-color-white :inherit 'term-color-white)
+
+/home/lyao/.emacs.d/elpa/doom-themes-20240404.2042/doom-gruvbox-light-theme.el
+491:9:   ;;;; vterm
+492:5:   (vterm-color-black   :background grey    :foreground base1)
+493:5:   (vterm-color-red     :background red     :foreground faded-red)
+494:5:   (vterm-color-green   :background green   :foreground faded-green)
+495:5:   (vterm-color-yellow  :background yellow  :foreground faded-yellow)
+496:5:   (vterm-color-blue    :background blue    :foreground faded-blue)
+497:5:   (vterm-color-magenta :background violet  :foreground magenta)
+498:5:   (vterm-color-cyan    :background cyan    :foreground faded-aqua)
+499:5:   (vterm-color-white   :background base7   :foreground light4)
+
+/home/lyao/.emacs.d/elpa/all-the-icons-20240108.559/all-the-icons.el
+605:6:    (vterm-mode                all-the-icons-octicon "terminal"            :v-adjust 0.2)
+
+/home/lyao/.emacs.d/site-lisp/emacs-libvterm/CMakeLists.txt
+4:18:project(emacs-libvterm C)
+7:11:   set(LIBVTERM_BUILD_COMMAND "gmake")
+9:11:   set(LIBVTERM_BUILD_COMMAND "make")
+12:13:add_library(vterm-module MODULE vterm-module.c utf8.c elisp.c)
+13:23:set_target_properties(vterm-module PROPERTIES
+28:22:option(USE_SYSTEM_LIBVTERM "Use system libvterm instead of the vendored version." ON)
+30:22:# Try to find the libvterm in system.
+31:19:if (USE_SYSTEM_LIBVTERM)
+32:21:  # try to find the vterm.h header file.
+33:16:  find_path(LIBVTERM_INCLUDE_DIR
+34:11:    NAMES vterm.h
+37:5:  # vterm.h is found.
+38:10:  if (LIBVTERM_INCLUDE_DIR)
+39:31:    message(STATUS "System libvterm detected")
+40:39:    execute_process(COMMAND  grep -c "VTermStringFragment" "${LIBVTERM_INCLUDE_DIR}/vterm.h" OUTPUT_VARIABLE VTermStringFragmentExists)
+41:11:    if (${VTermStringFragmentExists} EQUAL "0")
+42:30:#    add_compile_definitions(VTermStringFragmentNotExists)
+43:23:    add_definitions(-DVTermStringFragmentNotExists)
+45:39:    execute_process(COMMAND  grep -c "VTermSelectionMask" "${LIBVTERM_INCLUDE_DIR}/vterm.h" OUTPUT_VARIABLE VTermSelectionMaskExists)
+46:11:    if (${VTermSelectionMaskExists} EQUAL "0")
+47:30:#    add_compile_definitions(VTermStringFragmentNotExists)
+48:23:    add_definitions(-DVTermSelectionMaskNotExists)
+50:55:    execute_process(COMMAND  grep -c "sb_clear" "${LIBVTERM_INCLUDE_DIR}/vterm.h" OUTPUT_VARIABLE VTermSBClearExists)
+51:11:    if (${VTermSBClearExists} EQUAL "0")
+52:25:      add_definitions(-DVTermSBClearNotExists)
+55:31:    message(STATUS "System libvterm not found: libvterm will be downloaded and compiled as part of the build process")
+59:8:if (LIBVTERM_INCLUDE_DIR)
+60:19:  find_library(LIBVTERM_LIBRARY NAMES
+61:5:    vterm
+62:8:    libvterm
+65:13:  if(NOT LIBVTERM_LIBRARY)
+66:29:    message(FATAL_ERROR "libvterm not found")
+74:26:  ExternalProject_add(libvterm
+75:51:    GIT_REPOSITORY https://github.com/Sbozzolo/libvterm-mirror.git
+78:24:    BUILD_COMMAND ${LIBVTERM_BUILD_COMMAND} "CFLAGS='-fPIC'" "LDFLAGS='-static'"
+82:35:  ExternalProject_Get_property(libvterm SOURCE_DIR)
+84:10:  set(LIBVTERM_INCLUDE_DIR ${SOURCE_DIR}/include)
+85:10:  set(LIBVTERM_LIBRARY ${SOURCE_DIR}/.libs/libvterm.a)
+87:20:  add_dependencies(vterm-module libvterm)
+90:28:  file(MAKE_DIRECTORY ${LIBVTERM_INCLUDE_DIR})
+93:13:add_library(vterm STATIC IMPORTED)
+94:23:set_target_properties(vterm PROPERTIES IMPORTED_LOCATION ${LIBVTERM_LIBRARY})
+95:28:target_include_directories(vterm INTERFACE ${LIBVTERM_INCLUDE_DIR})
+97:16:# Link with libvterm
+98:23:target_link_libraries(vterm-module PUBLIC vterm)
+102:88:  COMMAND emacs -Q -L ${CMAKE_SOURCE_DIR} -L ${CMAKE_BINARY_DIR} --eval "\\(require \\'vterm\\)" --eval "\\(vterm\\)"
+103:11:  DEPENDS vterm-module
+
+/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles/Makefile.cmake
+10:43:  "/home/lyao/.emacs.d/site-lisp/emacs-libvterm/CMakeLists.txt"
+110:15:  "CMakeFiles/vterm-module.dir/DependInfo.cmake"
+
+/home/lyao/.emacs.d/site-lisp/emacs-libvterm/elisp.h
+5:11:#include "vterm.h"
+27:21:extern emacs_value Qvterm_line_wrap;
+29:21:extern emacs_value Qvterm_prompt;
+53:21:extern emacs_value Fvterm_flush_output;
+56:21:extern emacs_value Fvterm_set_title;
+57:21:extern emacs_value Fvterm_set_directory;
+58:21:extern emacs_value Fvterm_invalidate;
+60:21:extern emacs_value Fvterm_get_color;
+61:21:extern emacs_value Fvterm_eval;
+62:21:extern emacs_value Fvterm_set_selection;
+94:6:void vterm_invalidate(emacs_env *env);
+95:13:emacs_value vterm_get_color(emacs_env *env, int index, emacs_value args);
+96:13:emacs_value vterm_eval(emacs_env *env, emacs_value string);
+97:13:emacs_value vterm_set_selection(emacs_env *env, emacs_value selection_target,
+
+/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeCache.txt
+2:66:# For build in directory: /home/lyao/.emacs.d/site-lisp/emacs-libvterm/build
+77:80:CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles/pkgRedirects
+124:36:CMAKE_PROJECT_NAME:STATIC=emacs-libvterm
+192:4:LIBVTERM_INCLUDE_DIR:PATH=/usr/include
+195:4:LIBVTERM_LIBRARY:FILEPATH=/usr/lib/libvterm.so
+197:17://Use system libvterm instead of the vendored version.
+198:15:USE_SYSTEM_LIBVTERM:BOOL=ON
+201:10:emacs-libvterm_BINARY_DIR:STATIC=/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build
+204:10:emacs-libvterm_IS_TOP_LEVEL:STATIC=ON
+207:10:emacs-libvterm_SOURCE_DIR:STATIC=/home/lyao/.emacs.d/site-lisp/emacs-libvterm
+210:1:vterm-module_LIB_DEPENDS:STATIC=general;vterm;
+222:69:CMAKE_CACHEFILE_DIR:INTERNAL=/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build
+283:70:CMAKE_HOME_DIRECTORY:INTERNAL=/home/lyao/.emacs.d/site-lisp/emacs-libvterm
+
+/home/lyao/.emacs.d/site-lisp/emacs-libvterm/vterm-module.c
+1:11:#include "vterm-module.h"
+11:11:#include <vterm.h>
+29:41:static int term_sb_push(int cols, const VTermScreenCell *cells, void *data) {
+36:11:  // copy vterm cells into sb_buffer
+113:19:/// @param cells  VTerm state to update.
+115:34:static int term_sb_pop(int cols, VTermScreenCell *cells, void *data) {
+137:14:  // copy to vterm state
+191:54:static void fetch_cell(Term *term, int row, int col, VTermScreenCell *cell) {
+198:7:      VTermColor fg, bg;
+199:7:      VTermState *state = vterm_obtain_state(term->vt);
+200:7:      vterm_state_get_default_colors(state, &fg, &bg);
+202:16:      *cell = (VTermScreenCell){.chars = {0}, .width = 1, .bg = bg};
+205:5:    vterm_screen_get_cell(term->vts, (VTermPos){.row = row, .col = col}, cell);
+231:5:    VTermPos pos = {.row = row, .col = col};
+232:12:    return vterm_screen_is_eol(term->vts, pos);
+269:3:  vterm_get_size(term->vt, &height, &width);
+272:5:    VTermScreenCell cell;
+313:3:  VTermScreenCell cell;
+314:3:  VTermScreenCell lastCell;
+351:29:        for (int k = 0; k < VTERM_MAX_CHARS_PER_CELL && cell.chars[k]; ++k) {
+475:27:    // became full and libvterm had to push all rows up. Convert the first
+490:8:       vterm-max-scrollback is a large number.
+514:3:  VTermState *state = vterm_obtain_state(term->vt);
+515:3:  VTermPos pos;
+516:3:  vterm_state_get_cursorpos(state, &pos);
+557:24:static int term_damage(VTermRect rect, void *data) {
+562:26:static int term_moverect(VTermRect dest, VTermRect src, void *data) {
+568:28:static int term_movecursor(VTermPos new, VTermPos old, int visible,
+594:10:    case VTERM_PROP_CURSORSHAPE_BLOCK:
+597:10:    case VTERM_PROP_CURSORSHAPE_UNDERLINE:
+600:10:    case VTERM_PROP_CURSORSHAPE_BAR_LEFT:
+637:5:    vterm_eval(env, elisp_code);
+648:5:    vterm_set_selection(env, selection_mask, selection_data);
+657:8:static VTermScreenCallbacks vterm_screen_callbacks = {
+665:14:#if !defined(VTermSBClearNotExists)
+670:27:static bool compare_cells(VTermScreenCell *a, VTermScreenCell *b) {
+672:20:  equal = equal && vterm_color_is_equal(&a->fg, &b->fg);
+673:20:  equal = equal && vterm_color_is_equal(&a->bg, &b->bg);
+721:29:static int term_settermprop(VTermProp prop, VTermValue *val, void *user_data) {
+724:8:  case VTERM_PROP_CURSORVISIBLE:
+729:8:  case VTERM_PROP_CURSORBLINK:
+736:8:  case VTERM_PROP_CURSORSHAPE:
+741:8:  case VTERM_PROP_TITLE:
+742:8:#ifdef VTermStringFragmentNotExists
+749:8:  case VTERM_PROP_ALTSCREEN:
+760:41:                               int len, VTermScreenCell *cell) {
+771:11:  /* With vterm-disable-bold-font, vterm-disable-underline,
+772:6:   * vterm-disable-inverse-video, users can disable some text properties.
+822:34:      list(env, (emacs_value[]){Qvterm_prompt, Qt, Qrear_nonsticky, Qt}, 4);
+837:34:      list(env, (emacs_value[]){Qvterm_line_wrap, Qt, Qrear_nonsticky, Qt}, 4);
+845:35:                                  VTermScreenCell *cell, bool is_foreground) {
+846:3:  VTermColor *color = is_foreground ? &cell->fg : &cell->bg;
+860:16:   * see C-h f vterm--get-color RET
+862:7:  if (VTERM_COLOR_IS_DEFAULT_FG(color) || VTERM_COLOR_IS_DEFAULT_BG(color)) {
+863:12:    return vterm_get_color(env, -1, args);
+865:7:  if (VTERM_COLOR_IS_INDEXED(color)) {
+867:14:      return vterm_get_color(env, color->indexed.idx, args);
+869:7:      VTermState *state = vterm_obtain_state(term->vt);
+870:7:      vterm_state_get_palette_color(state, color->indexed.idx, color);
+872:14:  } else if (VTERM_COLOR_IS_RGB(color)) {
+883:16:  size_t len = vterm_output_get_buffer_current(term->vt);
+886:11:    len = vterm_output_read(term->vt, buffer, len);
+889:24:    env->funcall(env, Fvterm_flush_output, 1, (emacs_value[]){output});
+895:3:  vterm_screen_flush_damage(term->vts);
+900:42:                             size_t len, VTermModifier modifier) {
+908:5:    vterm_keyboard_start_paste(term->vt);
+910:5:    vterm_keyboard_end_paste(term->vt);
+912:5:    vterm_keyboard_key(term->vt, VTERM_KEY_TAB, modifier);
+915:5:    vterm_keyboard_key(term->vt, VTERM_KEY_TAB, VTERM_MOD_SHIFT);
+917:5:    vterm_keyboard_key(term->vt, VTERM_KEY_BACKSPACE, modifier);
+919:5:    vterm_keyboard_key(term->vt, VTERM_KEY_ESCAPE, modifier);
+921:5:    vterm_keyboard_key(term->vt, VTERM_KEY_UP, modifier);
+923:5:    vterm_keyboard_key(term->vt, VTERM_KEY_DOWN, modifier);
+925:5:    vterm_keyboard_key(term->vt, VTERM_KEY_LEFT, modifier);
+927:5:    vterm_keyboard_key(term->vt, VTERM_KEY_RIGHT, modifier);
+929:5:    vterm_keyboard_key(term->vt, VTERM_KEY_INS, modifier);
+931:5:    vterm_keyboard_key(term->vt, VTERM_KEY_DEL, modifier);
+933:5:    vterm_keyboard_key(term->vt, VTERM_KEY_HOME, modifier);
+935:5:    vterm_keyboard_key(term->vt, VTERM_KEY_END, modifier);
+937:5:    vterm_keyboard_key(term->vt, VTERM_KEY_PAGEUP, modifier);
+939:5:    vterm_keyboard_key(term->vt, VTERM_KEY_PAGEDOWN, modifier);
+941:5:    vterm_keyboard_key(term->vt, VTERM_KEY_FUNCTION(0), modifier);
+943:5:    vterm_keyboard_key(term->vt, VTERM_KEY_FUNCTION(1), modifier);
+945:5:    vterm_keyboard_key(term->vt, VTERM_KEY_FUNCTION(2), modifier);
+947:5:    vterm_keyboard_key(term->vt, VTERM_KEY_FUNCTION(3), modifier);
+949:5:    vterm_keyboard_key(term->vt, VTERM_KEY_FUNCTION(4), modifier);
+951:5:    vterm_keyboard_key(term->vt, VTERM_KEY_FUNCTION(5), modifier);
+953:5:    vterm_keyboard_key(term->vt, VTERM_KEY_FUNCTION(6), modifier);
+955:5:    vterm_keyboard_key(term->vt, VTERM_KEY_FUNCTION(7), modifier);
+957:5:    vterm_keyboard_key(term->vt, VTERM_KEY_FUNCTION(8), modifier);
+959:5:    vterm_keyboard_key(term->vt, VTERM_KEY_FUNCTION(9), modifier);
+961:5:    vterm_keyboard_key(term->vt, VTERM_KEY_FUNCTION(10), modifier);
+963:5:    vterm_keyboard_key(term->vt, VTERM_KEY_FUNCTION(11), modifier);
+965:5:    vterm_keyboard_key(term->vt, VTERM_KEY_FUNCTION(12), modifier);
+967:5:    vterm_keyboard_key(term->vt, VTERM_KEY_KP_0, modifier);
+969:5:    vterm_keyboard_key(term->vt, VTERM_KEY_KP_1, modifier);
+971:5:    vterm_keyboard_key(term->vt, VTERM_KEY_KP_2, modifier);
+973:5:    vterm_keyboard_key(term->vt, VTERM_KEY_KP_3, modifier);
+975:5:    vterm_keyboard_key(term->vt, VTERM_KEY_KP_4, modifier);
+977:5:    vterm_keyboard_key(term->vt, VTERM_KEY_KP_5, modifier);
+979:5:    vterm_keyboard_key(term->vt, VTERM_KEY_KP_6, modifier);
+981:5:    vterm_keyboard_key(term->vt, VTERM_KEY_KP_7, modifier);
+983:5:    vterm_keyboard_key(term->vt, VTERM_KEY_KP_8, modifier);
+985:5:    vterm_keyboard_key(term->vt, VTERM_KEY_KP_9, modifier);
+987:5:    vterm_keyboard_key(term->vt, VTERM_KEY_KP_PLUS, modifier);
+989:5:    vterm_keyboard_key(term->vt, VTERM_KEY_KP_MINUS, modifier);
+991:5:    vterm_keyboard_key(term->vt, VTERM_KEY_KP_MULT, modifier);
+993:5:    vterm_keyboard_key(term->vt, VTERM_KEY_KP_DIVIDE, modifier);
+995:5:    vterm_keyboard_key(term->vt, VTERM_KEY_KP_EQUAL, modifier);
+997:5:    vterm_keyboard_key(term->vt, VTERM_KEY_KP_PERIOD, modifier);
+999:5:    vterm_keyboard_key(term->vt, VTERM_KEY_KP_COMMA, modifier);
+1001:5:    vterm_keyboard_key(term->vt, VTERM_KEY_KP_ENTER, modifier);
+1002:52:  } else if (is_key(key, len, "j") && (modifier == VTERM_MOD_CTRL)) {
+1003:5:    vterm_keyboard_unichar(term->vt, '\n', 0);
+1005:5:    vterm_keyboard_unichar(term->vt, ' ', modifier);
+1009:7:      vterm_keyboard_unichar(term->vt, codepoint, modifier);
+1063:3:  vterm_free(term->vt);
+1124:39:/* maybe we should drop support of libvterm < v0.2 */
+1125:4:/* VTermStringFragmentNotExists was introduced when libvterm is not released */
+1126:8:#ifdef VTermStringFragmentNotExists
+1142:8:static VTermParserCallbacks parser_callbacks = {
+1152:34:static int osc_callback(int cmd, VTermStringFragment frag, void *user) {
+1182:8:static VTermStateFallbacks parser_callbacks = {
+1188:9:#ifndef VTermSelectionMaskNotExists
+1189:26:static int set_selection(VTermSelectionMask mask, VTermStringFragment frag,
+1214:8:static VTermSelectionCallbacks selection_callbacks = {
+1218:11:#endif /* VTermSelectionMaskNotExists */
+1222:14:emacs_value Fvterm_new(emacs_env *env, ptrdiff_t nargs, emacs_value args[],
+1235:14:  term->vt = vterm_new(rows, cols);
+1236:3:  vterm_set_utf8(term->vt, 1);
+1238:15:  term->vts = vterm_obtain_screen(term->vt);
+1240:3:  VTermState *state = vterm_obtain_state(term->vt);
+1241:3:  vterm_state_set_unrecognised_fallbacks(state, &parser_callbacks, term);
+1243:9:#ifndef VTermSelectionMaskNotExists
+1244:3:  vterm_state_set_selection_callbacks(state, &selection_callbacks, term,
+1247:3:  vterm_state_set_bold_highbright(state, set_bold_hightbright);
+1249:3:  vterm_screen_reset(term->vts, 1);
+1250:3:  vterm_screen_set_callbacks(term->vts, &vterm_screen_callbacks, term);
+1251:3:  vterm_screen_set_damage_merge(term->vts, VTERM_DAMAGE_SCROLL);
+1252:3:  vterm_screen_enable_altscreen(term->vts, true);
+1307:14:emacs_value Fvterm_update(emacs_env *env, ptrdiff_t nargs, emacs_value args[],
+1316:5:    VTermModifier modifier = VTERM_MOD_NONE;
+1318:29:      modifier = modifier | VTERM_MOD_SHIFT;
+1320:29:      modifier = modifier | VTERM_MOD_ALT;
+1322:29:      modifier = modifier | VTERM_MOD_CTRL;
+1331:5:    vterm_invalidate(env);
+1337:14:emacs_value Fvterm_redraw(emacs_env *env, ptrdiff_t nargs, emacs_value args[],
+1344:14:emacs_value Fvterm_write_input(emacs_env *env, ptrdiff_t nargs,
+1352:3:  vterm_input_write(term->vt, bytes, len);
+1353:3:  vterm_screen_flush_damage(term->vts);
+1358:14:emacs_value Fvterm_set_size(emacs_env *env, ptrdiff_t nargs, emacs_value args[],
+1372:5:    vterm_set_size(term->vt, rows, cols);
+1373:5:    vterm_screen_flush_damage(term->vts);
+1381:14:emacs_value Fvterm_set_pty_name(emacs_env *env, ptrdiff_t nargs,
+1395:14:emacs_value Fvterm_get_pwd(emacs_env *env, ptrdiff_t nargs, emacs_value args[],
+1405:14:emacs_value Fvterm_get_icrnl(emacs_env *env, ptrdiff_t nargs,
+1421:14:emacs_value Fvterm_reset_cursor_point(emacs_env *env, ptrdiff_t nargs,
+1449:4:  Qvterm_line_wrap =
+1450:51:      env->make_global_ref(env, env->intern(env, "vterm-line-wrap"));
+1453:4:  Qvterm_prompt = env->make_global_ref(env, env->intern(env, "vterm-prompt"));
+1470:57:  Finsert = env->make_global_ref(env, env->intern(env, "vterm--insert"));
+1477:4:  Fvterm_flush_output =
+1478:51:      env->make_global_ref(env, env->intern(env, "vterm--flush-output"));
+1480:60:  Fgoto_line = env->make_global_ref(env, env->intern(env, "vterm--goto-line"));
+1482:51:      env->make_global_ref(env, env->intern(env, "vterm--delete-lines"));
+1496:4:  Fvterm_set_title =
+1497:51:      env->make_global_ref(env, env->intern(env, "vterm--set-title"));
+1498:4:  Fvterm_set_directory =
+1499:51:      env->make_global_ref(env, env->intern(env, "vterm--set-directory"));
+1500:4:  Fvterm_invalidate =
+1501:51:      env->make_global_ref(env, env->intern(env, "vterm--invalidate"));
+1503:4:  Fvterm_get_color =
+1504:51:      env->make_global_ref(env, env->intern(env, "vterm--get-color"));
+1505:4:  Fvterm_eval = env->make_global_ref(env, env->intern(env, "vterm--eval"));
+1506:4:  Fvterm_set_selection =
+1507:51:      env->make_global_ref(env, env->intern(env, "vterm--set-selection"));
+1512:38:      env->make_function(env, 4, 8, Fvterm_new, "Allocate a new vterm.", NULL);
+1513:23:  bind_function(env, "vterm--new", fun);
+1515:40:  fun = env->make_function(env, 1, 5, Fvterm_update,
+1517:23:  bind_function(env, "vterm--update", fun);
+1520:38:      env->make_function(env, 1, 1, Fvterm_redraw, "Redraw the screen.", NULL);
+1521:23:  bind_function(env, "vterm--redraw", fun);
+1523:40:  fun = env->make_function(env, 2, 2, Fvterm_write_input,
+1524:44:                           "Write input to vterm.", NULL);
+1525:23:  bind_function(env, "vterm--write-input", fun);
+1527:40:  fun = env->make_function(env, 3, 3, Fvterm_set_size,
+1529:23:  bind_function(env, "vterm--set-size", fun);
+1531:40:  fun = env->make_function(env, 2, 2, Fvterm_set_pty_name,
+1533:23:  bind_function(env, "vterm--set-pty-name", fun);
+1534:40:  fun = env->make_function(env, 2, 2, Fvterm_get_pwd,
+1536:23:  bind_function(env, "vterm--get-pwd-raw", fun);
+1537:40:  fun = env->make_function(env, 1, 1, Fvterm_reset_cursor_point,
+1539:23:  bind_function(env, "vterm--reset-point", fun);
+1541:40:  fun = env->make_function(env, 1, 1, Fvterm_get_icrnl,
+1543:23:  bind_function(env, "vterm--get-icrnl", fun);
+1545:17:  provide(env, "vterm-module");
+
+/home/lyao/.emacs.d/site-lisp/emacs-libvterm/elisp.c
+24:14:emacs_value Qvterm_line_wrap;
+26:14:emacs_value Qvterm_prompt;
+50:14:emacs_value Fvterm_flush_output;
+53:14:emacs_value Fvterm_set_title;
+54:14:emacs_value Fvterm_set_directory;
+55:14:emacs_value Fvterm_invalidate;
+57:14:emacs_value Fvterm_get_color;
+58:14:emacs_value Fvterm_eval;
+59:14:emacs_value Fvterm_set_selection;
+186:13:emacs_value vterm_get_color(emacs_env *env, int index, emacs_value args) {
+188:57:  return env->funcall(env, Fapply, 3, (emacs_value[]){ Fvterm_get_color, idx, args });
+192:22:  env->funcall(env, Fvterm_set_title, 1, (emacs_value[]){string});
+196:22:  env->funcall(env, Fvterm_set_directory, 1, (emacs_value[]){string});
+199:6:void vterm_invalidate(emacs_env *env) {
+200:22:  env->funcall(env, Fvterm_invalidate, 0, NULL);
+202:13:emacs_value vterm_eval(emacs_env *env, emacs_value string) {
+203:29:  return env->funcall(env, Fvterm_eval, 1, (emacs_value[]){string});
+206:13:emacs_value vterm_set_selection(emacs_env *env, emacs_value selection_target,
+208:29:  return env->funcall(env, Fvterm_set_selection, 2,
+
+/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/Makefile
+60:59:CMAKE_SOURCE_DIR = /home/lyao/.emacs.d/site-lisp/emacs-libvterm
+63:59:CMAKE_BINARY_DIR = /home/lyao/.emacs.d/site-lisp/emacs-libvterm/build
+90:82:	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles /home/lyao/.emacs.d/site-lisp/emacs-libvterm/build//CMakeFiles/progress.marks
+92:82:	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles 0
+120:34:# Target rules for targets named vterm-module
+123:1:vterm-module: cmake_check_build_system
+124:48:	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vterm-module
+125:10:.PHONY : vterm-module
+128:1:vterm-module/fast:
+129:38:	$(MAKE) $(MAKESILENT) -f CMakeFiles/vterm-module.dir/build.make CMakeFiles/vterm-module.dir/build
+130:10:.PHONY : vterm-module/fast
+150:38:	$(MAKE) $(MAKESILENT) -f CMakeFiles/vterm-module.dir/build.make CMakeFiles/vterm-module.dir/elisp.c.o
+158:38:	$(MAKE) $(MAKESILENT) -f CMakeFiles/vterm-module.dir/build.make CMakeFiles/vterm-module.dir/elisp.c.i
+166:38:	$(MAKE) $(MAKESILENT) -f CMakeFiles/vterm-module.dir/build.make CMakeFiles/vterm-module.dir/elisp.c.s
+174:38:	$(MAKE) $(MAKESILENT) -f CMakeFiles/vterm-module.dir/build.make CMakeFiles/vterm-module.dir/utf8.c.o
+182:38:	$(MAKE) $(MAKESILENT) -f CMakeFiles/vterm-module.dir/build.make CMakeFiles/vterm-module.dir/utf8.c.i
+190:38:	$(MAKE) $(MAKESILENT) -f CMakeFiles/vterm-module.dir/build.make CMakeFiles/vterm-module.dir/utf8.c.s
+193:1:vterm-module.o: vterm-module.c.o
+194:10:.PHONY : vterm-module.o
+197:1:vterm-module.c.o:
+198:38:	$(MAKE) $(MAKESILENT) -f CMakeFiles/vterm-module.dir/build.make CMakeFiles/vterm-module.dir/vterm-module.c.o
+199:10:.PHONY : vterm-module.c.o
+201:1:vterm-module.i: vterm-module.c.i
+202:10:.PHONY : vterm-module.i
+205:1:vterm-module.c.i:
+206:38:	$(MAKE) $(MAKESILENT) -f CMakeFiles/vterm-module.dir/build.make CMakeFiles/vterm-module.dir/vterm-module.c.i
+207:10:.PHONY : vterm-module.c.i
+209:1:vterm-module.s: vterm-module.c.s
+210:10:.PHONY : vterm-module.s
+213:1:vterm-module.c.s:
+214:38:	$(MAKE) $(MAKESILENT) -f CMakeFiles/vterm-module.dir/build.make CMakeFiles/vterm-module.dir/vterm-module.c.s
+215:10:.PHONY : vterm-module.c.s
+226:13:	@echo "... vterm-module"
+233:13:	@echo "... vterm-module.o"
+234:13:	@echo "... vterm-module.i"
+235:13:	@echo "... vterm-module.s"
+
+/home/lyao/.emacs.d/site-lisp/emacs-libvterm/etc/emacs-vterm-bash.sh
+1:48:# Some of the most useful features in emacs-libvterm require shell-side
+3:33:# shell to send information to `vterm` via properly escaped sequences. A
+4:38:# function that helps in this task, `vterm_printf`, is defined below.
+6:10:function vterm_printf(){
+20:26:if [[ "$INSIDE_EMACS" = 'vterm' ]]; then
+22:9:        vterm_printf "51;Evterm-clear-scrollback";
+27:8:# With vterm_cmd you can execute Emacs commands directly from the shell.
+28:16:# For example, vterm_cmd message "HI" will print "HI".
+30:3:# vterm-eval-cmds.
+31:1:vterm_cmd() {
+32:11:    local vterm_elisp
+33:5:    vterm_elisp=""
+35:9:        vterm_elisp="$vterm_elisp""$(printf '"%s" ' "$(printf "%s" "$1" | sed -e 's|\\|\\\\|g' -e 's|"|\\"|g')")"
+38:5:    vterm_printf "51;E$vterm_elisp"
+52:1:vterm_prompt_end(){
+53:5:    vterm_printf "51;A$(whoami)@$(hostname):$(pwd)"
+55:14:PS1=$PS1'\[$(vterm_prompt_end)\]'
+
+/home/lyao/.emacs.d/site-lisp/emacs-libvterm/etc/emacs-vterm-zsh.sh
+1:48:# Some of the most useful features in emacs-libvterm require shell-side
+3:33:# shell to send information to `vterm` via properly escaped sequences. A
+4:38:# function that helps in this task, `vterm_printf`, is defined below.
+6:10:function vterm_printf(){
+20:26:if [[ "$INSIDE_EMACS" = 'vterm' ]]; then
+21:18:    alias clear='vterm_printf "51;Evterm-clear-scrollback";tput clear'
+24:8:# With vterm_cmd you can execute Emacs commands directly from the shell.
+25:16:# For example, vterm_cmd message "HI" will print "HI".
+27:3:# vterm-eval-cmds.
+28:1:vterm_cmd() {
+29:11:    local vterm_elisp
+30:5:    vterm_elisp=""
+32:9:        vterm_elisp="$vterm_elisp""$(printf '"%s" ' "$(printf "%s" "$1" | sed -e 's|\\|\\\\|g' -e 's|"|\\"|g')")"
+35:5:    vterm_printf "51;E$vterm_elisp"
+50:1:vterm_prompt_end() {
+51:5:    vterm_printf "51;A$(whoami)@$(hostname):$(pwd)"
+54:20:PROMPT=$PROMPT'%{$(vterm_prompt_end)%}'
+
+/home/lyao/.emacs.d/site-lisp/emacs-libvterm/etc/emacs-vterm.fish
+1:48:# Some of the most useful features in emacs-libvterm require shell-side
+3:33:# shell to send information to `vterm` via properly escaped sequences. A
+4:38:# function that helps in this task, `vterm_printf`, is defined below.
+6:10:function vterm_printf;
+20:25:if [ "$INSIDE_EMACS" = 'vterm' ]
+22:9:        vterm_printf "51;Evterm-clear-scrollback";
+36:8:# With vterm_cmd you can execute Emacs commands directly from the shell.
+37:16:# For example, vterm_cmd message "HI" will print "HI".
+39:3:# vterm-eval-cmds.
+40:10:function vterm_cmd --description 'Run an Emacs command among the ones defined in vterm-eval-cmds.'
+41:12:    set -l vterm_elisp ()
+43:16:        set -a vterm_elisp (printf '"%s" ' (string replace -a -r '([\\\\"])' '\\\\\\\\$1' $arg))
+45:5:    vterm_printf '51;E'(string join '' $vterm_elisp)
+54:10:function vterm_prompt_end;
+55:5:    vterm_printf '51;A'(whoami)'@'(hostname)':'(pwd)
+59:30:functions --copy fish_prompt vterm_old_fish_prompt
+65:36:    printf "%b" (string join "\n" (vterm_old_fish_prompt))
+66:5:    vterm_prompt_end
+
+/home/lyao/.emacs.d/site-lisp/emacs-libvterm/README.md
+1:38:[![MELPA](https://melpa.org/packages/vterm-badge.svg)](https://melpa.org/#/vterm)
+5:10:Emacs-libvterm (_vterm_) is fully-fledged terminal emulator inside GNU Emacs
+6:14:based on [libvterm](https://github.com/neovim/libvterm), a C library. As a
+7:60:result of using compiled code (instead of elisp), emacs-libvterm is fully
+16:51:[appendix](#breaking-changes). Moreover, emacs-libvterm deals directly with some
+19:45:problem](https://github.com/akermu/emacs-libvterm/issues/new).
+21:83:## Given that eshell, shell, and (ansi-)term are Emacs built-in, why should I use vterm?
+27:13:`term` and `vterm`:
+43:4:- `vterm`: like `term` it is a terminal emulator. Unlike `term`, the core of
+44:4:  `vterm` is an external library written in C, `libvterm`. For this reason,
+45:4:  `vterm` outperforms `term` and has a nearly universal compatibility with
+48:1:Vterm is not for you if you are using Windows, or if you cannot set up Emacs
+49:53:with support for modules. Otherwise, you should try vterm, as it provides a
+52:8:Using `vterm` is like using Gnome Terminal inside Emacs: Vterm is fully-featured
+63:28:Before installing emacs-libvterm, you need to make sure you have installed
+69:46:    [#66](https://github.com/akermu/emacs-libvterm/issues/66)
+70:46:    [#85](https://github.com/akermu/emacs-libvterm/issues/85#issuecomment-491845136))
+71:19: 4. OPTIONAL: [libvterm](https://github.com/Sbozzolo/libvterm-mirror.git) (>= 0.2). This
+74:9:    `libvterm` (Arch, Fedora, Gentoo, openSUSE), or `libvterm-dev` (Debian,
+75:36:    Ubuntu). If not available, `libvterm` will be downloaded during the
+77:26:    have versions of `libvterm` that are too old. If you find compilation errors
+78:17:    related to `VTERM_COLOR`, you should not use your system libvterm. See
+83:2:`vterm` is available on [MELPA](https://melpa.org/), and it can be installed as
+85:29:with support for modules), `vterm` will compile the module the first time it is
+86:46:run. This is the recommended way to install `vterm`.
+88:2:`vterm` can be install from MELPA with `use-package` by adding the following
+92:14:(use-package vterm
+96:48:To take full advantage of the capabilities of `vterm`, you should configure your
+105:46:git clone https://github.com/akermu/emacs-libvterm.git
+108:13:By default, vterm will try to find if libvterm is installed. If it is not found,
+109:10:emacs-libvterm will download the latest version available of libvterm (from
+110:37:[here](https://github.com/neovim/libvterm)), compile it, and use it. If you
+112:16:`USE_SYSTEM_LIBVTERM` to `no`. To do this, change `cmake ..` with `cmake
+113:17:-DUSE_SYSTEM_LIBVTERM=no ..` in the following instructions.
+118:13:cd emacs-libvterm
+128:43:(add-to-list 'load-path "path/to/emacs-libvterm")
+129:11:(require 'vterm)
+135:14:(use-package vterm
+136:33:  :load-path  "path/to/emacs-libvterm/")
+139:4:## vterm and Ubuntu
+141:8:Using `vterm` on Ubuntu requires additional steps. The latest LTS version
+144:29:The basic steps for getting vterm to work on Ubuntu 20.04 are:
+201:8:Using `vterm` on Ubuntu 18.04 requires additional steps.
+202:58:18.04 ships with a version of CMake that is too old for `vterm` and GNU
+207:48:(see [#185](https://github.com/akermu/emacs-libvterm/issues/185#issuecomment-562237077)).
+226:43:[#216](https://github.com/akermu/emacs-libvterm/issues/216#issuecomment-575934593)).
+231:69:Some releases of Ubuntu (e.g., 18.04) ship with a old version of libvterm that
+237:2:`vterm` and its dependencies are available in GNU Guix as
+238:8:[emacs-vterm](https://guix.gnu.org/packages/emacs-vterm-0-1.7d7381f/).
+239:58:The package can be installed with `guix package -i emacs-vterm`.
+243:38:Some of the most useful features in `vterm` (e.g., [directory-tracking and
+246:75:these additional functions is to enable the shell to send information to `vterm`
+248:2:`vterm_printf`, is defined below. This function is widely used throughout this
+254:1:vterm_printf() {
+272:10:function vterm_printf;
+296:5:## `vterm`
+300:5:## `vterm-other-window`
+304:5:## `vterm-copy-mode`
+306:18:When you enable `vterm-copy-mode`, the terminal buffer behaves like a normal
+308:12:to toggle `vterm-copy-mode` is `C-c C-t`. When a region is selected, it is
+309:38:possible to copy the text and leave `vterm-copy-mode` with the enter key.
+312:29:line from start to end. If `vterm-copy-exclude-prompt` is true it will skip
+315:5:## `vterm-clear-scrollback`
+317:2:`vterm-clear-scrollback` does exactly what the name suggests: it clears the
+319:2:`vterm-clear-scrollback` is bound to `C-c C-l`. This function is typically used
+326:26:if [[ "$INSIDE_EMACS" = 'vterm' ]]; then
+327:18:    alias clear='vterm_printf "51;Evterm-clear-scrollback";tput clear'
+334:26:if [[ "$INSIDE_EMACS" = 'vterm' ]]; then
+336:9:        vterm_printf "51;Evterm-clear-scrollback";
+345:25:if [ "$INSIDE_EMACS" = 'vterm' ]
+347:9:        vterm_printf "51;Evterm-clear-scrollback";
+353:48:These aliases take advantage of the fact that `vterm` can execute `elisp`
+357:26:by setting the variable `vterm-clear-scrollback-when-clearing`: When
+358:2:`vterm-clear-scrollback-when-clearing` is non nil, `C-l` clears both the screen
+364:5:## `vterm-shell`
+366:23:Shell to run in a new vterm. It defaults to `$SHELL`.
+368:5:## `vterm-environment`
+370:55:to add more environment variables there is the custom vterm-environment which has
+374:5:## `vterm-term-environment-variable`
+378:10:setting `vterm-term-environment-variable` to `eterm-color` improves the
+381:5:## `vterm-kill-buffer-on-exit`
+387:5:## `vterm-module-cmake-args`
+391:38:moment, it main use is for compiling vterm using the system libvterm instead of
+395:5:## `vterm-copy-exclude-prompt`
+398:2:`vterm-copy-mode`. Using the universal prefix before calling
+399:2:`vterm-copy-mode-done` will invert the value for that call, allowing you to
+403:5:## `vterm-use-vterm-prompt-detection-method`
+405:15:The variable `vterm-use-vterm-prompt-detection-method` determines whether to use
+406:5:the vterm prompt tracking, if false it use the regexp in
+407:2:`vterm-copy-prompt-regexp` to search for the prompt.
+409:5:## `vterm-enable-manipulate-selection-data-by-osc52`
+411:1:Vterm support copy text to Emacs kill ring and system clipboard by using OSC 52.
+424:66:This feature need the new way of handling strings with a struct `VTermStringFragment`
+425:7:in libvterm. You'd better compile emacs-libvterm with `cmake -DUSE_SYSTEM_LIBVTERM=no ..`.
+427:14:by bug of libvterm.
+429:5:## `vterm-buffer-name-string`
+431:7:When `vterm-buffer-name-string` is not nil, vterm renames automatically its own
+432:15:buffers with `vterm-buffer-name-string`. This string can contain the character
+434:31:below). A possible value for `vterm-buffer-name-string` is `vterm %s`, according
+435:18:to which all the vterm buffers will be named "vterm TITLE".
+466:5:## `vterm-always-compile-module`
+468:1:Vterm needs `vterm-module` to work. This can be compiled externally, or `vterm`
+469:53:will ask the user whether to build the module when `vterm` is first called. To
+471:2:`vterm-always-compile-module` to `t`.
+473:5:## `vterm-copy-mode-remove-fake-newlines`
+476:1:vterm inserts fake-newlines purely for rendering. When using
+477:2:`vterm-copy-mode` these are in conflict with many emacs functions
+485:59:If you want a key to be sent to the terminal, bind it to `vterm--self-insert`,
+486:20:or remove it from `vterm-mode-map`. By default, `vterm.el` binds most of the
+492:31:use the interactive function `vterm-send-next-key`. This can be bound to a key
+493:9:in the `vterm-mode-map` like `C-q`, in which case pressing `C-q C-g` will send a
+497:13:(define-key vterm-mode-map (kbd "C-q") #'vterm-send-next-key)
+505:48:You can change the font (the _face_) used in a vterm with the following code:
+508:12:(add-hook 'vterm-mode-hook
+515:44:example reported here can be used to force vterm to use a mono-spaced font (the
+520:53:reverse video) setting the relative option to `t` (`vterm-disable-bold`,
+521:2:`vterm-disable-underline`, or `vterm-disable-inverse-video`).
+523:30:You can use another font for vterm buffer
+526:12:(add-hook 'vterm-mode-hook
+533:7:When `vterm-ignore-blink-cursor` is `t`, vterm will ignore request from application to turn on or off cursor blink.
+544:3:- vterm-color-black
+545:3:- vterm-color-red
+546:3:- vterm-color-green
+547:3:- vterm-color-yellow
+548:3:- vterm-color-blue
+549:3:- vterm-color-magenta
+550:3:- vterm-color-cyan
+551:3:- vterm-color-white
+552:3:- vterm-color-bright-black
+553:3:- vterm-color-bright-red
+554:3:- vterm-color-bright-green
+555:3:- vterm-color-bright-yellow
+556:3:- vterm-color-bright-blue
+557:3:- vterm-color-bright-magenta
+558:3:- vterm-color-bright-cyan
+559:3:- vterm-color-bright-white
+563:2:`vterm` supports _directory tracking_. If this feature is enabled, the default
+564:58:directory in Emacs and the current working directory in `vterm` are synced. As a
+568:6:And `vterm` supports _prompt tracking_. If this feature is enabled, Emacs knows
+570:19:Then you can use `vterm-next-prompt` and `vterm-previous-prompt`
+573:6:And `vterm-beginning-of-line` would move the point to the first character after the
+575:37:The default keybinding is `C-a` in `vterm-copy-mode`.
+577:6:And `vterm--at-prompt-p` would check whether the cursor is at the point just after
+582:41:code assume that you have the function `vterm_printf` as defined in section
+588:1:vterm_prompt_end() {
+589:5:    vterm_printf "51;A$(whoami)@$(hostname):$(pwd)"
+592:20:PROMPT=$PROMPT'%{$(vterm_prompt_end)%}'
+598:1:vterm_prompt_end(){
+599:5:    vterm_printf "51;A$(whoami)@$(hostname):$(pwd)"
+601:14:PS1=$PS1'\[$(vterm_prompt_end)\]'
+607:10:function vterm_prompt_end;
+608:5:    vterm_printf '51;A'(whoami)'@'(hostname)':'(pwd)
+610:30:functions --copy fish_prompt vterm_old_fish_prompt
+615:36:    printf "%b" (string join "\n" (vterm_old_fish_prompt))
+616:5:    vterm_prompt_end
+620:33:Here we are using the function `vterm_printf` that we have discussed above, so make
+631:1:vterm_printf "51;A$USER@$HOSTNAME:$(pwd)"
+636:2:`vterm` can read and execute commands. At the moment, a command is
+648:1:vterm_printf "51;Emessage \"Hello\!\""
+651:62:The commands that are understood are defined in the setting `vterm-eval-cmds`.
+660:1:vterm_cmd() {
+661:11:    local vterm_elisp
+662:5:    vterm_elisp=""
+664:9:        vterm_elisp="$vterm_elisp""$(printf '"%s" ' "$(printf "%s" "$1" | sed -e 's|\\|\\\\|g' -e 's|"|\\"|g')")"
+667:5:    vterm_printf "51;E$vterm_elisp"
+674:10:function vterm_cmd --description 'Run an Emacs command among the ones been defined in vterm-eval-cmds.'
+675:12:    set -l vterm_elisp ()
+677:16:        set -a vterm_elisp (printf '"%s" ' (string replace -a -r '([\\\\"])' '\\\\\\\\$1' $arg))
+679:5:    vterm_printf '51;E'(string join '' $vterm_elisp)
+683:63:Now we can write shell functions to call the ones defined in `vterm-eval-cmds`.
+687:5:    vterm_cmd find-file "$(realpath "${@:-.}")"
+691:5:    vterm_cmd message "%s" "$*"
+700:5:    vterm_cmd find-file (realpath "$argv")
+704:5:    vterm_cmd message "%s" "$argv"
+708:65:This newly defined `find_file` function can now be used inside `vterm` as
+727:7:      vterm-eval-cmds)
+734:5:    vterm_cmd find-file-below "$(realpath "${@:-.}")"
+752:12:When using vterm Emacs sets the environment variable INSIDE_EMACS in the subshell to ‘vterm’.
+755:1:Vterm also sets an extra variable EMACS_VTERM_PATH to the place where the vterm library is installed.
+756:34:This is very useful because when vterm is installed from melpa the Shell-side configuration files are
+757:14:in the EMACS_VTERM_PATH inside the /etc sub-directory. After a package update, the directory name changes,
+762:26:if [[ "$INSIDE_EMACS" = 'vterm' ]] \
+763:22:    && [[ -n ${EMACS_VTERM_PATH} ]] \
+764:22:    && [[ -f ${EMACS_VTERM_PATH}/etc/emacs-vterm-bash.sh ]]; then
+765:17:	source ${EMACS_VTERM_PATH}/etc/emacs-vterm-bash.sh
+773:66:By default, the scrollback can contain up to 1000 lines per each vterm buffer.
+775:2:`vterm-max-scrollback`. If you want to increase it further, you have to edit the
+776:7:file `vterm-module.h`, change the variable `SB_MAX`, and set the new value for
+777:2:`vterm-max-scrollback`. The potential maximum memory consumption of vterm
+778:25:buffers increases with `vterm-max-scrollback`, so setting `SB_MAX` to extreme
+781:35:### How can I automatically close vterm buffers when the process is terminated?
+783:35:There is an option for that: set `vterm-kill-buffer-on-exit` to `t`.
+785:61:### The package does not compile, I have errors related to `VTERM_COLOR`.
+787:20:The version of `libvterm` installed on your system is too old. You should let
+788:11:`emacs-libvterm` download `libvterm` for you. You can either uninstall your
+789:4:libvterm, or instruct Emacs to ignore the system libvterm. If you are compiling
+793:7:(setq vterm-module-cmake-args "-DUSE_SYSTEM_LIBVTERM=no")
+797:18:`-DUSE_SYSTEM_LIBVTERM=no`.
+804:13:(define-key vterm-mode-map (kbd "<C-backspace>")
+805:31:    (lambda () (interactive) (vterm-send-key (kbd "C-w"))))
+811:33:the correct function to yank in vterm buffers.
+814:8:(defun vterm-counsel-yank-pop-action (orig-fun &rest args)
+815:26:  (if (equal major-mode 'vterm-mode)
+817:56:            (yank-undo-function (lambda (_start _end) (vterm-undo))))
+819:31:               (lambda (str) (vterm-send-string str t))))
+823:48:(advice-add 'counsel-yank-pop-action :around #'vterm-counsel-yank-pop-action)
+834:8:(defun vterm-directory-sync ()
+837:9:  (when vterm--process
+838:29:    (let* ((pid (process-id vterm--process))
+846:35:(advice-add #'find-file :before #'vterm-directory-sync)
+861:1:vterm_set_directory() {
+862:5:    vterm_cmd update-pwd "$PWD/"
+869:1:vterm_set_directory() {
+870:5:    vterm_cmd update-pwd "/-:""$USER""@""$HOSTNAME"":""$PWD/"
+878:28:add-zsh-hook -Uz chpwd (){ vterm_set_directory }
+884:53:PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND; }vterm_set_directory"
+888:28:is allowed to execute from vterm:
+891:15:(add-to-list 'vterm-eval-cmds '("update-pwd" (lambda (path) (setq default-directory path))))
+900:24:(defun evil-collection-vterm-escape-stay ()
+906:12:(add-hook 'vterm-mode-hook #'evil-collection-vterm-escape-stay)
+912:4:- [vterm-toggle](https://github.com/jixiuf/vterm-toggle): Toggles between a
+913:3:  vterm and the current buffer
+914:13:- [multi-libvterm](https://github.com/suonlight/multi-libvterm): Multiterm for emacs-libvterm
+923:4:* `vterm-send-C-[a-z]` `vterm-send-M-[a-z]` `vterm-define-key`
+924:3: `vterm-send-{up/down/left/right/prior/next/meta-dot/meta-comma/ctrl-slash}`
+925:29: were obsolete, please use `vterm-send` or `vterm-send-key` or
+926:3: `vterm--self-insert` instead.
+930:4:* `vterm-disable-bold-font` was renamed to `vterm-disable-bold` to uniform it
+935:4:* `vterm-use-vterm-prompt` was renamed to `vterm-use-vterm-prompt-detection-method`.
+936:4:* `vterm-kill-buffer-on-exit` is set to `t` by default.
+940:4:* `vterm-clear-scrollback` was renamed to `vterm-clear-scrollback-when-clearning`.
+941:4:* `vterm-set-title-functions` was removed. In its place, there is a new custom
+942:11:  option `vterm-buffer-name-string`. See
+943:4:  [vterm-buffer-name-string](vterm-buffer-name-string) for documentation.
+
+/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/cmake_install.cmake
+1:72:# Install script for directory: /home/lyao/.emacs.d/site-lisp/emacs-libvterm
+53:52:file(WRITE "/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/${CMAKE_INSTALL_MANIFEST}"
+
+/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles/TargetDirectories.txt
+1:40:/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles/vterm-module.dir
+2:40:/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles/run.dir
+3:40:/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles/edit_cache.dir
+4:40:/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles/rebuild_cache.dir
+
+/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles/CMakeDirectoryInformation.cmake
+5:76:set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/home/lyao/.emacs.d/site-lisp/emacs-libvterm")
+6:76:set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build")
+
+/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles/vterm-module.dir/depend.make
+1:31:# Empty dependencies file for vterm-module.
+
+/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles/vterm-module.dir/compiler_depend.make
+1:50:# Empty compiler generated dependencies file for vterm-module.
+
+/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles/CMakeConfigureLog.yaml
+31:48:        /home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles/3.29.3/CompilerIdC/a.out
+42:55:      source: "/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles/CMakeScratch/TryCompile-aoTR4R"
+43:55:      binary: "/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles/CMakeScratch/TryCompile-aoTR4R"
+52:61:        Change Dir: '/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles/CMakeScratch/TryCompile-aoTR4R'
+56:77:        make[1]: Entering directory '/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles/CMakeScratch/TryCompile-aoTR4R'
+106:76:        make[1]: Leaving directory '/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles/CMakeScratch/TryCompile-aoTR4R'
+141:75:        ignore line: [Change Dir: '/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles/CMakeScratch/TryCompile-aoTR4R']
+145:91:        ignore line: [make[1]: Entering directory '/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles/CMakeScratch/TryCompile-aoTR4R']
+
+/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles/Makefile2
+57:59:CMAKE_SOURCE_DIR = /home/lyao/.emacs.d/site-lisp/emacs-libvterm
+60:59:CMAKE_BINARY_DIR = /home/lyao/.emacs.d/site-lisp/emacs-libvterm/build
+66:17:all: CMakeFiles/vterm-module.dir/all
+74:19:clean: CMakeFiles/vterm-module.dir/clean
+79:38:# Target rules for target CMakeFiles/vterm-module.dir
+82:12:CMakeFiles/vterm-module.dir/all:
+83:38:	$(MAKE) $(MAKESILENT) -f CMakeFiles/vterm-module.dir/build.make CMakeFiles/vterm-module.dir/depend
+84:38:	$(MAKE) $(MAKESILENT) -f CMakeFiles/vterm-module.dir/build.make CMakeFiles/vterm-module.dir/build
+85:114:	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles --progress-num=1,2,3,4 "Built target vterm-module"
+86:21:.PHONY : CMakeFiles/vterm-module.dir/all
+89:12:CMakeFiles/vterm-module.dir/rule: cmake_check_build_system
+90:82:	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles 4
+91:59:	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/vterm-module.dir/all
+92:82:	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles 0
+93:21:.PHONY : CMakeFiles/vterm-module.dir/rule
+96:1:vterm-module: CMakeFiles/vterm-module.dir/rule
+97:10:.PHONY : vterm-module
+100:12:CMakeFiles/vterm-module.dir/clean:
+101:38:	$(MAKE) $(MAKESILENT) -f CMakeFiles/vterm-module.dir/build.make CMakeFiles/vterm-module.dir/clean
+102:21:.PHONY : CMakeFiles/vterm-module.dir/clean
+108:36:CMakeFiles/run.dir/all: CMakeFiles/vterm-module.dir/all
+111:114:	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles --progress-num= "Built target run"
+116:82:	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles 4
+118:82:	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles 0
+
+/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles/vterm-module.dir/elisp.c.o.d
+1:12:CMakeFiles/vterm-module.dir/elisp.c.o: \
+2:41: /home/lyao/.emacs.d/site-lisp/emacs-libvterm/elisp.c \
+4:41: /home/lyao/.emacs.d/site-lisp/emacs-libvterm/elisp.h \
+5:41: /home/lyao/.emacs.d/site-lisp/emacs-libvterm/emacs-module.h \
+18:15: /usr/include/vterm.h /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+35:15: /usr/include/vterm_keycodes.h /usr/include/stdio.h \
+
+/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles/run.dir/build.make
+56:59:CMAKE_SOURCE_DIR = /home/lyao/.emacs.d/site-lisp/emacs-libvterm
+59:59:CMAKE_BINARY_DIR = /home/lyao/.emacs.d/site-lisp/emacs-libvterm/build
+69:56:CMakeFiles/run: /home/lyao/.emacs.d/site-lisp/emacs-libvterm/vterm-module.so
+70:53:	emacs -Q -L /home/lyao/.emacs.d/site-lisp/emacs-libvterm -L /home/lyao/.emacs.d/site-lisp/emacs-libvterm/build --eval \(require\ \'vterm\) --eval \(vterm\)
+85:44:	cd /home/lyao/.emacs.d/site-lisp/emacs-libvterm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lyao/.emacs.d/site-lisp/emacs-libvterm /home/lyao/.emacs.d/site-lisp/emacs-libvterm /home/lyao/.emacs.d/site-lisp/emacs-libvterm/build /home/lyao/.emacs.d/site-lisp/emacs-libvterm/build /home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles/run.dir/DependInfo.cmake "--color=$(COLOR)"
+
+/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles/vterm-module.dir/flags.make
+5:15:C_DEFINES = -Dvterm_module_EXPORTS
+
+/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles/vterm-module.dir/compiler_depend.ts
+2:69:# Timestamp file for compiler generated dependencies management for vterm-module.
+
+/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles/vterm-module.dir/vterm-module.c.o.d
+1:12:CMakeFiles/vterm-module.dir/vterm-module.c.o: \
+2:41: /home/lyao/.emacs.d/site-lisp/emacs-libvterm/vterm-module.c \
+4:41: /home/lyao/.emacs.d/site-lisp/emacs-libvterm/vterm-module.h \
+5:41: /home/lyao/.emacs.d/site-lisp/emacs-libvterm/emacs-module.h \
+18:39: /usr/include/inttypes.h /usr/include/vterm.h /usr/include/stdlib.h \
+35:15: /usr/include/vterm_keycodes.h \
+36:41: /home/lyao/.emacs.d/site-lisp/emacs-libvterm/elisp.h \
+37:41: /home/lyao/.emacs.d/site-lisp/emacs-libvterm/utf8.h \
+
+/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles/vterm-module.dir/DependInfo.cmake
+11:43:  "/home/lyao/.emacs.d/site-lisp/emacs-libvterm/elisp.c" "CMakeFiles/vterm-module.dir/elisp.c.o" "gcc" "CMakeFiles/vterm-module.dir/elisp.c.o.d"
+12:43:  "/home/lyao/.emacs.d/site-lisp/emacs-libvterm/utf8.c" "CMakeFiles/vterm-module.dir/utf8.c.o" "gcc" "CMakeFiles/vterm-module.dir/utf8.c.o.d"
+13:43:  "/home/lyao/.emacs.d/site-lisp/emacs-libvterm/vterm-module.c" "CMakeFiles/vterm-module.dir/vterm-module.c.o" "gcc" "CMakeFiles/vterm-module.dir/vterm-module.c.o.d"
+
+/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles/vterm-module.dir/link.txt
+1:86:/usr/bin/cc -fPIC -O2 -g -DNDEBUG -shared  -o /home/lyao/.emacs.d/site-lisp/emacs-libvterm/vterm-module.so "CMakeFiles/vterm-module.dir/vterm-module.c.o" "CMakeFiles/vterm-module.dir/utf8.c.o" "CMakeFiles/vterm-module.dir/elisp.c.o"  /usr/lib/libvterm.so
+
+/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles/vterm-module.dir/utf8.c.o.d
+1:12:CMakeFiles/vterm-module.dir/utf8.c.o: \
+2:41: /home/lyao/.emacs.d/site-lisp/emacs-libvterm/utf8.c \
+4:41: /home/lyao/.emacs.d/site-lisp/emacs-libvterm/utf8.h \
+
+/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles/vterm-module.dir/build.make
+56:59:CMAKE_SOURCE_DIR = /home/lyao/.emacs.d/site-lisp/emacs-libvterm
+59:59:CMAKE_BINARY_DIR = /home/lyao/.emacs.d/site-lisp/emacs-libvterm/build
+62:20:include CMakeFiles/vterm-module.dir/depend.make
+64:20:include CMakeFiles/vterm-module.dir/compiler_depend.make
+67:20:include CMakeFiles/vterm-module.dir/progress.make
+70:20:include CMakeFiles/vterm-module.dir/flags.make
+72:12:CMakeFiles/vterm-module.dir/vterm-module.c.o: CMakeFiles/vterm-module.dir/flags.make
+73:12:CMakeFiles/vterm-module.dir/vterm-module.c.o: /home/lyao/.emacs.d/site-lisp/emacs-libvterm/vterm-module.c
+74:12:CMakeFiles/vterm-module.dir/vterm-module.c.o: CMakeFiles/vterm-module.dir/compiler_depend.ts
+75:122:	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/vterm-module.dir/vterm-module.c.o"
+76:71:	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/vterm-module.dir/vterm-module.c.o -MF CMakeFiles/vterm-module.dir/vterm-module.c.o.d -o CMakeFiles/vterm-module.dir/vterm-module.c.o -c /home/lyao/.emacs.d/site-lisp/emacs-libvterm/vterm-module.c
+78:12:CMakeFiles/vterm-module.dir/vterm-module.c.i: cmake_force
+79:106:	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/vterm-module.dir/vterm-module.c.i"
+80:94:	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lyao/.emacs.d/site-lisp/emacs-libvterm/vterm-module.c > CMakeFiles/vterm-module.dir/vterm-module.c.i
+82:12:CMakeFiles/vterm-module.dir/vterm-module.c.s: cmake_force
+83:111:	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/vterm-module.dir/vterm-module.c.s"
+84:94:	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lyao/.emacs.d/site-lisp/emacs-libvterm/vterm-module.c -o CMakeFiles/vterm-module.dir/vterm-module.c.s
+86:12:CMakeFiles/vterm-module.dir/utf8.c.o: CMakeFiles/vterm-module.dir/flags.make
+87:12:CMakeFiles/vterm-module.dir/utf8.c.o: /home/lyao/.emacs.d/site-lisp/emacs-libvterm/utf8.c
+88:12:CMakeFiles/vterm-module.dir/utf8.c.o: CMakeFiles/vterm-module.dir/compiler_depend.ts
+89:122:	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/vterm-module.dir/utf8.c.o"
+90:71:	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/vterm-module.dir/utf8.c.o -MF CMakeFiles/vterm-module.dir/utf8.c.o.d -o CMakeFiles/vterm-module.dir/utf8.c.o -c /home/lyao/.emacs.d/site-lisp/emacs-libvterm/utf8.c
+92:12:CMakeFiles/vterm-module.dir/utf8.c.i: cmake_force
+93:106:	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/vterm-module.dir/utf8.c.i"
+94:94:	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lyao/.emacs.d/site-lisp/emacs-libvterm/utf8.c > CMakeFiles/vterm-module.dir/utf8.c.i
+96:12:CMakeFiles/vterm-module.dir/utf8.c.s: cmake_force
+97:111:	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/vterm-module.dir/utf8.c.s"
+98:94:	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lyao/.emacs.d/site-lisp/emacs-libvterm/utf8.c -o CMakeFiles/vterm-module.dir/utf8.c.s
+100:12:CMakeFiles/vterm-module.dir/elisp.c.o: CMakeFiles/vterm-module.dir/flags.make
+101:12:CMakeFiles/vterm-module.dir/elisp.c.o: /home/lyao/.emacs.d/site-lisp/emacs-libvterm/elisp.c
+102:12:CMakeFiles/vterm-module.dir/elisp.c.o: CMakeFiles/vterm-module.dir/compiler_depend.ts
+103:122:	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/vterm-module.dir/elisp.c.o"
+104:71:	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/vterm-module.dir/elisp.c.o -MF CMakeFiles/vterm-module.dir/elisp.c.o.d -o CMakeFiles/vterm-module.dir/elisp.c.o -c /home/lyao/.emacs.d/site-lisp/emacs-libvterm/elisp.c
+106:12:CMakeFiles/vterm-module.dir/elisp.c.i: cmake_force
+107:106:	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/vterm-module.dir/elisp.c.i"
+108:94:	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lyao/.emacs.d/site-lisp/emacs-libvterm/elisp.c > CMakeFiles/vterm-module.dir/elisp.c.i
+110:12:CMakeFiles/vterm-module.dir/elisp.c.s: cmake_force
+111:111:	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/vterm-module.dir/elisp.c.s"
+112:94:	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lyao/.emacs.d/site-lisp/emacs-libvterm/elisp.c -o CMakeFiles/vterm-module.dir/elisp.c.s
+114:27:# Object files for target vterm-module
+115:1:vterm__module_OBJECTS = \
+116:13:"CMakeFiles/vterm-module.dir/vterm-module.c.o" \
+117:13:"CMakeFiles/vterm-module.dir/utf8.c.o" \
+118:13:"CMakeFiles/vterm-module.dir/elisp.c.o"
+120:36:# External object files for target vterm-module
+121:1:vterm__module_EXTERNAL_OBJECTS =
+123:40:/home/lyao/.emacs.d/site-lisp/emacs-libvterm/vterm-module.so: CMakeFiles/vterm-module.dir/vterm-module.c.o
+124:40:/home/lyao/.emacs.d/site-lisp/emacs-libvterm/vterm-module.so: CMakeFiles/vterm-module.dir/utf8.c.o
+125:40:/home/lyao/.emacs.d/site-lisp/emacs-libvterm/vterm-module.so: CMakeFiles/vterm-module.dir/elisp.c.o
+126:40:/home/lyao/.emacs.d/site-lisp/emacs-libvterm/vterm-module.so: CMakeFiles/vterm-module.dir/build.make
+127:40:/home/lyao/.emacs.d/site-lisp/emacs-libvterm/vterm-module.so: /usr/lib/libvterm.so
+128:40:/home/lyao/.emacs.d/site-lisp/emacs-libvterm/vterm-module.so: CMakeFiles/vterm-module.dir/link.txt
+129:129:	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared module /home/lyao/.emacs.d/site-lisp/emacs-libvterm/vterm-module.so"
+130:51:	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/vterm-module.dir/link.txt --verbose=$(VERBOSE)
+133:12:CMakeFiles/vterm-module.dir/build: /home/lyao/.emacs.d/site-lisp/emacs-libvterm/vterm-module.so
+134:21:.PHONY : CMakeFiles/vterm-module.dir/build
+136:12:CMakeFiles/vterm-module.dir/clean:
+137:33:	$(CMAKE_COMMAND) -P CMakeFiles/vterm-module.dir/cmake_clean.cmake
+138:21:.PHONY : CMakeFiles/vterm-module.dir/clean
+140:12:CMakeFiles/vterm-module.dir/depend:
+141:44:	cd /home/lyao/.emacs.d/site-lisp/emacs-libvterm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lyao/.emacs.d/site-lisp/emacs-libvterm /home/lyao/.emacs.d/site-lisp/emacs-libvterm /home/lyao/.emacs.d/site-lisp/emacs-libvterm/build /home/lyao/.emacs.d/site-lisp/emacs-libvterm/build /home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles/vterm-module.dir/DependInfo.cmake "--color=$(COLOR)"
+142:21:.PHONY : CMakeFiles/vterm-module.dir/depend
+
+/home/lyao/.emacs.d/site-lisp/emacs-libvterm/build/CMakeFiles/vterm-module.dir/cmake_clean.cmake
+2:43:  "/home/lyao/.emacs.d/site-lisp/emacs-libvterm/vterm-module.pdb"
+3:43:  "/home/lyao/.emacs.d/site-lisp/emacs-libvterm/vterm-module.so"
+4:15:  "CMakeFiles/vterm-module.dir/elisp.c.o"
+5:15:  "CMakeFiles/vterm-module.dir/elisp.c.o.d"
+6:15:  "CMakeFiles/vterm-module.dir/utf8.c.o"
+7:15:  "CMakeFiles/vterm-module.dir/utf8.c.o.d"
+8:15:  "CMakeFiles/vterm-module.dir/vterm-module.c.o"
+9:15:  "CMakeFiles/vterm-module.dir/vterm-module.c.o.d"
+14:22:  include(CMakeFiles/vterm-module.dir/cmake_clean_${lang}.cmake OPTIONAL)
+
+color-rg finished (2016 matches found) at Sun May 26 08:42:27

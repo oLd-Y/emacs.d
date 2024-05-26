@@ -1,6 +1,6 @@
 ;;; init-text.el --- Text configurations -*- lexical-binding: t -*-
 
-;;; Commentary:
+;;; commentary:
 ;;
 
 ;;; Code:
@@ -24,6 +24,8 @@
 (add-to-list 'load-path "~/.emacs.d/site-lisp/dictionary-overlay/")
 (use-package dictionary-overlay
   :ensure nil)
+
+
 
 
 (provide 'init-text)

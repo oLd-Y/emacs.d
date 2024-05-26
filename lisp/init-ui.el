@@ -28,24 +28,10 @@
 ;;   (doom-modeline-unicode-fallback t)
 ;;   (doom-modeline-enable-word-count nil))
 
-(add-to-list 'load-path "~/.emacs.d/site-lisp/sort-tab/")
+;; (add-to-list 'load-path "~/.emacs.d/site-lisp/sort-tab/")
 (use-package sort-tab
   :config
   (sort-tab-mode 1)
-
-;;   (global-set-key (kbd "s-1") 'sort-tab-select-visible-tab)
-;; (global-set-key (kbd "s-2") 'sort-tab-select-visible-tab)
-;; (global-set-key (kbd "s-3") 'sort-tab-select-visible-tab)
-;; (global-set-key (kbd "s-4") 'sort-tab-select-visible-tab)
-;; (global-set-key (kbd "s-5") 'sort-tab-select-visible-tab)
-;; (global-set-key (kbd "s-6") 'sort-tab-select-visible-tab)
-;; (global-set-key (kbd "s-7") 'sort-tab-select-visible-tab)
-;; (global-set-key (kbd "s-8") 'sort-tab-select-visible-tab)
-;; (global-set-key (kbd "s-9") 'sort-tab-select-visible-tab)
-;; (global-set-key (kbd "s-0") 'sort-tab-select-visible-tab)
-;; (global-set-key (kbd "s-Q") 'sort-tab-close-all-tabs)
-;; (global-set-key (kbd "s-q") 'sort-tab-close-mode-tabs)
-;; (global-set-key (kbd "C-;") 'sort-tab-close-current-tab)
   :bind
   ("s-1" . 'sort-tab-select-visible-tab)
   ("s-2" . 'sort-tab-select-visible-tab)
@@ -54,35 +40,47 @@
   ("s-5" . 'sort-tab-select-visible-tab)
   ("s-6" . 'sort-tab-select-visible-tab)
   ("s-7" . 'sort-tab-select-visible-tab)
+  ("s-8" . 'sort-tab-select-visible-tab)
+  ("s-9" . 'sort-tab-select-visible-tab)
+  ("s-0" . 'sort-tab-select-visible-tab)
+  ("s-Q" . 'sort-tab-close-all-tabs)
+  ("s-q" . 'sort-tab-close-mode-tabs)
+  ("C-;" . 'sort-tab-close-current-tab)
   )
 
+;; (add-to-list 'load-path "~/.emacs.d/site-lisp/awesome-tray/")
+;; (use-package awesome-tray
+;;   :config
+;;   (awesome-tray-mode 1))
+
+
 ;; Customize popwin behavior
-(use-package shackle
-  :ensure t
-  :hook (after-init . shackle-mode)
-  :custom
-  (shackle-default-size 0.5)
-  (shackle-default-alignment 'below)
-  (shackle-rules '((magit-status-mode        :select t :inhibit-window-quit t :same t)
-                   (magit-log-mode           :select t :inhibit-window-quit t :same t)
-                   (vc-annotate-mode         :select t :inhibit-window-quit t :same t)
-                   ("*quickrun*"             :select t :inhibit-window-quit t :same t)
-                   (profiler-report-mode     :select t)
-                   (xwidget-webkit-mode      :select t :same t)
-                   (flycheck-error-list-mode :select t :align t :size 10)
-                   (comint-mode              :select t :align t :size 0.4)
-                   (grep-mode                :select t :align t)
-                   (rg-mode                  :select t :align t)
-                   ;; See also `help-window-select'
-                   (apropos-mode             :select nil :align t :size 0.4)
-                   (help-mode                :select nil :align t :size 0.4)
-                   ("*Backtrace*"               :select t   :align t :size 15)
-                   ("*Shell Command Output*"    :select nil :align t :size 0.4)
-                   ("*Async Shell Command*"     :select nil :align t :size 0.4)
-                   ("*Org-Babel Error Output*"  :select nil :align t :size 0.3)
-                   ("*Process List*"            :select t   :align t :size 0.3)
-                   ("*Occur*"                   :select t   :align t)
-                   ("\\*eldoc\\( for \\)?.*\\*" :select nil :align t :size 15 :regexp t))))
+;; (use-package shackle
+;;   :ensure t
+;;   :hook (after-init . shackle-mode)
+;;   :custom
+;;   (shackle-default-size 0.5)
+;;   (shackle-default-alignment 'below)
+;;   (shackle-rules '((magit-status-mode        :select t :inhibit-window-quit t :same t)
+;;                    (magit-log-mode           :select t :inhibit-window-quit t :same t)
+;;                    (vc-annotate-mode         :select t :inhibit-window-quit t :same t)
+;;                    ("*quickrun*"             :select t :inhibit-window-quit t :same t)
+;;                    (profiler-report-mode     :select t)
+;;                    (xwidget-webkit-mode      :select t :same t)
+;;                    (flycheck-error-list-mode :select t :align t :size 10)
+;;                    (comint-mode              :select t :align t :size 0.4)
+;;                    (grep-mode                :select t :align t)
+;;                    (rg-mode                  :select t :align t)
+;;                    ;; See also `help-window-select'
+;;                    (apropos-mode             :select nil :align t :size 0.4)
+;;                    (help-mode                :select nil :align t :size 0.4)
+;;                    ("*Backtrace*"               :select t   :align t :size 15)
+;;                    ("*Shell Command Output*"    :select nil :align t :size 0.4)
+;;                    ("*Async Shell Command*"     :select nil :align t :size 0.4)
+;;                    ("*Org-Babel Error Output*"  :select nil :align t :size 0.3)
+;;                    ("*Process List*"            :select t   :align t :size 0.3)
+;;                    ("*Occur*"                   :select t   :align t)
+;;                    ("\\*eldoc\\( for \\)?.*\\*" :select nil :align t :size 15 :regexp t))))
 
 (use-package help
   :ensure nil
@@ -94,16 +92,16 @@
 ;;
 ;; You can still use `winner-mode' on Emacs 26 or early. On Emacs 27, it's
 ;; preferred over `winner-mode' for better compatibility with `tab-bar-mode'.
-(use-package tab-bar
-  :ensure nil
-  :hook (after-init . tab-bar-history-mode)
-  :custom
-  (tab-bar-history-buttons-show nil))
+;; (use-package tab-bar
+;;   :ensure nil
+;;   :hook (after-init . tab-bar-history-mode)
+;;   :custom
+;;   (tab-bar-history-buttons-show nil))
 
-(use-package nerd-icons
-  :ensure t
-  :when (display-graphic-p)
-  :demand t)
+;; (use-package nerd-icons
+;;   :ensure t
+;;   :when (display-graphic-p)
+;;   :demand t)
 
 
 ;; (use-package dashboard
@@ -166,6 +164,7 @@
 
 
 (use-package valign
+  :demand nil
   :ensure t
   :hook
   (org-mode . valign-mode)
@@ -183,11 +182,12 @@
   :hook (after-init . winum-mode)
   :bind
   ("M-0" . 'winum-select-window-0-or-10)
-  ("M-1" . 'winum-select-window-1)
-  ("M-2" . 'winum-select-window-2)
-  ("M-3" . 'winum-select-window-3)
-  ("M-4" . 'winum-select-window-4)
-  ("M-5" . 'winum-select-window-5))
+  ;; to avoid sort-tab buffer
+  ("M-1" . 'winum-select-window-2)
+  ("M-2" . 'winum-select-window-3)
+  ("M-3" . 'winum-select-window-4)
+  ("M-4" . 'winum-select-window-5)
+  ("M-5" . 'winum-select-window-6))
 
 
 

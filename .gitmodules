@@ -20,3 +20,15 @@
 [submodule "site-lisp/sort-tab"]
 	path = site-lisp/sort-tab
 	url = https://github.com/manateelazycat/sort-tab.git
+[submodule "site-lisp/awesome-tray"]
+	path = site-lisp/awesome-tray
+	url = https://github.com/manateelazycat/awesome-tray.git
+[submodule "site-lisp/blink-search"]
+	path = site-lisp/blink-search
+	url = https://github.com/manateelazycat/blink-search.git
+[submodule "site-lisp/emacs-libvterm"]
+	path = site-lisp/emacs-libvterm
+	url = https://github.com/akermu/emacs-libvterm.git
+[submodule "extensions/lyao/ws-butler"]
+	path = site-lisp/ws-butler
+	url = https://github.com/lewang/ws-butler.git

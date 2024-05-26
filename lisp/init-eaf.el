@@ -1,6 +1,6 @@
 
 (use-package eaf
-  :load-path "~/.emacs.d/site-lisp/emacs-application-framework"
+  ;; :load-path "~/.emacs.d/site-lisp/emacs-application-framework"
   :custom
   ; See https://github.com/emacs-eaf/emacs-application-framework/wiki/Customization
   (eaf-browser-continue-where-left-off t)
@@ -19,14 +19,28 @@
   ;; (eaf-bind-key nil "M-q" eaf-browser-keybinding) ;; unbind, see more in the Wiki
 
   :bind
-  ("C-c e e" . 'eaf-open-browser-with-history)
-  ("C-c e b" . 'eaf-open-bookmark)
+  ("C-c e b" . 'eaf-open-bookmark))
 
-  )
+;; (add-to-list 'load-path "~/.emacs.d/site-lisp/emacs-application-framework/app/browser")
+;; (add-to-list 'load-path "~/.emacs.d/site-lisp/emacs-application-framework/app/pdf-viewer")
+;; (add-to-list 'load-path "~/.emacs.d/site-lisp/emacs-application-framework/app/file-manager")
+;; (add-to-list 'load-path "~/.emacs.d/site-lisp/emacs-application-framework/app/pyqterminal")
 
-(require 'eaf-pdf-viewer)
-(require 'eaf-browser)
-(require 'eaf-file-manager)
+
+(use-package eaf-pdf-viewer)
+
+(use-package eaf-browser
+
+  :bind
+  ("s-\"" . 'eaf-open-browser-with-history))
+
+(use-package eaf-file-manager
+  :hook
+  (window-setup . eaf-open-in-file-manager)
+  :bind
+  ("M-j" . 'eaf-open-in-file-manager))
+
+;; (use-package eaf-pyqterminal)
 
 (provide 'init-eaf)
 ;;; init-eaf.el ends here

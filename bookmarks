@@ -1052,8 +1052,8 @@
  (filename . "https://chat.openai.com/chat"))
 ("org-capture-last-stored"
  (filename . "~/org/all-posts.org")
- (front-context-string . "** TODO npm erro")
- (rear-context-string . "etails/82391665\n")
- (position . 21380)
- (last-modified 26192 20950 114994 367000))
+ (front-context-string . "** TODO KDE 为某个应")
+ (rear-context-string . "pp 文件夹删除重新安装即可。\n")
+ (position . 21810)
+ (last-modified 26193 16337 776573 380000))
 )

@@ -2,13 +2,10 @@
 ;;; Commentary:
 ;;; Code:
 
-(unless (package-installed-p 'copilot)
-  (package-vc-install "https://github.com/copilot-emacs/copilot.el"))
+;; (unless (package-installed-p 'copilot)
+;;   (package-vc-install "https://github.com/copilot-emacs/copilot.el"))
 
 (use-package copilot
-  ;; :straight (:host github :repo "copilot-emacs/copilot.el" :files ("*.el"))
-  ;; :ensure t
-  :ensure nil
   :hook
   (prog-mode . copilot-mode)
   (copilot-mode . (lambda ()
