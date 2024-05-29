@@ -2,7 +2,7 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Sun May 26 10:38:33 2024
+;; Created Wed May 29 22:49:32 2024
 ;; Desktop file format version 208
 ;; Emacs version 29.3
 
@@ -14,42 +14,18 @@
 (setq search-ring nil)
 (setq regexp-search-ring nil)
 (setq register-alist nil)
-(setq file-name-history '("~/.emacs.d/lisp/init-auto-save.el" "~/.emacs.d/" "~/org/all-posts.org" "~/.emacs.d/lisp/" "~/.emacs.d/lisp/init-basic.el" "~/org/" "~/.emacs.d/lisp/init-edit.el" "~/.emacs.d/lisp/init-minibuffer.el" "~/.emacs.d/init.el" "~/.emacs.d/lisp/init-minibuffer.el" "~/.emacs.d/lisp/" "~/.emacs.d/lisp/init-ui.el" "~/.emacs.d/init.el" "~/.emacs.d/lisp/init-ui.el" "~/.emacs.d/lisp/" "~/.emacs.d/lisp/init-eaf.el" "~/.emacs.d/" "~/.emacs.d/lisp/" "~/.emacs.d/lisp/init-eaf.el" "~/.emacs.d/" "~/.emacs.d/lisp/init-ui.el" "~/.emacs.d/dictionary-overlay-data/" "~/.emacs.d/" "~/.emacs.d/.git/COMMIT_EDITMSG" "~/.emacs.d/.gitignore" "~/.emacs.d/.git/COMMIT_EDITMSG" "~/.emacs.d/" "~/.emacs.d/init.el" "~/.emacs.d/" "~/.emacs.d/lisp/init-project.el" "~/.emacs.d/lisp/init-eaf.el" "~/.emacs.d/" "~/.emacs.d/.gitignore" "~/.emacs.d/" "~/.emacs.d/lisp/init-project.el" "~/.emacs.d/lisp/init-env.el" "~/.emacs.d/lisp/init-ui.el" "~/.emacs.d/lisp/init-env.el" "~/.emacs.d/lisp/init-ui.el" "~/.emacs.d/lisp/init-env.el" "~/.emacs.d/lisp/init-ui.el" "~/.emacs.d/" "~/.emacs.d/init.el" "~/.emacs.d/lisp/init-session.el" "/home/lyao/.emacs.d/site-lisp/auto-save" "~/Videos/" "~/.emacs.d/" "~/.emacs.d/extensions/basic-toolkit.el" "~/lazycat-emacs/site-lisp/extensions/lazycat/" "~/lazycat-emacs/site-lisp/extensions/lazycat/basic-toolkit.el" "~/lazycat-emacs/" "~/.emacs.d/lisp/init-session.el" "~/.emacs.d/lisp/" "~/.emacs.d/" "~/.emacs.d/lisp/" "~/.emacs.d/lisp/init-eaf.el" "~/.emacs.d/site-lisp/emacs-application-framework/app/browser/" "~/.emacs.d/lisp/init-eaf.el" "~/.emacs.d/" "~/org/all-posts.org" "~/.emacs.d/lisp/init-session.el" "~/org/all-posts.org" "~/.emacs.d/site-lisp/emacs-application-framework/" "~/.emacs.d/lisp/init-eaf.el" "~/.emacs.d/site-lisp/emacs-application-framework/" "~/.emacs.d/lisp/init-eaf.el" "~/.emacs.d/init.el" "~/.emacs.d/" "~/.emacs.d/lisp/init-eaf.el" "~/.emacs.d/lisp/init-text.el" "~/.emacs.d/" "~/.emacs.d/lisp/init-meow.el" "~/.emacs.d/lisp/init-env.el" "~/.emacs.d/init.el" "~/org/all-posts.org" "~/.emacs.d/lisp/init-env.el" "~/.emacs.d/lisp/init-writing.el" "~/.emacs.d/lisp/init-edit.el" "~/.emacs.d/init.el" "~/org/all-posts.org" "~/.emacs.d/lisp/init-edit.el" "~/org/" "~/.emacs.d/init.el" "~/.emacs.d/lisp/init-edit.el" "~/.emacs.d/lisp/init-meow.el" "~/.emacs.d/lisp/init-edit.el" "~/.emacs.d/init.el" "~/org/all-posts.org" "~/.emacs.d/init.el" "~/.emacs.d/" "~/org/" "/usr/share/" "~/org/os-configuration.org" "~/.emacs.d/init.el" "~/org/all-posts.org" "~/.emacs.d/lisp/init-meow.el" "~/.emacs.d/" "~/org/all-posts.org" "~/.emacs.d/.git/COMMIT_EDITMSG" "~/.emacs.d/lisp/init-meow.el"))
+(setq file-name-history '("/home/lyao/test.cpp" "~/.emacs.d/" "~/test.c" "~/.emacs.d/.git/COMMIT_EDITMSG" "~/.emacs.d/lisp/init-auto-save.el" "~/.emacs.d/" "~/org/all-posts.org" "~/.emacs.d/lisp/" "~/.emacs.d/lisp/init-basic.el" "~/org/" "~/.emacs.d/lisp/init-edit.el" "~/.emacs.d/lisp/init-minibuffer.el" "~/.emacs.d/init.el" "~/.emacs.d/lisp/init-minibuffer.el" "~/.emacs.d/lisp/" "~/.emacs.d/lisp/init-ui.el" "~/.emacs.d/init.el" "~/.emacs.d/lisp/init-ui.el" "~/.emacs.d/lisp/" "~/.emacs.d/lisp/init-eaf.el" "~/.emacs.d/" "~/.emacs.d/lisp/" "~/.emacs.d/lisp/init-eaf.el" "~/.emacs.d/" "~/.emacs.d/lisp/init-ui.el" "~/.emacs.d/dictionary-overlay-data/" "~/.emacs.d/" "~/.emacs.d/.git/COMMIT_EDITMSG" "~/.emacs.d/.gitignore" "~/.emacs.d/.git/COMMIT_EDITMSG" "~/.emacs.d/" "~/.emacs.d/init.el" "~/.emacs.d/" "~/.emacs.d/lisp/init-project.el" "~/.emacs.d/lisp/init-eaf.el" "~/.emacs.d/" "~/.emacs.d/.gitignore" "~/.emacs.d/" "~/.emacs.d/lisp/init-project.el" "~/.emacs.d/lisp/init-env.el" "~/.emacs.d/lisp/init-ui.el" "~/.emacs.d/lisp/init-env.el" "~/.emacs.d/lisp/init-ui.el" "~/.emacs.d/lisp/init-env.el" "~/.emacs.d/lisp/init-ui.el" "~/.emacs.d/" "~/.emacs.d/init.el" "~/.emacs.d/lisp/init-session.el" "/home/lyao/.emacs.d/site-lisp/auto-save" "~/Videos/" "~/.emacs.d/" "~/.emacs.d/extensions/basic-toolkit.el" "~/lazycat-emacs/site-lisp/extensions/lazycat/" "~/lazycat-emacs/site-lisp/extensions/lazycat/basic-toolkit.el" "~/lazycat-emacs/" "~/.emacs.d/lisp/init-session.el" "~/.emacs.d/lisp/" "~/.emacs.d/" "~/.emacs.d/lisp/" "~/.emacs.d/lisp/init-eaf.el" "~/.emacs.d/site-lisp/emacs-application-framework/app/browser/" "~/.emacs.d/lisp/init-eaf.el" "~/.emacs.d/" "~/org/all-posts.org" "~/.emacs.d/lisp/init-session.el" "~/org/all-posts.org" "~/.emacs.d/site-lisp/emacs-application-framework/" "~/.emacs.d/lisp/init-eaf.el" "~/.emacs.d/site-lisp/emacs-application-framework/" "~/.emacs.d/lisp/init-eaf.el" "~/.emacs.d/init.el" "~/.emacs.d/" "~/.emacs.d/lisp/init-eaf.el" "~/.emacs.d/lisp/init-text.el" "~/.emacs.d/" "~/.emacs.d/lisp/init-meow.el" "~/.emacs.d/lisp/init-env.el" "~/.emacs.d/init.el" "~/org/all-posts.org" "~/.emacs.d/lisp/init-env.el" "~/.emacs.d/lisp/init-writing.el" "~/.emacs.d/lisp/init-edit.el" "~/.emacs.d/init.el" "~/org/all-posts.org" "~/.emacs.d/lisp/init-edit.el" "~/org/" "~/.emacs.d/init.el" "~/.emacs.d/lisp/init-edit.el" "~/.emacs.d/lisp/init-meow.el" "~/.emacs.d/lisp/init-edit.el" "~/.emacs.d/init.el" "~/org/all-posts.org" "~/.emacs.d/init.el" "~/.emacs.d/" "~/org/" "/usr/share/" "~/org/os-configuration.org" "~/.emacs.d/init.el" "~/org/all-posts.org" "~/.emacs.d/lisp/init-meow.el"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 208
-  "/home/lyao/.emacs.d/lisp/init-ui.el"
-  "init-ui.el"
-  'emacs-lisp-mode
-  '(meow-normal-mode font-lock-mode eldoc-mode meow-mode ws-butler-mode awesome-pair-mode lsp-bridge-mode hs-minor-mode yas-minor-mode flycheck-mode rainbow-delimiters-mode copilot-mode)
-  348
-  '(691 nil)
+  "/home/lyao/test.cpp"
+  "test.cpp"
+  'c++-ts-mode
+  '(font-lock-mode meow-normal-mode meow-mode ws-butler-mode lsp-bridge-mode hs-minor-mode yas-minor-mode flycheck-mode rainbow-delimiters-mode copilot-mode)
+  349
+  '(131 nil)
   nil
   nil
-  '((buffer-display-time 26194 41109 852462 37000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (691 143 143 143 7062 6917 6917 6917 6917 6929 6929 693 348 348 1409 1409))))
-
-(desktop-create-buffer 208
-  "/home/lyao/.emacs.d/lisp/init-completion.el"
-  "init-completion.el"
-  'emacs-lisp-mode
-  '(meow-normal-mode copilot-mode font-lock-mode eldoc-mode meow-mode ws-butler-mode awesome-pair-mode lsp-bridge-mode hs-minor-mode yas-minor-mode flycheck-mode rainbow-delimiters-mode)
-  648
-  '(245 nil)
-  nil
-  nil
-  '((buffer-display-time 26194 40649 772516 230000) (buffer-file-coding-system . prefer-utf-8-unix))
-  '((mark-ring (245 245 108 108 108 108 648 764 648))))
-
-(desktop-create-buffer 208
-  "/home/lyao/.emacs.d/lisp/init-auto-save.el"
-  "init-auto-save.el"
-  'emacs-lisp-mode
-  '(meow-normal-mode copilot-mode font-lock-mode eldoc-mode meow-mode ws-butler-mode awesome-pair-mode lsp-bridge-mode hs-minor-mode yas-minor-mode flycheck-mode rainbow-delimiters-mode)
-  318
-  '(196 nil)
-  nil
-  nil
-  '((buffer-display-time 26194 39784 928690 482000) (buffer-file-coding-system . prefer-utf-8-unix))
-  '((mark-ring nil)))
+  '((buffer-display-time 26199 16506 991663 924000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1 1 1 1 1 1 1 130 151 151 308 292 308 280 327 349))))
 

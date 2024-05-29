@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
- emacs-init-time
- desktop-read
- lsp-bridge-copilot-login
- auto-save-mode
- visual-line-mode
- eaf-open-browser-with-history
- eaf-open-bookmark
+ c++-ts-mode
+ c++-mode
+ cpp-highlight-buffer
+ vterm
+ compile
+ treesit-install-language-grammar
+ lsp-bridge-mode
 )
 
 ;; ----- amx-data -----
@@ -41,20 +41,20 @@
  (rg . 4)
  (kill-buffer . 1)
  (dashboard-open . 1)
- (magit . 25)
+ (magit . 26)
  (customize-group . 1)
  (org-goto . 1)
  (help-with-tutorial-spec-language . 3)
  (end-of-line . 1)
  (find-file-in-project-at-point . 13)
  (menu-bar-read-lispintro . 2)
- (lsp-bridge-mode . 6)
+ (lsp-bridge-mode . 8)
  (run-python . 1)
  (vc-dir . 1)
  (copilot-install-server . 6)
  (copilot-diagnose . 1)
- (treesit-install-language-grammar . 3)
- (compile . 5)
+ (treesit-install-language-grammar . 5)
+ (compile . 7)
  (org-indent-mode . 10)
  (org-mode . 2)
  (org-hugo-auto-export-mode . 1)
@@ -69,7 +69,7 @@
  (color-rg-mode . 1)
  (emacs-lisp-mode . 2)
  (color-rg-search-project . 3)
- (color-rg-search-input . 11)
+ (color-rg-search-input . 12)
  (color-rg-search-symbol-in-current-file . 2)
  (color-rg-customized-search . 2)
  (meow-normal-mode . 3)
@@ -92,7 +92,7 @@
  (maximize-window . 1)
  (toggle-frame-fullscreen . 1)
  (scroll-up-line . 3)
- (rime-deploy . 13)
+ (rime-deploy . 18)
  (rime-open-configuration . 1)
  (toggle-input-method . 1)
  (meow-global-mode . 1)
@@ -123,10 +123,10 @@
  (awesome-pair-jump-right . 10)
  (lsp-bridge-toggle-sdcv-helper . 3)
  (dictionary-overlay-install . 1)
- (dictionary-overlay-start . 1)
- (dictionary-overlay-render-buffer . 4)
- (dictionary-overlay-mark-word-unknown . 6)
- (dictionary-overlay-mark-word-known . 2)
+ (dictionary-overlay-start . 4)
+ (dictionary-overlay-render-buffer . 10)
+ (dictionary-overlay-mark-word-unknown . 10)
+ (dictionary-overlay-mark-word-known . 3)
  (eaf-open-browser . 13)
  (eaf-open . 1)
  (eaf-install-and-update . 1)
@@ -134,18 +134,22 @@
  (eaf-py-proxy-insert_or_render_by_eww . 4)
  (eaf-open-bookmark . 4)
  (eaf-import-chrome-bookmarks . 1)
- (mark-line . 2)
+ (mark-line . 3)
  (lsp-bridge-copilot-login . 4)
  (eaf-open-file-manager . 2)
  (eaf-open-in-file-manager . 5)
  (auto-save-mode . 4)
  (emacs-session-restore . 1)
- (desktop-read . 26)
+ (desktop-read . 29)
  (desktop-save . 5)
  (magit-unstage . 1)
  (sort-tab-close-current-tab . 1)
  (eaf-open-pyqterminal . 2)
- (vterm . 1)
+ (vterm . 7)
  (meow-last-buffer . 1)
- (emacs-init-time . 7)
+ (emacs-init-time . 8)
+ (electric-pair-mode . 2)
+ (cpp-highlight-buffer . 1)
+ (c++-ts-mode . 3)
+ (c++-mode . 1)
 )

@@ -1052,8 +1052,8 @@
  (filename . "https://chat.openai.com/chat"))
 ("org-capture-last-stored"
  (filename . "~/org/all-posts.org")
- (front-context-string . "** TODO KDE 为某个应")
- (rear-context-string . "pp 文件夹删除重新安装即可。\n")
- (position . 21810)
- (last-modified 26193 16337 776573 380000))
+ (front-context-string . "** TODO kde fcit")
+ (rear-context-string . "s -> 选择 yes 即可。\n")
+ (position . 23672)
+ (last-modified 26194 46015 249741 723000))
 )

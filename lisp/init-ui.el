@@ -49,9 +49,9 @@
   )
 
 ;; (add-to-list 'load-path "~/.emacs.d/site-lisp/awesome-tray/")
-;; (use-package awesome-tray
-;;   :config
-;;   (awesome-tray-mode 1))
+(use-package awesome-tray
+  :config
+  (awesome-tray-mode 1))
 
 
 ;; Customize popwin behavior

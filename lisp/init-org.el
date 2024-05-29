@@ -14,12 +14,14 @@
 
 ;; blog backend
 (use-package ox-hugo
+  :demand nil
   :ensure t   ;Auto-install the package from Melpa
   :pin melpa  ;`package-archives' should already have ("melpa" . "https://melpa.org/packages/")
   :after ox)
 
 
 (use-package org-capture
+  :demand nil
   :ensure nil
   :after org
   :bind
@@ -61,6 +63,7 @@ See `org-capture-templates' for more information."
 
 
 (use-package org-bullets
+  :demand nil
   :ensure t
   :config
   (progn
@@ -68,12 +71,14 @@ See `org-capture-templates' for more information."
     (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))))
 
 (use-package org-roam
+  :demand nil
   :ensure t
   :config
   (setq org-roam-directory "~/org"))
 
 
 (use-package org-download
+  :demand nil
   :ensure t
   :after org
   :custom

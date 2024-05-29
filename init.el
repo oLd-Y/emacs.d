@@ -55,6 +55,7 @@
 (require 'init-eaf)
 (require 'init-session)
 (require 'init-auto-save)
+(require 'init-terminal)
 
 
 

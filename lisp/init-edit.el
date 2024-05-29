@@ -37,7 +37,8 @@
 (use-package mwim
   :ensure t
   :bind
-  ("C-a" . mwim-beginning-of-code-or-line))
+  ("C-a" . mwim-beginning-of-code-or-line)
+  ("C-e" . mwim-end-of-code-or-line))
 
 
 (use-package flycheck
@@ -51,6 +52,7 @@
 
 
 (use-package avy
+  :demand nil
   :ensure t
   :custom
   (avy-timeout-seconds 0.3))
