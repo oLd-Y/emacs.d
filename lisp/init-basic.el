@@ -8,8 +8,8 @@
 
 
 ;; (setq pixel-scroll-precision-mode t)
-(visual-line-mode t)
-(electric-pair-mode t)                       ; 自动补全括号
+(visual-line-mode)
+(electric-pair-mode)                       ; 自动补全括号
 (add-hook 'prog-mode-hook #'show-paren-mode) ; 编程模式下，光标在括号上时高亮另一个括号
 (column-number-mode t)                       ; 在 Mode line 上显示列号
 (global-auto-revert-mode t)                  ; 当另一程序修改了文件时，让 Emacs 及时刷新 Buffer
@@ -29,7 +29,7 @@
 
 (savehist-mode 1)                            ; （可选）打开 Buffer 历史记录保存
 ;; (add-to-list 'default-frame-alist '(fullscreen . maximized))
-(add-hook 'window-setup-hook 'toggle-frame-fullscreen t) ; 启动时全屏
+;; (add-hook 'window-setup-hook 'toggle-frame-fullscreen t) ; 启动时全屏
 
 ;; set proxy
 (setq url-proxy-services '(("no_proxy" . "^\\(192\\.168\\..*\\)")

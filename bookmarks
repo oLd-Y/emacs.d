@@ -1052,8 +1052,8 @@
  (filename . "https://chat.openai.com/chat"))
 ("org-capture-last-stored"
  (filename . "~/org/all-posts.org")
- (front-context-string . "** TODO kde fcit")
- (rear-context-string . "s -> 选择 yes 即可。\n")
- (position . 23672)
- (last-modified 26194 46015 249741 723000))
+ (front-context-string . "** TODO ** TODO ")
+ (rear-context-string . "的代码时，需要遵循相应的规范。\n")
+ (position . 35555)
+ (last-modified 26205 12890 622271 930000))
 )

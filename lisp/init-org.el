@@ -14,7 +14,6 @@
 
 ;; blog backend
 (use-package ox-hugo
-  :demand nil
   :ensure t   ;Auto-install the package from Melpa
   :pin melpa  ;`package-archives' should already have ("melpa" . "https://melpa.org/packages/")
   :after ox)
